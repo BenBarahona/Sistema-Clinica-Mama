@@ -1,0 +1,70 @@
+F:\basePruebas\DataTransaction\bin\Debug\DataTransaction.dll
+F:\basePruebas\DataTransaction\bin\Debug\DataTransaction.pdb
+F:\basePruebas\DataTransaction\obj\Debug\ResolveAssemblyReference.cache
+F:\basePruebas\DataTransaction\obj\Debug\DataTransaction.dll
+F:\basePruebas\DataTransaction\obj\Debug\DataTransaction.pdb
+C:\Users\KoTaRo\Desktop\basePruebas\DataTransaction\bin\Debug\DataTransaction.dll
+C:\Users\KoTaRo\Desktop\basePruebas\DataTransaction\bin\Debug\DataTransaction.pdb
+C:\Users\KoTaRo\Desktop\basePruebas\DataTransaction\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\KoTaRo\Desktop\basePruebas\DataTransaction\obj\Debug\DataTransaction.dll
+C:\Users\KoTaRo\Desktop\basePruebas\DataTransaction\obj\Debug\DataTransaction.pdb
+C:\Users\Otto\Desktop\Clinica Patologica Final !!\basePruebas\DataTransaction\bin\Debug\DataTransaction.dll
+C:\Users\Otto\Desktop\Clinica Patologica Final !!\basePruebas\DataTransaction\bin\Debug\DataTransaction.pdb
+C:\Users\Otto\Desktop\Clinica Patologica Final !!\basePruebas\DataTransaction\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Otto\Desktop\Clinica Patologica Final !!\basePruebas\DataTransaction\obj\Debug\DataTransaction.dll
+C:\Users\Otto\Desktop\Clinica Patologica Final !!\basePruebas\DataTransaction\obj\Debug\DataTransaction.pdb
+E:\My Documents\Clases\Teoria Base de Datos I\Proyecto\BaseDeDatosClinicaPatologica2\DataTransaction\bin\Debug\DataTransaction.dll
+E:\My Documents\Clases\Teoria Base de Datos I\Proyecto\BaseDeDatosClinicaPatologica2\DataTransaction\bin\Debug\DataTransaction.pdb
+E:\My Documents\Clases\Teoria Base de Datos I\Proyecto\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Debug\ResolveAssemblyReference.cache
+E:\My Documents\Clases\Teoria Base de Datos I\Proyecto\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Debug\DataTransaction.dll
+E:\My Documents\Clases\Teoria Base de Datos I\Proyecto\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Debug\DataTransaction.pdb
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Debug\DataTransaction.dll
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Debug\DataTransaction.pdb
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\DataTransaction\bin\Debug\DataTransaction.dll
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\DataTransaction\bin\Debug\DataTransaction.pdb
+C:\Users\Kotaro\Desktop\Temp\kotaro\BaseDeDatosClinicaPatologica2\DataTransaction\bin\Debug\DataTransaction.dll
+C:\Users\Kotaro\Desktop\Temp\kotaro\BaseDeDatosClinicaPatologica2\DataTransaction\bin\Debug\DataTransaction.pdb
+C:\Users\Kotaro\Desktop\Temp\kotaro\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Kotaro\Desktop\Temp\kotaro\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Debug\DataTransaction.dll
+C:\Users\Kotaro\Desktop\Temp\kotaro\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Debug\DataTransaction.pdb
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\DataTransaction\bin\Debug\DataTransaction.dll
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\DataTransaction\bin\Debug\DataTransaction.pdb
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Debug\DataTransaction.dll
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Debug\DataTransaction.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\DataTransaction\bin\Debug\DataTransaction.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\DataTransaction\bin\Debug\DataTransaction.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Debug\DataTransaction.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Debug\DataTransaction.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica2\DataTransaction\bin\Debug\DataTransaction.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica2\DataTransaction\bin\Debug\DataTransaction.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Debug\DataTransaction.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Debug\DataTransaction.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\DataTransaction\bin\Debug\DataTransaction.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\DataTransaction\bin\Debug\DataTransaction.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Debug\DataTransaction.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Debug\DataTransaction.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS\DataTransaction\bin\Debug\DataTransaction.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS\DataTransaction\bin\Debug\DataTransaction.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS\DataTransaction\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS\DataTransaction\obj\Debug\DataTransaction.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS\DataTransaction\obj\Debug\DataTransaction.pdb
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica\DataTransaction\bin\Debug\DataTransaction.dll
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica\DataTransaction\bin\Debug\DataTransaction.pdb
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica\DataTransaction\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica\DataTransaction\obj\Debug\DataTransaction.dll
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica\DataTransaction\obj\Debug\DataTransaction.pdb
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica AMBIENTE DE PRUEBA\DataTransaction\bin\Debug\DataTransaction.dll
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica AMBIENTE DE PRUEBA\DataTransaction\bin\Debug\DataTransaction.pdb
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica AMBIENTE DE PRUEBA\DataTransaction\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica AMBIENTE DE PRUEBA\DataTransaction\obj\Debug\DataTransaction.dll
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica AMBIENTE DE PRUEBA\DataTransaction\obj\Debug\DataTransaction.pdb
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\BaseDeDatosClinicaPatologica\DataTransaction\bin\Debug\DataTransaction.dll
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\BaseDeDatosClinicaPatologica\DataTransaction\bin\Debug\DataTransaction.pdb
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\BaseDeDatosClinicaPatologica\DataTransaction\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\BaseDeDatosClinicaPatologica\DataTransaction\obj\Debug\DataTransaction.dll
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\BaseDeDatosClinicaPatologica\DataTransaction\obj\Debug\DataTransaction.pdb

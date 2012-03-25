@@ -1,0 +1,40 @@
+﻿<navigation:Page x:Class="ProyectoSCA_Navigation.Views.Seguridad" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="800"
+           Title="Seguridad" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" d:DesignHeight="344">
+    <Grid x:Name="LayoutRoot">
+        <ScrollViewer x:Name="PageScrollViewer" Style="{StaticResource PageScrollViewerStyle}">
+            <Grid Name="grid2" Width="800">
+                <Grid.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#FFA9FF89" Offset="1" />
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <sdk:Label Height="39" HorizontalAlignment="Center" Margin="3,18,6,0" Name="label3" VerticalAlignment="Top" Width="754" Content="Seguridad" FontSize="22" FontFamily="Arial" FontWeight="Bold" HorizontalContentAlignment="Center" />
+                <Canvas Height="296" HorizontalAlignment="Left" Margin="151,63,0,0" Name="canvas1" VerticalAlignment="Top" Width="524" Background="White">
+                    <TextBlock Canvas.Left="203" Canvas.Top="23" Height="22" Name="textblock1" Text="Seleccione un Rol:" TextAlignment="Center" />
+                    <ComboBox Canvas.Left="194" Canvas.Top="47" Height="23" Name="rol_txt" Width="120" SelectionChanged="rol_txt_SelectionChanged" />
+                    <Border BorderBrush="Silver" BorderThickness="1" Canvas.Left="69" Canvas.Top="85" Height="124" Name="border1" Width="384">
+                        <Grid Height="111" Name="grid1" Width="374">
+                            <TextBlock Height="23" HorizontalAlignment="Left" Margin="124,6,0,0" Name="textBlock2" Text="Permisos Asociados:" VerticalAlignment="Top" TextAlignment="Center" />
+                            <CheckBox Content="Registrar Persona" Height="16" HorizontalAlignment="Left" Margin="10,37,0,0" Name="registrarPersona_chk" VerticalAlignment="Top" />
+                            <CheckBox Content="Control de Pago" Height="16" HorizontalAlignment="Left" Margin="10,70,0,0" Name="controlDePago_chk" VerticalAlignment="Top" />
+                            <CheckBox Content="Capitalizacion" Height="16" HorizontalAlignment="Left" Margin="141,37,0,0" Name="capitalizacion_chk" VerticalAlignment="Top" />
+                            <CheckBox Content="Consultas" Height="16" HorizontalAlignment="Left" Margin="141,70,0,0" Name="consultas_chk" VerticalAlignment="Top" />
+                            <CheckBox Content="Parametrizacion" Height="16" HorizontalAlignment="Left" Margin="251,37,0,0" Name="parametrizacion_chk" VerticalAlignment="Top" />
+                            <CheckBox Content="Seguridad" Height="16" HorizontalAlignment="Left" Margin="251,70,0,0" Name="seguridad_chk" VerticalAlignment="Top" IsEnabled="True" />
+                        </Grid>
+                    </Border>
+                    <Button Canvas.Left="198" Canvas.Top="216" Content="Guardar Cambios" Height="37" Name="guardar_btn" Width="120" Click="guardar_btn_Click" />
+                    <TextBlock Canvas.Left="70" Canvas.Top="262" Height="30" Name="mensaje_txt" Text="" Width="384" FontWeight="Bold" />
+                </Canvas>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</navigation:Page>

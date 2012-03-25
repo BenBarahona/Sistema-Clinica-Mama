@@ -1,0 +1,5 @@
+C:\Users\dAnY\documents\visual studio 2010\Projects\TC\DT\bin\Debug\DT.dll
+C:\Users\dAnY\documents\visual studio 2010\Projects\TC\DT\bin\Debug\DT.pdb
+C:\Users\dAnY\documents\visual studio 2010\Projects\TC\DT\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\dAnY\documents\visual studio 2010\Projects\TC\DT\obj\Debug\DT.dll
+C:\Users\dAnY\documents\visual studio 2010\Projects\TC\DT\obj\Debug\DT.pdb

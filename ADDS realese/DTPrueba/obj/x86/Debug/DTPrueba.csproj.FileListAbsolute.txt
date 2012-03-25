@@ -1,0 +1,96 @@
+c:\users\kotaro\documents\visual studio 2010\Projects\DT\DTPrueba\bin\Debug\DTPrueba.exe
+c:\users\kotaro\documents\visual studio 2010\Projects\DT\DTPrueba\bin\Debug\DTPrueba.pdb
+c:\users\kotaro\documents\visual studio 2010\Projects\DT\DTPrueba\bin\Debug\DT.dll
+c:\users\kotaro\documents\visual studio 2010\Projects\DT\DTPrueba\bin\Debug\DT.pdb
+c:\users\kotaro\documents\visual studio 2010\Projects\DT\DTPrueba\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\kotaro\documents\visual studio 2010\Projects\DT\DTPrueba\obj\x86\Debug\DTPrueba.Form1.resources
+c:\users\kotaro\documents\visual studio 2010\Projects\DT\DTPrueba\obj\x86\Debug\DTPrueba.Properties.Resources.resources
+c:\users\kotaro\documents\visual studio 2010\Projects\DT\DTPrueba\obj\x86\Debug\ResGen.read.1.tlog
+c:\users\kotaro\documents\visual studio 2010\Projects\DT\DTPrueba\obj\x86\Debug\ResGen.write.1.tlog
+c:\users\kotaro\documents\visual studio 2010\Projects\DT\DTPrueba\obj\x86\Debug\DTPrueba.exe
+c:\users\kotaro\documents\visual studio 2010\Projects\DT\DTPrueba\obj\x86\Debug\DTPrueba.pdb
+C:\Users\Ben\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\DTPrueba\bin\Debug\DTPrueba.exe
+C:\Users\Ben\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\DTPrueba\bin\Debug\DTPrueba.pdb
+C:\Users\Ben\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\DTPrueba\bin\Debug\DT.dll
+C:\Users\Ben\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\DTPrueba\bin\Debug\DT.pdb
+C:\Users\Ben\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\DTPrueba\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\DTPrueba\obj\x86\Debug\DTPrueba.Form1.resources
+C:\Users\Ben\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\DTPrueba\obj\x86\Debug\DTPrueba.Properties.Resources.resources
+C:\Users\Ben\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\DTPrueba\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Ben\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\DTPrueba\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Ben\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\DTPrueba\obj\x86\Debug\DTPrueba.exe
+C:\Users\Ben\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\DTPrueba\obj\x86\Debug\DTPrueba.pdb
+C:\Users\KOTARO\Desktop\DT\DTPrueba\bin\Debug\DTPrueba.exe
+C:\Users\KOTARO\Desktop\DT\DTPrueba\bin\Debug\DTPrueba.pdb
+C:\Users\KOTARO\Desktop\DT\DTPrueba\bin\Debug\DT.dll
+C:\Users\KOTARO\Desktop\DT\DTPrueba\bin\Debug\DT.pdb
+C:\Users\KOTARO\Desktop\DT\DTPrueba\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\KOTARO\Desktop\DT\DTPrueba\obj\x86\Debug\DTPrueba.Form1.resources
+C:\Users\KOTARO\Desktop\DT\DTPrueba\obj\x86\Debug\DTPrueba.Properties.Resources.resources
+C:\Users\KOTARO\Desktop\DT\DTPrueba\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\KOTARO\Desktop\DT\DTPrueba\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\KOTARO\Desktop\DT\DTPrueba\obj\x86\Debug\DTPrueba.exe
+C:\Users\KOTARO\Desktop\DT\DTPrueba\obj\x86\Debug\DTPrueba.pdb
+C:\Users\Ben\Dropbox\ADDS realese\DTPrueba\bin\Debug\DTPrueba.exe
+C:\Users\Ben\Dropbox\ADDS realese\DTPrueba\bin\Debug\DTPrueba.pdb
+C:\Users\Ben\Dropbox\ADDS realese\DTPrueba\bin\Debug\DT.dll
+C:\Users\Ben\Dropbox\ADDS realese\DTPrueba\bin\Debug\DT.pdb
+C:\Users\Ben\Dropbox\ADDS realese\DTPrueba\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Dropbox\ADDS realese\DTPrueba\obj\x86\Debug\DTPrueba.Form1.resources
+C:\Users\Ben\Dropbox\ADDS realese\DTPrueba\obj\x86\Debug\DTPrueba.Properties.Resources.resources
+C:\Users\Ben\Dropbox\ADDS realese\DTPrueba\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Ben\Dropbox\ADDS realese\DTPrueba\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Ben\Dropbox\ADDS realese\DTPrueba\obj\x86\Debug\DTPrueba.exe
+C:\Users\Ben\Dropbox\ADDS realese\DTPrueba\obj\x86\Debug\DTPrueba.pdb
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\DTPrueba\bin\Debug\DTPrueba.exe
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\DTPrueba\bin\Debug\DTPrueba.pdb
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\DTPrueba\bin\Debug\DT.dll
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\DTPrueba\bin\Debug\DT.pdb
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\DTPrueba\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\DTPrueba\obj\x86\Debug\DTPrueba.Form1.resources
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\DTPrueba\obj\x86\Debug\DTPrueba.Properties.Resources.resources
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\DTPrueba\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\DTPrueba\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\DTPrueba\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\DTPrueba\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\DTPrueba\obj\x86\Debug\DTPrueba.exe
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\DTPrueba\obj\x86\Debug\DTPrueba.pdb
+C:\Users\KOTARO\Desktop\ADDS realese\DTPrueba\bin\Debug\DTPrueba.exe
+C:\Users\KOTARO\Desktop\ADDS realese\DTPrueba\bin\Debug\DTPrueba.pdb
+C:\Users\KOTARO\Desktop\ADDS realese\DTPrueba\bin\Debug\DT.dll
+C:\Users\KOTARO\Desktop\ADDS realese\DTPrueba\bin\Debug\DT.pdb
+C:\Users\KOTARO\Desktop\ADDS realese\DTPrueba\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\KOTARO\Desktop\ADDS realese\DTPrueba\obj\x86\Debug\DTPrueba.Form1.resources
+C:\Users\KOTARO\Desktop\ADDS realese\DTPrueba\obj\x86\Debug\DTPrueba.Properties.Resources.resources
+C:\Users\KOTARO\Desktop\ADDS realese\DTPrueba\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\KOTARO\Desktop\ADDS realese\DTPrueba\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\KOTARO\Desktop\ADDS realese\DTPrueba\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\KOTARO\Desktop\ADDS realese\DTPrueba\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\KOTARO\Desktop\ADDS realese\DTPrueba\obj\x86\Debug\DTPrueba.exe
+C:\Users\KOTARO\Desktop\ADDS realese\DTPrueba\obj\x86\Debug\DTPrueba.pdb
+C:\Users\dAnY\Desktop\ADDS realese\DTPrueba\bin\Debug\DTPrueba.exe
+C:\Users\dAnY\Desktop\ADDS realese\DTPrueba\bin\Debug\DTPrueba.pdb
+C:\Users\dAnY\Desktop\ADDS realese\DTPrueba\bin\Debug\DT.dll
+C:\Users\dAnY\Desktop\ADDS realese\DTPrueba\bin\Debug\DT.pdb
+C:\Users\dAnY\Desktop\ADDS realese\DTPrueba\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\dAnY\Desktop\ADDS realese\DTPrueba\obj\x86\Debug\DTPrueba.Form1.resources
+C:\Users\dAnY\Desktop\ADDS realese\DTPrueba\obj\x86\Debug\DTPrueba.Properties.Resources.resources
+C:\Users\dAnY\Desktop\ADDS realese\DTPrueba\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\dAnY\Desktop\ADDS realese\DTPrueba\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\dAnY\Desktop\ADDS realese\DTPrueba\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\dAnY\Desktop\ADDS realese\DTPrueba\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\dAnY\Desktop\ADDS realese\DTPrueba\obj\x86\Debug\DTPrueba.exe
+C:\Users\dAnY\Desktop\ADDS realese\DTPrueba\obj\x86\Debug\DTPrueba.pdb
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\DTPrueba\bin\Debug\DTPrueba.exe
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\DTPrueba\bin\Debug\DTPrueba.pdb
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\DTPrueba\bin\Debug\DT.dll
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\DTPrueba\bin\Debug\DT.pdb
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\DTPrueba\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\DTPrueba\obj\x86\Debug\DTPrueba.Form1.resources
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\DTPrueba\obj\x86\Debug\DTPrueba.Properties.Resources.resources
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\DTPrueba\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\DTPrueba\obj\x86\Debug\ResGen.read.1.tlog
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\DTPrueba\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\DTPrueba\obj\x86\Debug\ResGen.write.1.tlog
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\DTPrueba\obj\x86\Debug\DTPrueba.exe
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\DTPrueba\obj\x86\Debug\DTPrueba.pdb

@@ -1,0 +1,7 @@
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\Sistema_BD_Clinica_Patologica\Sistema_BD_Clinica_Patologica.Web\bin\Sistema_BD_Clinica_Patologica.Web.dll
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\Sistema_BD_Clinica_Patologica\Sistema_BD_Clinica_Patologica.Web\bin\Sistema_BD_Clinica_Patologica.Web.pdb
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\Sistema_BD_Clinica_Patologica\Sistema_BD_Clinica_Patologica.Web\bin\DT.dll
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\Sistema_BD_Clinica_Patologica\Sistema_BD_Clinica_Patologica.Web\bin\DT.pdb
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\Sistema_BD_Clinica_Patologica\Sistema_BD_Clinica_Patologica.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\Sistema_BD_Clinica_Patologica\Sistema_BD_Clinica_Patologica.Web\obj\Debug\Sistema_BD_Clinica_Patologica.Web.dll
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\Sistema_BD_Clinica_Patologica\Sistema_BD_Clinica_Patologica.Web\obj\Debug\Sistema_BD_Clinica_Patologica.Web.pdb

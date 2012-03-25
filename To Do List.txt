@@ -1,0 +1,20 @@
+				POR HACER
+Formulario:
+	- Imprimir varias paginas
+
+Consultas:
+	- Arreglar el Buscar por nombre
+	- Debuggear Listado de Medicos
+	- Poner boton de imprimir informe en alguna consulta
+	- Arreglar Tab Index
+
+Contabilidad:
+	- Todo
+	- Tab Index
+
+
+Base de Datos:
+	- Hacer procedimiento anidado para insertar columnas de la contabilidad (En las tablas de Contabilidad, Ingreso y Egreso)y que se ejecute el primero de cada mes
+	- Hacer procedimiento anidado para que quite los pacientes que no tengan examenes asignados.  Estos son pacientes basura.
+
+DEPLOY!

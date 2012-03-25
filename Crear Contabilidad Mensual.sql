@@ -1,0 +1,24 @@
+INSERT INTO Contabilidad VALUES('Ingresos por Examen', YEAR(GETDATE()), MONTH(GETDATE()));
+INSERT INTO Contabilidad VALUES('Empleados', YEAR(GETDATE()), MONTH(GETDATE()));
+INSERT INTO Contabilidad VALUES('Servicios', YEAR(GETDATE()), MONTH(GETDATE()));
+INSERT INTO Contabilidad VALUES('Transporte', YEAR(GETDATE()), MONTH(GETDATE()));
+INSERT INTO Contabilidad VALUES('Papeleria', YEAR(GETDATE()), MONTH(GETDATE()));
+INSERT INTO Contabilidad VALUES('Materiales', YEAR(GETDATE()), MONTH(GETDATE()));
+INSERT INTO Contabilidad VALUES('Mantenimiento Local', YEAR(GETDATE()), MONTH(GETDATE()));
+INSERT INTO Contabilidad VALUES('Mantenimiento Equipo', YEAR(GETDATE()), MONTH(GETDATE()));
+INSERT INTO Contabilidad VALUES('Jardineria', YEAR(GETDATE()), MONTH(GETDATE()));
+INSERT INTO Contabilidad VALUES('Otros', YEAR(GETDATE()), MONTH(GETDATE()));
+GO
+
+INSERT INTO Egreso VALUES('Empleados', YEAR(GETDATE()), MONTH(GETDATE()), '0');
+INSERT INTO Egreso VALUES('Servicios', YEAR(GETDATE()), MONTH(GETDATE()), '0');
+INSERT INTO Egreso VALUES('Transporte', YEAR(GETDATE()), MONTH(GETDATE()), '0');
+INSERT INTO Egreso VALUES('Papeleria', YEAR(GETDATE()), MONTH(GETDATE()), '0');
+INSERT INTO Egreso VALUES('Materiales', YEAR(GETDATE()), MONTH(GETDATE()), '0');
+INSERT INTO Egreso VALUES('Mantenimiento Local', YEAR(GETDATE()), MONTH(GETDATE()), '0');
+INSERT INTO Egreso VALUES('Mantenimiento Equipo', YEAR(GETDATE()), MONTH(GETDATE()), '0');
+INSERT INTO Egreso VALUES('Jardineria', YEAR(GETDATE()), MONTH(GETDATE()), '0');
+INSERT INTO Egreso VALUES('Otros', YEAR(GETDATE()), MONTH(GETDATE()), '0');
+
+INSERT INTO Ingreso VALUES('Ingresos por Examen', YEAR(GETDATE()), MONTH(GETDATE()), '0');
+GO

@@ -1,0 +1,9 @@
+c:\users\dany\documents\visual studio 2010\Projects\TC\TC\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\dany\documents\visual studio 2010\Projects\TC\TC\obj\x86\Debug\TC.Form1.resources
+c:\users\dany\documents\visual studio 2010\Projects\TC\TC\obj\x86\Debug\TC.Properties.Resources.resources
+c:\users\dany\documents\visual studio 2010\Projects\TC\TC\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\dany\documents\visual studio 2010\Projects\TC\TC\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\dany\documents\visual studio 2010\Projects\TC\TC\bin\Debug\TC.exe
+c:\users\dany\documents\visual studio 2010\Projects\TC\TC\bin\Debug\TC.pdb
+c:\users\dany\documents\visual studio 2010\Projects\TC\TC\obj\x86\Debug\TC.exe
+c:\users\dany\documents\visual studio 2010\Projects\TC\TC\obj\x86\Debug\TC.pdb

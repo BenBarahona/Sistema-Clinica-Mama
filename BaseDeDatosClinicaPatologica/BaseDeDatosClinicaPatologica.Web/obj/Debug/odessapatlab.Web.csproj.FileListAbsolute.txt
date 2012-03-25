@@ -1,0 +1,14 @@
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS\BaseDeDatosClinicaPatologica.Web\bin\odessapatlab.Web.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS\BaseDeDatosClinicaPatologica.Web\bin\odessapatlab.Web.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS\BaseDeDatosClinicaPatologica.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS\BaseDeDatosClinicaPatologica.Web\obj\Debug\odessapatlab.Web.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS\BaseDeDatosClinicaPatologica.Web\obj\Debug\odessapatlab.Web.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS - Copy\BaseDeDatosClinicaPatologica.Web\bin\odessapatlab.Web.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS - Copy\BaseDeDatosClinicaPatologica.Web\bin\odessapatlab.Web.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS - Copy\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS - Copy\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS - Copy\BaseDeDatosClinicaPatologica.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS - Copy\BaseDeDatosClinicaPatologica.Web\obj\Debug\odessapatlab.Web.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS - Copy\BaseDeDatosClinicaPatologica.Web\obj\Debug\odessapatlab.Web.pdb

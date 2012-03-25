@@ -1,0 +1,42 @@
+﻿<navigation:Page x:Class="ProyectoSCA_Navigation.Views.Consulta.EstadoDeCuentaTodos" 
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+            mc:Ignorable="d"
+            xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+            Title="Todos los Estados de Cuenta"
+            d:DesignWidth="800" d:DesignHeight="619"
+            Style="{StaticResource PageStyle}" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+
+            <Grid x:Name="LayoutRoot">
+                <ScrollViewer x:Name="PageScrollViewer" Style="{StaticResource PageScrollViewerStyle}">
+                    <Grid Name="grid2" Width="800">
+                        <Grid.Background>
+                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                <GradientStop Color="White" Offset="0" />
+                                <GradientStop Color="#FFA9FF89" Offset="1" />
+                            </LinearGradientBrush>
+                        </Grid.Background>
+                <sdk:Label Height="39" HorizontalAlignment="Center" Margin="8,14,38,0" Name="label3" VerticalAlignment="Top" Width="754" Content="Reportes" FontSize="22" FontFamily="Arial" FontWeight="Bold" HorizontalContentAlignment="Center" />
+                <Grid Height="564" HorizontalAlignment="Left" Margin="8,53,0,0" Name="grid3" VerticalAlignment="Top" Width="749">
+                    <sdk:DataGrid AutoGenerateColumns="True" Height="266" HorizontalAlignment="Right" Margin="0,214,23,0" Name="gridResultado" VerticalAlignment="Top" Width="697" IsReadOnly="True" />
+                    <Button Content="Exportar Reporte" FontSize="12" FontWeight="Bold" Height="34" HorizontalAlignment="Left" Margin="315,491,0,0" Name="exportar_btn" VerticalAlignment="Top" Width="138" Click="exportar_btn_Click" />
+                    <Button Content="Aplicar" FontSize="12" FontWeight="Bold" Height="34" HorizontalAlignment="Right" Margin="0,162,329,0" Name="aplicar_btn" VerticalAlignment="Top" Width="82" Click="aplicar_btn_Click" />
+                    <Border BorderBrush="Silver" BorderThickness="1" Height="148" HorizontalAlignment="Left" Margin="43,8,0,0" Name="border1" VerticalAlignment="Top" Width="668">
+                        <Grid Height="132" Name="grid4" Width="647">
+                            <sdk:DatePicker Height="23" HorizontalAlignment="Right" Margin="0,86,362,0" Name="fechaDesde_txt" VerticalAlignment="Top" Width="120" />
+                            <sdk:Label Content="Desde:" Height="28" HorizontalAlignment="Right" Margin="0,68,403,0" Name="label7" VerticalAlignment="Top" Width="44" />
+                            <sdk:DatePicker Height="23" HorizontalAlignment="Right" Margin="0,86,180,0" Name="fechaHasta_txt" VerticalAlignment="Top" Width="120" />
+                            <sdk:Label Content="Hasta:" Height="28" HorizontalAlignment="Right" Margin="0,68,234,0" Name="label8" VerticalAlignment="Top" Width="43" />
+                            <sdk:Label Content="Filtros" FontSize="13" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="301,6,0,0" Name="label9" VerticalAlignment="Top" Width="50" />
+                            <RadioButton Content="Todas las Aportacion" Height="16" HorizontalAlignment="Left" Margin="44,39,0,0" Name="todasAportaciones_btn" VerticalAlignment="Top" IsChecked="True" Checked="todasAportaciones_btn_Checked" />
+                            <RadioButton Content="Saldos Totales por Afiliado" Height="16" HorizontalAlignment="Left" Margin="232,39,0,0" Name="saldosTotales_btn" VerticalAlignment="Top" Checked="saldosTotales_btn_Checked" />
+                            <ComboBox Height="23" HorizontalAlignment="Left" Margin="441,36,0,0" Name="tipoAportacion_txt" VerticalAlignment="Top" Width="175" />
+                        </Grid>
+                    </Border>
+                </Grid>
+            </Grid>
+                </ScrollViewer>
+            </Grid>
+</navigation:Page>

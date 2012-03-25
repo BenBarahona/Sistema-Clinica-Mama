@@ -1,0 +1,61 @@
+﻿<navigation:Page x:Class="ProyectoSCA_Navigation.Views.FiltrosBusqueda" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           Title="Consulta"
+        d:DesignWidth="800" d:DesignHeight="649"
+    Style="{StaticResource PageStyle}" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+
+    <Grid x:Name="LayoutRoot">
+        <ScrollViewer x:Name="PageScrollViewer" Style="{StaticResource PageScrollViewerStyle}">
+            <Grid Name="grid2">
+                <Grid.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#FFA9FF89" Offset="1" />
+                    </LinearGradientBrush>
+                </Grid.Background>
+
+                <Border BorderBrush="Silver" BorderThickness="1" Height="324" HorizontalAlignment="Left" Margin="29,6,0,0" Name="border1" VerticalAlignment="Top" Width="742">
+                    <Grid Height="304" Name="grid4" Width="722">
+                        <ComboBox Height="23" HorizontalAlignment="Left" Margin="27,77,0,0" Name="numeroCertificado_txt" VerticalAlignment="Top" Width="101" TabIndex="1" />
+                        <sdk:Label Content="No. de Certificado:" Height="28" HorizontalAlignment="Left" Margin="27,52,0,0" Name="label4" VerticalAlignment="Top" Width="120" />
+                        <sdk:Label Content="Nombre Completo:" Height="28" HorizontalAlignment="Left" Margin="153,52,0,0" Name="label5" VerticalAlignment="Top" Width="120" />
+                        <sdk:Label Content="No. de Identidad:" Height="28" HorizontalAlignment="Left" Margin="491,52,0,0" Name="id" VerticalAlignment="Top" Width="120" />
+                        <sdk:AutoCompleteBox Height="28" HorizontalAlignment="Left" Margin="153,74,0,0" Name="nombreAuto_txt" VerticalAlignment="Top" Width="317" FilterMode="Contains" Text="" TabIndex="2" />
+                        <Button Content="Buscar" FontSize="12" FontWeight="Bold" Height="34" HorizontalAlignment="Left" Margin="361,252,0,0" Name="buscar_btn" VerticalAlignment="Top" Width="121" TabIndex="12" Click="buscar_btn_Click" />
+                        <sdk:Label Content="Profesión u Oficio:" Height="23" HorizontalAlignment="Left" Margin="361,119,0,0" Name="label7" VerticalAlignment="Top" Width="109" />
+                        <sdk:Label Content="Teléfono:" Height="23" HorizontalAlignment="Left" Margin="27,119,0,0" Name="label8" VerticalAlignment="Top" Width="58" />
+                        <sdk:Label Content="Estado Civil:" Height="23" HorizontalAlignment="Left" Margin="191,185,0,0" Name="label11" VerticalAlignment="Top" Width="120" />
+                        <ComboBox Height="23" HorizontalAlignment="Left" Margin="191,204,0,0" Name="estadoCivil_txt" VerticalAlignment="Top" Width="147" TabIndex="9"></ComboBox>
+                        <sdk:Label Content="Género:" Height="23" HorizontalAlignment="Left" Margin="546,119,0,0" Name="label13" VerticalAlignment="Top" Width="88" />
+                        <ComboBox Height="23" HorizontalAlignment="Left" Margin="361,141,0,0" Name="profesion_txt" VerticalAlignment="Top" Width="164" TabIndex="6" />
+                        <sdk:Label Content="Estado Afiliado:" Height="23" HorizontalAlignment="Left" Margin="361,185,0,0" Name="label26" VerticalAlignment="Top" Width="120" />
+                        <ComboBox Height="23" HorizontalAlignment="Left" Margin="361,204,0,0" Name="estadoAfiliado_txt" VerticalAlignment="Top" Width="164" TabIndex="10"></ComboBox>
+                        <ComboBox Height="23" HorizontalAlignment="Left" Margin="546,140,0,0" Name="genero_txt" VerticalAlignment="Top" Width="147" TabIndex="7"></ComboBox>
+                        <sdk:Label Content="Celular:" Height="23" HorizontalAlignment="Left" Margin="191,119,0,0" Name="label33" VerticalAlignment="Top" Width="58" />
+                        <sdk:Label Content="Correo Electrónico:" Height="23" HorizontalAlignment="Left" Margin="27,185,0,0" Name="label35" VerticalAlignment="Top" Width="105" />
+                        <sdk:Label Height="28" HorizontalAlignment="Left" Margin="269,7,0,0" Name="label3" VerticalAlignment="Top" Width="187" Content="Criterios de Búsqueda" FontWeight="Bold" FontSize="14" />
+                        <sdk:Label Content="Empresa donde labora:" Height="23" HorizontalAlignment="Left" Margin="546,185,0,0" Name="label14" VerticalAlignment="Top" Width="134" />
+                        <TextBox Height="23" HorizontalAlignment="Left" Margin="491,77,0,0" Name="id_txt" VerticalAlignment="Top" Width="202" TabIndex="3" />
+                        <TextBox Height="23" HorizontalAlignment="Left" Margin="27,140,0,0" Name="telefono_txt" VerticalAlignment="Top" Width="147" TabIndex="4" />
+                        <TextBox Height="23" HorizontalAlignment="Left" Margin="191,141,0,0" Name="celular_txt" VerticalAlignment="Top" Width="147" TabIndex="5" />
+                        <TextBox Height="23" HorizontalAlignment="Left" Margin="546,204,0,0" Name="empresa_txt" VerticalAlignment="Top" Width="147" TabIndex="11" />
+                        <TextBox Height="23" HorizontalAlignment="Left" Margin="27,204,0,0" Name="correo_txt" VerticalAlignment="Top" Width="147" TabIndex="8" />
+                        <Button Content="Reiniciar Campos" FontSize="12" FontWeight="Bold" Height="34" HorizontalAlignment="Left" Margin="204,252,0,0" Name="reset_btn" TabIndex="12" VerticalAlignment="Top" Width="134" Click="reset_btn_Click" />
+                    </Grid>
+                </Border>
+                <sdk:DataGrid AutoGenerateColumns="True" Height="199" Margin="71,372,69,0" Name="gridResultado" VerticalAlignment="Top" TabIndex="13" IsReadOnly="True" />
+                <Button Content="Ver Perfil" FontSize="12" FontWeight="Bold" Height="42" HorizontalAlignment="Left" Margin="147,587,0,0" Name="verPerfil_btn" VerticalAlignment="Top" Width="133" TabIndex="14" Click="verPerfil_btn_Click" />
+                <Button Content="Ver Estado de Cuenta" FontSize="12" FontWeight="Bold" Height="42" Margin="294,587,315,0" Name="estadoCuenta_btn" VerticalAlignment="Top" TabIndex="15" Click="estadoCuenta_btn_Click" />
+                <sdk:Label Content="Resultados" FontSize="14" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="348,350,0,0" Name="label6" VerticalAlignment="Top" Width="91" />
+                <Button Content="Generar Reportes" FontSize="12" FontWeight="Bold" Height="42" Margin="499,587,109,0" Name="generarReporte_btn" VerticalAlignment="Top" Click="generarReporte_btn_Click" TabIndex="16" />
+
+            </Grid>
+            
+        </ScrollViewer>
+    </Grid>
+</navigation:Page>

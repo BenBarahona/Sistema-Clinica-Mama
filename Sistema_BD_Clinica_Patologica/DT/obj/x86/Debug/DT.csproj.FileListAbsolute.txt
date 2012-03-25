@@ -1,0 +1,5 @@
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\Sistema_BD_Clinica_Patologica\DT\bin\Debug\DT.dll
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\Sistema_BD_Clinica_Patologica\DT\bin\Debug\DT.pdb
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\Sistema_BD_Clinica_Patologica\DT\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\Sistema_BD_Clinica_Patologica\DT\obj\x86\Debug\DT.dll
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\Sistema_BD_Clinica_Patologica\DT\obj\x86\Debug\DT.pdb

@@ -1,0 +1,15 @@
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica2\DataTransaction\bin\Release\DataTransaction.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica2\DataTransaction\bin\Release\DataTransaction.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Release\DataTransaction.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Release\DataTransaction.pdb
+C:\Users\bbarahona\Desktop\BaseDeDatosClinicaPatologica2\DataTransaction\bin\Release\DataTransaction.dll
+C:\Users\bbarahona\Desktop\BaseDeDatosClinicaPatologica2\DataTransaction\bin\Release\DataTransaction.pdb
+C:\Users\bbarahona\Desktop\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Release\ResolveAssemblyReference.cache
+C:\Users\bbarahona\Desktop\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Release\DataTransaction.dll
+C:\Users\bbarahona\Desktop\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Release\DataTransaction.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\DataTransaction\bin\Release\DataTransaction.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\DataTransaction\bin\Release\DataTransaction.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Release\DataTransaction.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\DataTransaction\obj\Release\DataTransaction.pdb

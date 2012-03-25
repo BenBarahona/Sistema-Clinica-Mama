@@ -1,0 +1,40 @@
+﻿<navigation:Page x:Class="Sistema_BD_Clinica_Patologica.Views.Creditos" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="800" d:DesignHeight="480"
+           Title="Creditos">
+    <Grid x:Name="LayoutRoot">
+        <ScrollViewer x:Name="PageScrollViewer" Style="{StaticResource PageScrollViewerStyle}">
+            <StackPanel x:Name="ContentStackPanel" >
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#FFF6FF69" Offset="1" />
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <Grid Width="758" Height="500">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="24*" />
+                        <ColumnDefinition Width="36*" />
+                        <ColumnDefinition Width="698*" />
+                    </Grid.ColumnDefinitions>
+                    <Image Height="150" HorizontalAlignment="Left" Margin="461,123,0,0" Name="image1" Stretch="Fill" VerticalAlignment="Top" Width="200" Grid.Column="2" Source="/Sistema_BD_Clinica_Patologica;component/Images/LilDwarf%20Pro%20Pic.jpg" GotFocus="image1_GotFocus" />
+                    <TextBlock Height="51" HorizontalAlignment="Left" Margin="1,18,0,0" Name="textBlock1" Text="Sistema de Control de Datos de la Clinica de Patología, Ctiología y Anatomía" VerticalAlignment="Top" Width="697" FontWeight="Bold" FontSize="20" TextAlignment="Center" FontFamily="Verdana" Grid.ColumnSpan="2" Grid.Column="1" TextWrapping="Wrap" />
+                    <TextBlock FontSize="20" FontWeight="Bold" Height="35" HorizontalAlignment="Left" Margin="0,75,0,0" Name="textBlock2" Text="Dra. Odessa Henriquez Rivas" VerticalAlignment="Top" Width="697" TextAlignment="Center" FontFamily="Verdana" Grid.ColumnSpan="2" Grid.Column="1" TextWrapping="Wrap" />
+                    <TextBlock FontFamily="Verdana" FontSize="16" FontWeight="Bold" Height="35" HorizontalAlignment="Left" Margin="0,135,0,0" Name="textBlock3" Text="Programación, Análisis y Diseño por:" TextAlignment="Left" VerticalAlignment="Top" Width="364" Grid.ColumnSpan="2" Grid.Column="1" />
+                    <TextBlock FontFamily="Verdana" FontSize="16" Height="35" HorizontalAlignment="Left" Margin="0,165,0,0" Name="textBlock4" Text="Benjamín Barahona Henríquez" TextAlignment="Left" VerticalAlignment="Top" Width="328" Grid.Column="2" FontStyle="Italic" FontWeight="Bold" />
+                    <TextBlock FontFamily="Verdana" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="2" Height="35" HorizontalAlignment="Left" Margin="0,238,0,0" Name="textBlock5" Text="Ayuda Complementaria:" TextAlignment="Left" VerticalAlignment="Top" Width="364" Grid.Column="1" />
+                    <TextBlock FontFamily="Verdana" FontSize="16" FontStyle="Italic" FontWeight="Bold" Grid.Column="2" Height="35" HorizontalAlignment="Left" Margin="0,268,0,0" Name="textBlock6" Text="Daniel Acosta                         Carlos Sanchez" TextAlignment="Left" VerticalAlignment="Top" Width="697" />
+                    <TextBlock FontFamily="Verdana" FontSize="16" FontWeight="Bold" Grid.ColumnSpan="2" Height="35" HorizontalAlignment="Left" Margin="0,346,0,0" Name="textBlock7" Text="Sistema Creado En:" TextAlignment="Left" VerticalAlignment="Top" Width="364" Grid.Column="1" />
+                    <TextBlock FontFamily="Verdana" FontSize="16" FontStyle="Italic" FontWeight="Bold" Grid.Column="2" Height="71" HorizontalAlignment="Left" Margin="0,376,0,0" Name="textBlock8" Text="Microsoft SQL Server 2008                         Visual Studio 2010 en C#                         Microsoft Siverlight 4" TextAlignment="Left" VerticalAlignment="Top" Width="697" TextWrapping="Wrap" />
+                </Grid>
+            </StackPanel>
+
+        </ScrollViewer>
+    </Grid>
+</navigation:Page>
+

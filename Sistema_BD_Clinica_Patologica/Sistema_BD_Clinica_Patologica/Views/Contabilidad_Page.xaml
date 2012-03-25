@@ -1,0 +1,36 @@
+﻿<navigation:Page x:Class="Sistema_BD_Clinica_Patologica.Views.Contabilidad" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="800" d:DesignHeight="480"
+           Title="Contabilidad">
+    <Grid x:Name="LayoutRoot">
+        <ScrollViewer x:Name="PageScrollViewer" Style="{StaticResource PageScrollViewerStyle}">
+            <StackPanel x:Name="ContentStackPanel" >
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#FFF6FF69" Offset="1" />
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <Grid Width="758" Height="500">
+                    <TextBlock Height="36" HorizontalAlignment="Left" Margin="0,43,0,0" Name="textBlock1" Text="Escoja un módulo de Contabilidad:" VerticalAlignment="Top" FontSize="20" Width="752" FontWeight="Bold" TextAlignment="Center" />
+                    <Border HorizontalAlignment="Left" Margin="235,121,0,0" Name="LinksBorder" Style="{StaticResource LinksBorderStyle}" Width="293" Background="#FFDCEFF8" Height="56" VerticalAlignment="Top">
+                        <StackPanel Name="LinksStackPanel" Style="{StaticResource LinksStackPanelStyle}">
+                            <Image Height="35" Name="image1" Stretch="Fill" Width="35" Source="/Sistema_BD_Clinica_Patologica;component/Images/income.png" />
+                            <HyperlinkButton Content="INGRESOS" Name="empleado" NavigateUri="/Contabilidad_Choose/Ingresos" Style="{StaticResource LinkStyle}" TargetName="ContentFrame" Foreground="Black" FontWeight="Bold" Width="104" Height="51" HorizontalContentAlignment="Left" />
+                            <Rectangle Name="Divider1" Style="{StaticResource DividerStyle}" />
+                            <Image Height="35" Name="image2" Stretch="Fill" Width="35" Source="/Sistema_BD_Clinica_Patologica;component/Images/coins-delete-icon.png" />
+                            <HyperlinkButton Content="EGRESOS" Name="afiliado" NavigateUri="/Contabilidad_Choose/Egresos" Style="{StaticResource LinkStyle}" TargetName="ContentFrame" Foreground="Black" FontWeight="Bold" Width="105" HorizontalContentAlignment="Left" />
+
+                        </StackPanel>
+                    </Border>
+                </Grid>
+            </StackPanel>
+
+        </ScrollViewer>
+    </Grid>
+</navigation:Page>

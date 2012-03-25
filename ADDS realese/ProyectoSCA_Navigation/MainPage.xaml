@@ -1,0 +1,96 @@
+﻿<UserControl
+    x:Class="ProyectoSCA_Navigation.MainPage"
+    xmlns:local="clr-namespace:ProyectoSCA_Navigation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation" 
+    xmlns:uriMapper="clr-namespace:System.Windows.Navigation;assembly=System.Windows.Controls.Navigation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d" d:DesignWidth="800" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+
+    <Grid x:Name="LayoutRoot" Style="{StaticResource LayoutRootGridStyle}" ShowGridLines="False" HorizontalAlignment="Center">
+
+        <Border x:Name="ContentBorder" Style="{StaticResource ContentBorderStyle}" Margin="0,152,0,0">
+
+            <navigation:Frame x:Name="ContentFrame">
+                <navigation:Frame.UriMapper>
+                    <uriMapper:UriMapper>
+                        <uriMapper:UriMapping Uri="" MappedUri="/Views/Home.xaml"/>
+                        <uriMapper:UriMapping Uri="/{pageName}" MappedUri="/Views/{pageName}.xaml"/>
+                    </uriMapper:UriMapper>
+                </navigation:Frame.UriMapper>
+                <navigation:Frame.ContentLoader>
+                    <local:CustomContentLoader LoginPage="/Views/Home.xaml" SecuredFolder="Views"></local:CustomContentLoader>
+                </navigation:Frame.ContentLoader>
+            </navigation:Frame>
+        </Border>
+
+        <Grid x:Name="NavigationGrid" Style="{StaticResource NavigationGridStyle}" Height="156">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFCEDE1F" Offset="0" />
+                    <GradientStop Color="White" Offset="1" />
+                    <GradientStop Color="#FF1C5F0F" Offset="0.977" />
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Border x:Name="LinksBorder" Style="{StaticResource LinksBorderStyle}" Margin="14,92,0,13" Width="778" HorizontalAlignment="Left">
+                <StackPanel x:Name="LinksStackPanel" Style="{StaticResource LinksStackPanelStyle}">
+
+                    <HyperlinkButton x:Name="home" Style="{StaticResource LinkStyle}" 
+                                     NavigateUri="/Home" TargetName="ContentFrame" Content="Home" AllowDrop="False" IsEnabled="True" />
+
+                    <Rectangle x:Name="Divider1" Style="{StaticResource DividerStyle}"/>
+
+                    <HyperlinkButton x:Name="miPerfil" Style="{StaticResource LinkStyle}" 
+                                     NavigateUri="/MiPerfil" TargetName="ContentFrame" Content="Mi Perfil"/>
+
+                    <Rectangle x:Name="Divider2" Style="{StaticResource DividerStyle}"/>
+
+                    <HyperlinkButton x:Name="ingresar" Style="{StaticResource LinkStyle}" 
+                                     NavigateUri="/Ingresar" TargetName="ContentFrame" Content="Ingresar"/>
+                    
+                    <Rectangle x:Name="Divider7" Style="{StaticResource DividerStyle}"/>
+
+                    <HyperlinkButton x:Name="controlDePagos" Style="{StaticResource LinkStyle}" 
+                                     NavigateUri="/IngresarAportacion" TargetName="ContentFrame" Content="Control de Pagos"/>                
+                    
+                    <Rectangle x:Name="Divider3" Style="{StaticResource DividerStyle}"/>
+
+                    <HyperlinkButton x:Name="capitalizacion" Style="{StaticResource LinkStyle}" 
+                                     NavigateUri="/Capitalizacion" TargetName="ContentFrame" Content="Capitalizacion"/>
+                    
+                    <Rectangle x:Name="Divider4" Style="{StaticResource DividerStyle}"/>
+
+                    <HyperlinkButton x:Name="consultas" Style="{StaticResource LinkStyle}" 
+                                     NavigateUri="/FiltrosBusqueda" TargetName="ContentFrame" Content="Consultas" AllowDrop="False" />
+
+                    <Rectangle x:Name="Divider5" Style="{StaticResource DividerStyle}"/>
+
+                    <HyperlinkButton x:Name="parametrizacion" Style="{StaticResource LinkStyle}" 
+                                     NavigateUri="/Parametrizacion" TargetName="ContentFrame" Content="Parametrizacion"/>
+                    <Rectangle x:Name="Divider6" Style="{StaticResource DividerStyle}"/>
+
+                    <HyperlinkButton x:Name="seguridad" Style="{StaticResource LinkStyle}" 
+                                     NavigateUri="/Seguridad" TargetName="ContentFrame" Content="Seguridad"/>
+                </StackPanel>
+            </Border>
+        </Grid>
+        <Grid Height="96" HorizontalAlignment="Left" Name="grid1" VerticalAlignment="Top" Width="788" >
+            <sdk:Label Height="28" HorizontalAlignment="Center" Margin="157,15,32,0" Name="label1" VerticalAlignment="Top" Width="599" Content="Cooperativa de Servicios Educativos Continental" HorizontalContentAlignment="Center" FontSize="12" />
+            <sdk:Label Height="48" HorizontalAlignment="Center" Margin="157,30,31,0" Name="label2" VerticalAlignment="Top" Width="599" Content="Sistema de Control de Afiliados" FontFamily="Arial Black" HorizontalContentAlignment="Center" FontSize="20" />
+            <sdk:Label Height="28" HorizontalAlignment="Left" Margin="297,62,0,0" Name="label27" VerticalAlignment="Top" Width="120" Content="Bienvenido " FontSize="14" />
+            <Image Height="84" HorizontalAlignment="Left" Margin="112,6,0,0" Name="image1" Stretch="Uniform" VerticalAlignment="Top" Width="113" Source="/ProyectoSCA_Navigation;component/Images/logocooperativa.png" />
+            <Border HorizontalAlignment="Left" Margin="684,55,0,-1" Name="border1" Style="{StaticResource LinksBorderStyle}" Width="96">
+                <StackPanel Name="stackPanel1" Style="{StaticResource LinksStackPanelStyle}">
+                    <Rectangle Name="rectangle6" Style="{StaticResource DividerStyle}" />
+                    <HyperlinkButton Content="Cerrar Sesion" x:Name="cerrarSesion" NavigateUri="/Home" 
+                                     Style="{StaticResource LinkStyle}" TargetName="ContentFrame" FontSize="10"
+                                     Click="cerrarSesion_Click" />
+                    <Rectangle Name="rectangle7" Style="{StaticResource DividerStyle}" />
+                </StackPanel>
+            </Border>
+            <TextBlock Height="23" HorizontalAlignment="Left" Margin="385,62,0,0" Name="username" Text="&lt;&lt;Nombre del Usuario logeado&gt;&gt;" VerticalAlignment="Top" FontSize="14" />
+        </Grid>
+    </Grid>
+
+</UserControl>

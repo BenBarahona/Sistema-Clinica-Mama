@@ -1,0 +1,2001 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="esUsuarioValido">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="esUsuarioValidoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="esUsuarioValidoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getIDdeMedico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nombre_Medico" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getIDdeMedicoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getIDdeMedicoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getIDdePaciente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nombre_Paciente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="s_nombre_Paciente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="apellido_paciente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="s_apellido_paciente" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getIDdePacienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getIDdePacienteResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMedicos_Nombres">
+        <s:complexType />
+      </s:element>
+      <s:element name="getMedicos_NombresResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMedicos_NombresResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMedicosTodos">
+        <s:complexType />
+      </s:element>
+      <s:element name="getMedicosTodosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMedicosTodosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMaterialEnviadoBiopsiaImprimir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idMuestra" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tabla" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMaterialEnviadoBiopsiaImprimirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMaterialEnviadoBiopsiaImprimirResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMaterialEnviado_CitologiaNoGinecologica">
+        <s:complexType />
+      </s:element>
+      <s:element name="getMaterialEnviado_CitologiaNoGinecologicaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMaterialEnviado_CitologiaNoGinecologicaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMedico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id_medico" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMedicoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMedicoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMuestraGinecologica">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idMuestra" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMuestraGinecologicaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMuestraGinecologicaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMuestraNo_Ginecologica">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idMuestra" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMuestraNo_GinecologicaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMuestraNo_GinecologicaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMuestraBiopsia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idMuestra" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getMuestraBiopsiaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getMuestraBiopsiaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getIdExamenes">
+        <s:complexType />
+      </s:element>
+      <s:element name="getIdExamenesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getIdExamenesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCantidadDeExamenes">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tabla" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filtroedad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechainicial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechafinal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filtroCategoria" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="doctor" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCantidadDeExamenesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getCantidadDeExamenesResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getExamenesFiltrados">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tabla" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filtroedad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechainicial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechafinal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="filtroCategoria" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="doctor" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getExamenesFiltradosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getExamenesFiltradosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="consultaMedicoBiopsias">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="anio" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="mes" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="doctor" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="consultaMedicoBiopsiasResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="consultaMedicoBiopsiasResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="consultaMedicoCitologia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="anio" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="mes" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="doctor" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="consultaMedicoCitologiaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="consultaMedicoCitologiaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getNombresPacientes">
+        <s:complexType />
+      </s:element>
+      <s:element name="getNombresPacientesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getNombresPacientesResult" type="tns:ArrayOfNombreCompleto" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfNombreCompleto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="NombreCompleto" nillable="true" type="tns:NombreCompleto" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="NombreCompleto">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="PrimerNombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SegundoNombre" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PrimerApellido" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="SegundoApellido" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getUsuarios">
+        <s:complexType />
+      </s:element>
+      <s:element name="getUsuariosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getUsuariosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDatosEmpleado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDatosEmpleadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getDatosEmpleadoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAccesosDeUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getAccesosDeUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getAccesosDeUsuarioResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarMedico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="telefono" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="celular" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="direccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compania" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="numeroCol" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarMedicoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarMedicoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarMaterial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="material_enviado" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarMaterialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarMaterialResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarPaciente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DIU" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="fur" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fup" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pnombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="snombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="papellido" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sapellido" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="edad" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="anticonceptivos" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="expediente" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarPacienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarPacienteResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarBiopsia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cod_examen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fecha" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="precio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Diagnostico" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="diagnostico_medico" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Id_paciente" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="id_medico" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Nombre_Contable" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="anio_contable" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="mes_contable" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="usuario_empleado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="descripcion_macros" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="descripcion_micros" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaHoy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaHoySQL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaRecibido" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarBiopsiaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarBiopsiaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarCitologiaNoGinecologica">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cod_examen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fecha" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="precio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Diagnostico" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="diagnostico_medico" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Id_paciente" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="id_medico" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Nombre_Contable" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="anio_contable" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="mes_contable" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="usuario_empleado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="descripcion_macros" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="descripcion_micros" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="comentario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaHoy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaHoySQL" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaRecibido" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarCitologiaNoGinecologicaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarCitologiaNoGinecologicaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarCitologiaGinecologica">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cod_examen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fecha" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="precio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Diagnostico" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="diagnostico_medico" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="Id_paciente" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="id_medico" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="Nombre_Contable" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="anio_contable" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="mes_contable" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="usuario_empleado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="comentario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="inflamacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="calidadFrotis_causa" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="calidadFrotisAdecuado" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="anticonceptivos" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="candida_sp" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="gardnerela" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="vaginosis" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="herpes" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="tricomonas" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="otroAgenteInfeccioso" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="evaluacionHormonal_basales" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="evaluacionhormonal_intermedias" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="evaluacionhormonal_superficiales" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Colposcopia" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="repetir" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="recomendaciones_otra" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="recomendaciones_biopsia" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="recomendaciones_tratamientos" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="NIC_I" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="NIC_II" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="NIC_III" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="origen_muestra" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="negativo" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="VPH" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="glandular" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="escamoza" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="adenocarcinomana" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="carcinomana_celula" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="celula_atipica" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="lesion_escamosa_AltoGrado" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="lesion_escamosa_BajoGrado" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaHoy" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaHoySQL" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarCitologiaGinecologicaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarCitologiaGinecologicaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarMaterialEnviado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cod_examen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="material_enviado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tabla" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarMaterialEnviadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarMaterialEnviadoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarEmpleado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tipoEmpleado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="s_nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_apellido" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="s_apellido" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contrasena" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="correo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="accesos" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InsertarEmpleadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InsertarEmpleadoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarCitologia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idMuestra" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarCitologiaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="buscarCitologiaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarCitologiaLiquidos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idMuestra" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarCitologiaLiquidosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="buscarCitologiaLiquidosResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarBiopsia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idMuestra" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarBiopsiaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="buscarBiopsiaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarMuestraPorPaciente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="pNombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sNombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pApellido" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sApellido" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="buscarMuestraPorPacienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="buscarMuestraPorPacienteResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BorrarMedico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BorrarMedicoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="BorrarMedicoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BorrarMuestra">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="codigo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BorrarMuestraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="BorrarMuestraResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BorrarMaterial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="material" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BorrarMaterialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="BorrarMaterialResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BorrarEmpleado">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BorrarEmpleadoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="BorrarEmpleadoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizarCitologia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cod_examen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Diagnostico" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="comentario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="inflamacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="calidadFrotis_causa" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="calidadFrotisAdecuado" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="candida_sp" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="gardnerela" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="vaginosis" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="herpes" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="tricomonas" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="otroAgenteInfeccioso" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="evaluacionHormonal_basales" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="evaluacionhormonal_intermedias" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="evaluacionhormonal_superficiales" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Colposcopia" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="repetir" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="recomendaciones_otra" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="recomendaciones_biopsia" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="recomendaciones_tratamientos" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="NIC_I" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="NIC_II" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="NIC_III" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="origen_muestra" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="negativo" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="VPH" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="glandular" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="escamosa" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="adenocarcinomana" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="carcinomana_celula" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="celula_atipica" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="lesion_escamosa_AltoGrado" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="lesion_escamosa_BajoGrado" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="anticonceptivos_orales" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="fecha_examen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="diagnostico_medico" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="diu" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="fur" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fup" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="s_nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_apellido" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="s_apellido" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="edad" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="expediente" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="precio" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizarCitologiaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ActualizarCitologiaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizarBiopsia">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cod_examen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="macroscopica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="microscopica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="codificacion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="diagnostico" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fecha_examen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="diagnostico_medico" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="diu" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="fur" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fup" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="s_nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_apellido" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="s_apellido" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="edad" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="expediente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="materialEnviado" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="precio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaRecibido" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizarBiopsiaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ActualizarBiopsiaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizarCitologiaLiquidos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cod_examen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="macroscopica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="microscopica" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="diagnostico" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fecha_examen" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="diagnostico_medico" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="diu" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="fur" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fup" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="s_nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_apellido" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="s_apellido" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="edad" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="expediente" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="precio" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="material_enviado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fechaRecibido" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizarCitologiaLiquidosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ActualizarCitologiaLiquidosResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizarMedico">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="telefono" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="celular" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="direccion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="compania" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="numeroCol" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizarMedicoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ActualizarMedicoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizarPaciente">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="id" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="DIU" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="fur" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fup" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="pnombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="snombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="papellido" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="sapellido" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="edad" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="anticonceptivos" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Expediente" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizarPacienteResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ActualizarPacienteResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizarUsuario">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="tipoEmpleado" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="s_nombre" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="p_apellido" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="s_apellido" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="contrasena" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="correo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="accesos" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ActualizarUsuarioResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ActualizarUsuarioResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="esUsuarioValidoSoapIn">
+    <wsdl:part name="parameters" element="tns:esUsuarioValido" />
+  </wsdl:message>
+  <wsdl:message name="esUsuarioValidoSoapOut">
+    <wsdl:part name="parameters" element="tns:esUsuarioValidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getIDdeMedicoSoapIn">
+    <wsdl:part name="parameters" element="tns:getIDdeMedico" />
+  </wsdl:message>
+  <wsdl:message name="getIDdeMedicoSoapOut">
+    <wsdl:part name="parameters" element="tns:getIDdeMedicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getIDdePacienteSoapIn">
+    <wsdl:part name="parameters" element="tns:getIDdePaciente" />
+  </wsdl:message>
+  <wsdl:message name="getIDdePacienteSoapOut">
+    <wsdl:part name="parameters" element="tns:getIDdePacienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMedicos_NombresSoapIn">
+    <wsdl:part name="parameters" element="tns:getMedicos_Nombres" />
+  </wsdl:message>
+  <wsdl:message name="getMedicos_NombresSoapOut">
+    <wsdl:part name="parameters" element="tns:getMedicos_NombresResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMedicosTodosSoapIn">
+    <wsdl:part name="parameters" element="tns:getMedicosTodos" />
+  </wsdl:message>
+  <wsdl:message name="getMedicosTodosSoapOut">
+    <wsdl:part name="parameters" element="tns:getMedicosTodosResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMaterialEnviadoBiopsiaImprimirSoapIn">
+    <wsdl:part name="parameters" element="tns:getMaterialEnviadoBiopsiaImprimir" />
+  </wsdl:message>
+  <wsdl:message name="getMaterialEnviadoBiopsiaImprimirSoapOut">
+    <wsdl:part name="parameters" element="tns:getMaterialEnviadoBiopsiaImprimirResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMaterialEnviado_CitologiaNoGinecologicaSoapIn">
+    <wsdl:part name="parameters" element="tns:getMaterialEnviado_CitologiaNoGinecologica" />
+  </wsdl:message>
+  <wsdl:message name="getMaterialEnviado_CitologiaNoGinecologicaSoapOut">
+    <wsdl:part name="parameters" element="tns:getMaterialEnviado_CitologiaNoGinecologicaResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMedicoSoapIn">
+    <wsdl:part name="parameters" element="tns:getMedico" />
+  </wsdl:message>
+  <wsdl:message name="getMedicoSoapOut">
+    <wsdl:part name="parameters" element="tns:getMedicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMuestraGinecologicaSoapIn">
+    <wsdl:part name="parameters" element="tns:getMuestraGinecologica" />
+  </wsdl:message>
+  <wsdl:message name="getMuestraGinecologicaSoapOut">
+    <wsdl:part name="parameters" element="tns:getMuestraGinecologicaResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMuestraNo_GinecologicaSoapIn">
+    <wsdl:part name="parameters" element="tns:getMuestraNo_Ginecologica" />
+  </wsdl:message>
+  <wsdl:message name="getMuestraNo_GinecologicaSoapOut">
+    <wsdl:part name="parameters" element="tns:getMuestraNo_GinecologicaResponse" />
+  </wsdl:message>
+  <wsdl:message name="getMuestraBiopsiaSoapIn">
+    <wsdl:part name="parameters" element="tns:getMuestraBiopsia" />
+  </wsdl:message>
+  <wsdl:message name="getMuestraBiopsiaSoapOut">
+    <wsdl:part name="parameters" element="tns:getMuestraBiopsiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="getIdExamenesSoapIn">
+    <wsdl:part name="parameters" element="tns:getIdExamenes" />
+  </wsdl:message>
+  <wsdl:message name="getIdExamenesSoapOut">
+    <wsdl:part name="parameters" element="tns:getIdExamenesResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCantidadDeExamenesSoapIn">
+    <wsdl:part name="parameters" element="tns:getCantidadDeExamenes" />
+  </wsdl:message>
+  <wsdl:message name="getCantidadDeExamenesSoapOut">
+    <wsdl:part name="parameters" element="tns:getCantidadDeExamenesResponse" />
+  </wsdl:message>
+  <wsdl:message name="getExamenesFiltradosSoapIn">
+    <wsdl:part name="parameters" element="tns:getExamenesFiltrados" />
+  </wsdl:message>
+  <wsdl:message name="getExamenesFiltradosSoapOut">
+    <wsdl:part name="parameters" element="tns:getExamenesFiltradosResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultaMedicoBiopsiasSoapIn">
+    <wsdl:part name="parameters" element="tns:consultaMedicoBiopsias" />
+  </wsdl:message>
+  <wsdl:message name="consultaMedicoBiopsiasSoapOut">
+    <wsdl:part name="parameters" element="tns:consultaMedicoBiopsiasResponse" />
+  </wsdl:message>
+  <wsdl:message name="consultaMedicoCitologiaSoapIn">
+    <wsdl:part name="parameters" element="tns:consultaMedicoCitologia" />
+  </wsdl:message>
+  <wsdl:message name="consultaMedicoCitologiaSoapOut">
+    <wsdl:part name="parameters" element="tns:consultaMedicoCitologiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="getNombresPacientesSoapIn">
+    <wsdl:part name="parameters" element="tns:getNombresPacientes" />
+  </wsdl:message>
+  <wsdl:message name="getNombresPacientesSoapOut">
+    <wsdl:part name="parameters" element="tns:getNombresPacientesResponse" />
+  </wsdl:message>
+  <wsdl:message name="getUsuariosSoapIn">
+    <wsdl:part name="parameters" element="tns:getUsuarios" />
+  </wsdl:message>
+  <wsdl:message name="getUsuariosSoapOut">
+    <wsdl:part name="parameters" element="tns:getUsuariosResponse" />
+  </wsdl:message>
+  <wsdl:message name="getDatosEmpleadoSoapIn">
+    <wsdl:part name="parameters" element="tns:getDatosEmpleado" />
+  </wsdl:message>
+  <wsdl:message name="getDatosEmpleadoSoapOut">
+    <wsdl:part name="parameters" element="tns:getDatosEmpleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="getAccesosDeUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:getAccesosDeUsuario" />
+  </wsdl:message>
+  <wsdl:message name="getAccesosDeUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:getAccesosDeUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarMedicoSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarMedico" />
+  </wsdl:message>
+  <wsdl:message name="InsertarMedicoSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarMedicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarMaterialSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarMaterial" />
+  </wsdl:message>
+  <wsdl:message name="InsertarMaterialSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarMaterialResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarPacienteSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarPaciente" />
+  </wsdl:message>
+  <wsdl:message name="InsertarPacienteSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarPacienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarBiopsiaSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarBiopsia" />
+  </wsdl:message>
+  <wsdl:message name="InsertarBiopsiaSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarBiopsiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarCitologiaNoGinecologicaSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarCitologiaNoGinecologica" />
+  </wsdl:message>
+  <wsdl:message name="InsertarCitologiaNoGinecologicaSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarCitologiaNoGinecologicaResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarCitologiaGinecologicaSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarCitologiaGinecologica" />
+  </wsdl:message>
+  <wsdl:message name="InsertarCitologiaGinecologicaSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarCitologiaGinecologicaResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarMaterialEnviadoSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarMaterialEnviado" />
+  </wsdl:message>
+  <wsdl:message name="InsertarMaterialEnviadoSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarMaterialEnviadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="InsertarEmpleadoSoapIn">
+    <wsdl:part name="parameters" element="tns:InsertarEmpleado" />
+  </wsdl:message>
+  <wsdl:message name="InsertarEmpleadoSoapOut">
+    <wsdl:part name="parameters" element="tns:InsertarEmpleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscarCitologiaSoapIn">
+    <wsdl:part name="parameters" element="tns:buscarCitologia" />
+  </wsdl:message>
+  <wsdl:message name="buscarCitologiaSoapOut">
+    <wsdl:part name="parameters" element="tns:buscarCitologiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscarCitologiaLiquidosSoapIn">
+    <wsdl:part name="parameters" element="tns:buscarCitologiaLiquidos" />
+  </wsdl:message>
+  <wsdl:message name="buscarCitologiaLiquidosSoapOut">
+    <wsdl:part name="parameters" element="tns:buscarCitologiaLiquidosResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscarBiopsiaSoapIn">
+    <wsdl:part name="parameters" element="tns:buscarBiopsia" />
+  </wsdl:message>
+  <wsdl:message name="buscarBiopsiaSoapOut">
+    <wsdl:part name="parameters" element="tns:buscarBiopsiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscarMuestraPorPacienteSoapIn">
+    <wsdl:part name="parameters" element="tns:buscarMuestraPorPaciente" />
+  </wsdl:message>
+  <wsdl:message name="buscarMuestraPorPacienteSoapOut">
+    <wsdl:part name="parameters" element="tns:buscarMuestraPorPacienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="BorrarMedicoSoapIn">
+    <wsdl:part name="parameters" element="tns:BorrarMedico" />
+  </wsdl:message>
+  <wsdl:message name="BorrarMedicoSoapOut">
+    <wsdl:part name="parameters" element="tns:BorrarMedicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="BorrarMuestraSoapIn">
+    <wsdl:part name="parameters" element="tns:BorrarMuestra" />
+  </wsdl:message>
+  <wsdl:message name="BorrarMuestraSoapOut">
+    <wsdl:part name="parameters" element="tns:BorrarMuestraResponse" />
+  </wsdl:message>
+  <wsdl:message name="BorrarMaterialSoapIn">
+    <wsdl:part name="parameters" element="tns:BorrarMaterial" />
+  </wsdl:message>
+  <wsdl:message name="BorrarMaterialSoapOut">
+    <wsdl:part name="parameters" element="tns:BorrarMaterialResponse" />
+  </wsdl:message>
+  <wsdl:message name="BorrarEmpleadoSoapIn">
+    <wsdl:part name="parameters" element="tns:BorrarEmpleado" />
+  </wsdl:message>
+  <wsdl:message name="BorrarEmpleadoSoapOut">
+    <wsdl:part name="parameters" element="tns:BorrarEmpleadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizarCitologiaSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizarCitologia" />
+  </wsdl:message>
+  <wsdl:message name="ActualizarCitologiaSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizarCitologiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizarBiopsiaSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizarBiopsia" />
+  </wsdl:message>
+  <wsdl:message name="ActualizarBiopsiaSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizarBiopsiaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizarCitologiaLiquidosSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizarCitologiaLiquidos" />
+  </wsdl:message>
+  <wsdl:message name="ActualizarCitologiaLiquidosSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizarCitologiaLiquidosResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizarMedicoSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizarMedico" />
+  </wsdl:message>
+  <wsdl:message name="ActualizarMedicoSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizarMedicoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizarPacienteSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizarPaciente" />
+  </wsdl:message>
+  <wsdl:message name="ActualizarPacienteSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizarPacienteResponse" />
+  </wsdl:message>
+  <wsdl:message name="ActualizarUsuarioSoapIn">
+    <wsdl:part name="parameters" element="tns:ActualizarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="ActualizarUsuarioSoapOut">
+    <wsdl:part name="parameters" element="tns:ActualizarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSClinicaSoap">
+    <wsdl:operation name="esUsuarioValido">
+      <wsdl:input message="tns:esUsuarioValidoSoapIn" />
+      <wsdl:output message="tns:esUsuarioValidoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getIDdeMedico">
+      <wsdl:input message="tns:getIDdeMedicoSoapIn" />
+      <wsdl:output message="tns:getIDdeMedicoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getIDdePaciente">
+      <wsdl:input message="tns:getIDdePacienteSoapIn" />
+      <wsdl:output message="tns:getIDdePacienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMedicos_Nombres">
+      <wsdl:input message="tns:getMedicos_NombresSoapIn" />
+      <wsdl:output message="tns:getMedicos_NombresSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMedicosTodos">
+      <wsdl:input message="tns:getMedicosTodosSoapIn" />
+      <wsdl:output message="tns:getMedicosTodosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMaterialEnviadoBiopsiaImprimir">
+      <wsdl:input message="tns:getMaterialEnviadoBiopsiaImprimirSoapIn" />
+      <wsdl:output message="tns:getMaterialEnviadoBiopsiaImprimirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMaterialEnviado_CitologiaNoGinecologica">
+      <wsdl:input message="tns:getMaterialEnviado_CitologiaNoGinecologicaSoapIn" />
+      <wsdl:output message="tns:getMaterialEnviado_CitologiaNoGinecologicaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMedico">
+      <wsdl:input message="tns:getMedicoSoapIn" />
+      <wsdl:output message="tns:getMedicoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMuestraGinecologica">
+      <wsdl:input message="tns:getMuestraGinecologicaSoapIn" />
+      <wsdl:output message="tns:getMuestraGinecologicaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMuestraNo_Ginecologica">
+      <wsdl:input message="tns:getMuestraNo_GinecologicaSoapIn" />
+      <wsdl:output message="tns:getMuestraNo_GinecologicaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getMuestraBiopsia">
+      <wsdl:input message="tns:getMuestraBiopsiaSoapIn" />
+      <wsdl:output message="tns:getMuestraBiopsiaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getIdExamenes">
+      <wsdl:input message="tns:getIdExamenesSoapIn" />
+      <wsdl:output message="tns:getIdExamenesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCantidadDeExamenes">
+      <wsdl:input message="tns:getCantidadDeExamenesSoapIn" />
+      <wsdl:output message="tns:getCantidadDeExamenesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getExamenesFiltrados">
+      <wsdl:input message="tns:getExamenesFiltradosSoapIn" />
+      <wsdl:output message="tns:getExamenesFiltradosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaMedicoBiopsias">
+      <wsdl:input message="tns:consultaMedicoBiopsiasSoapIn" />
+      <wsdl:output message="tns:consultaMedicoBiopsiasSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="consultaMedicoCitologia">
+      <wsdl:input message="tns:consultaMedicoCitologiaSoapIn" />
+      <wsdl:output message="tns:consultaMedicoCitologiaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getNombresPacientes">
+      <wsdl:input message="tns:getNombresPacientesSoapIn" />
+      <wsdl:output message="tns:getNombresPacientesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getUsuarios">
+      <wsdl:input message="tns:getUsuariosSoapIn" />
+      <wsdl:output message="tns:getUsuariosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDatosEmpleado">
+      <wsdl:input message="tns:getDatosEmpleadoSoapIn" />
+      <wsdl:output message="tns:getDatosEmpleadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getAccesosDeUsuario">
+      <wsdl:input message="tns:getAccesosDeUsuarioSoapIn" />
+      <wsdl:output message="tns:getAccesosDeUsuarioSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarMedico">
+      <wsdl:input message="tns:InsertarMedicoSoapIn" />
+      <wsdl:output message="tns:InsertarMedicoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarMaterial">
+      <wsdl:input message="tns:InsertarMaterialSoapIn" />
+      <wsdl:output message="tns:InsertarMaterialSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarPaciente">
+      <wsdl:input message="tns:InsertarPacienteSoapIn" />
+      <wsdl:output message="tns:InsertarPacienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarBiopsia">
+      <wsdl:input message="tns:InsertarBiopsiaSoapIn" />
+      <wsdl:output message="tns:InsertarBiopsiaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarCitologiaNoGinecologica">
+      <wsdl:input message="tns:InsertarCitologiaNoGinecologicaSoapIn" />
+      <wsdl:output message="tns:InsertarCitologiaNoGinecologicaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarCitologiaGinecologica">
+      <wsdl:input message="tns:InsertarCitologiaGinecologicaSoapIn" />
+      <wsdl:output message="tns:InsertarCitologiaGinecologicaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarMaterialEnviado">
+      <wsdl:input message="tns:InsertarMaterialEnviadoSoapIn" />
+      <wsdl:output message="tns:InsertarMaterialEnviadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertarEmpleado">
+      <wsdl:input message="tns:InsertarEmpleadoSoapIn" />
+      <wsdl:output message="tns:InsertarEmpleadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarCitologia">
+      <wsdl:input message="tns:buscarCitologiaSoapIn" />
+      <wsdl:output message="tns:buscarCitologiaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarCitologiaLiquidos">
+      <wsdl:input message="tns:buscarCitologiaLiquidosSoapIn" />
+      <wsdl:output message="tns:buscarCitologiaLiquidosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarBiopsia">
+      <wsdl:input message="tns:buscarBiopsiaSoapIn" />
+      <wsdl:output message="tns:buscarBiopsiaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="buscarMuestraPorPaciente">
+      <wsdl:input message="tns:buscarMuestraPorPacienteSoapIn" />
+      <wsdl:output message="tns:buscarMuestraPorPacienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BorrarMedico">
+      <wsdl:input message="tns:BorrarMedicoSoapIn" />
+      <wsdl:output message="tns:BorrarMedicoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BorrarMuestra">
+      <wsdl:input message="tns:BorrarMuestraSoapIn" />
+      <wsdl:output message="tns:BorrarMuestraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BorrarMaterial">
+      <wsdl:input message="tns:BorrarMaterialSoapIn" />
+      <wsdl:output message="tns:BorrarMaterialSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BorrarEmpleado">
+      <wsdl:input message="tns:BorrarEmpleadoSoapIn" />
+      <wsdl:output message="tns:BorrarEmpleadoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarCitologia">
+      <wsdl:input message="tns:ActualizarCitologiaSoapIn" />
+      <wsdl:output message="tns:ActualizarCitologiaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarBiopsia">
+      <wsdl:input message="tns:ActualizarBiopsiaSoapIn" />
+      <wsdl:output message="tns:ActualizarBiopsiaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarCitologiaLiquidos">
+      <wsdl:input message="tns:ActualizarCitologiaLiquidosSoapIn" />
+      <wsdl:output message="tns:ActualizarCitologiaLiquidosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarMedico">
+      <wsdl:input message="tns:ActualizarMedicoSoapIn" />
+      <wsdl:output message="tns:ActualizarMedicoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarPaciente">
+      <wsdl:input message="tns:ActualizarPacienteSoapIn" />
+      <wsdl:output message="tns:ActualizarPacienteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarUsuario">
+      <wsdl:input message="tns:ActualizarUsuarioSoapIn" />
+      <wsdl:output message="tns:ActualizarUsuarioSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSClinicaSoap" type="tns:WSClinicaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="esUsuarioValido">
+      <soap:operation soapAction="http://tempuri.org/esUsuarioValido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getIDdeMedico">
+      <soap:operation soapAction="http://tempuri.org/getIDdeMedico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getIDdePaciente">
+      <soap:operation soapAction="http://tempuri.org/getIDdePaciente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMedicos_Nombres">
+      <soap:operation soapAction="http://tempuri.org/getMedicos_Nombres" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMedicosTodos">
+      <soap:operation soapAction="http://tempuri.org/getMedicosTodos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMaterialEnviadoBiopsiaImprimir">
+      <soap:operation soapAction="http://tempuri.org/getMaterialEnviadoBiopsiaImprimir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMaterialEnviado_CitologiaNoGinecologica">
+      <soap:operation soapAction="http://tempuri.org/getMaterialEnviado_CitologiaNoGinecologica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMedico">
+      <soap:operation soapAction="http://tempuri.org/getMedico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMuestraGinecologica">
+      <soap:operation soapAction="http://tempuri.org/getMuestraGinecologica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMuestraNo_Ginecologica">
+      <soap:operation soapAction="http://tempuri.org/getMuestraNo_Ginecologica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMuestraBiopsia">
+      <soap:operation soapAction="http://tempuri.org/getMuestraBiopsia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getIdExamenes">
+      <soap:operation soapAction="http://tempuri.org/getIdExamenes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCantidadDeExamenes">
+      <soap:operation soapAction="http://tempuri.org/getCantidadDeExamenes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getExamenesFiltrados">
+      <soap:operation soapAction="http://tempuri.org/getExamenesFiltrados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaMedicoBiopsias">
+      <soap:operation soapAction="http://tempuri.org/consultaMedicoBiopsias" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaMedicoCitologia">
+      <soap:operation soapAction="http://tempuri.org/consultaMedicoCitologia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNombresPacientes">
+      <soap:operation soapAction="http://tempuri.org/getNombresPacientes" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsuarios">
+      <soap:operation soapAction="http://tempuri.org/getUsuarios" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDatosEmpleado">
+      <soap:operation soapAction="http://tempuri.org/getDatosEmpleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAccesosDeUsuario">
+      <soap:operation soapAction="http://tempuri.org/getAccesosDeUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarMedico">
+      <soap:operation soapAction="http://tempuri.org/InsertarMedico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarMaterial">
+      <soap:operation soapAction="http://tempuri.org/InsertarMaterial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarPaciente">
+      <soap:operation soapAction="http://tempuri.org/InsertarPaciente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarBiopsia">
+      <soap:operation soapAction="http://tempuri.org/InsertarBiopsia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarCitologiaNoGinecologica">
+      <soap:operation soapAction="http://tempuri.org/InsertarCitologiaNoGinecologica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarCitologiaGinecologica">
+      <soap:operation soapAction="http://tempuri.org/InsertarCitologiaGinecologica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarMaterialEnviado">
+      <soap:operation soapAction="http://tempuri.org/InsertarMaterialEnviado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarEmpleado">
+      <soap:operation soapAction="http://tempuri.org/InsertarEmpleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarCitologia">
+      <soap:operation soapAction="http://tempuri.org/buscarCitologia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarCitologiaLiquidos">
+      <soap:operation soapAction="http://tempuri.org/buscarCitologiaLiquidos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarBiopsia">
+      <soap:operation soapAction="http://tempuri.org/buscarBiopsia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarMuestraPorPaciente">
+      <soap:operation soapAction="http://tempuri.org/buscarMuestraPorPaciente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BorrarMedico">
+      <soap:operation soapAction="http://tempuri.org/BorrarMedico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BorrarMuestra">
+      <soap:operation soapAction="http://tempuri.org/BorrarMuestra" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BorrarMaterial">
+      <soap:operation soapAction="http://tempuri.org/BorrarMaterial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BorrarEmpleado">
+      <soap:operation soapAction="http://tempuri.org/BorrarEmpleado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarCitologia">
+      <soap:operation soapAction="http://tempuri.org/ActualizarCitologia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarBiopsia">
+      <soap:operation soapAction="http://tempuri.org/ActualizarBiopsia" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarCitologiaLiquidos">
+      <soap:operation soapAction="http://tempuri.org/ActualizarCitologiaLiquidos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarMedico">
+      <soap:operation soapAction="http://tempuri.org/ActualizarMedico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarPaciente">
+      <soap:operation soapAction="http://tempuri.org/ActualizarPaciente" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarUsuario">
+      <soap:operation soapAction="http://tempuri.org/ActualizarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSClinicaSoap12" type="tns:WSClinicaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="esUsuarioValido">
+      <soap12:operation soapAction="http://tempuri.org/esUsuarioValido" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getIDdeMedico">
+      <soap12:operation soapAction="http://tempuri.org/getIDdeMedico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getIDdePaciente">
+      <soap12:operation soapAction="http://tempuri.org/getIDdePaciente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMedicos_Nombres">
+      <soap12:operation soapAction="http://tempuri.org/getMedicos_Nombres" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMedicosTodos">
+      <soap12:operation soapAction="http://tempuri.org/getMedicosTodos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMaterialEnviadoBiopsiaImprimir">
+      <soap12:operation soapAction="http://tempuri.org/getMaterialEnviadoBiopsiaImprimir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMaterialEnviado_CitologiaNoGinecologica">
+      <soap12:operation soapAction="http://tempuri.org/getMaterialEnviado_CitologiaNoGinecologica" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMedico">
+      <soap12:operation soapAction="http://tempuri.org/getMedico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMuestraGinecologica">
+      <soap12:operation soapAction="http://tempuri.org/getMuestraGinecologica" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMuestraNo_Ginecologica">
+      <soap12:operation soapAction="http://tempuri.org/getMuestraNo_Ginecologica" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMuestraBiopsia">
+      <soap12:operation soapAction="http://tempuri.org/getMuestraBiopsia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getIdExamenes">
+      <soap12:operation soapAction="http://tempuri.org/getIdExamenes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCantidadDeExamenes">
+      <soap12:operation soapAction="http://tempuri.org/getCantidadDeExamenes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getExamenesFiltrados">
+      <soap12:operation soapAction="http://tempuri.org/getExamenesFiltrados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaMedicoBiopsias">
+      <soap12:operation soapAction="http://tempuri.org/consultaMedicoBiopsias" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="consultaMedicoCitologia">
+      <soap12:operation soapAction="http://tempuri.org/consultaMedicoCitologia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNombresPacientes">
+      <soap12:operation soapAction="http://tempuri.org/getNombresPacientes" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsuarios">
+      <soap12:operation soapAction="http://tempuri.org/getUsuarios" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDatosEmpleado">
+      <soap12:operation soapAction="http://tempuri.org/getDatosEmpleado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAccesosDeUsuario">
+      <soap12:operation soapAction="http://tempuri.org/getAccesosDeUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarMedico">
+      <soap12:operation soapAction="http://tempuri.org/InsertarMedico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarMaterial">
+      <soap12:operation soapAction="http://tempuri.org/InsertarMaterial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarPaciente">
+      <soap12:operation soapAction="http://tempuri.org/InsertarPaciente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarBiopsia">
+      <soap12:operation soapAction="http://tempuri.org/InsertarBiopsia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarCitologiaNoGinecologica">
+      <soap12:operation soapAction="http://tempuri.org/InsertarCitologiaNoGinecologica" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarCitologiaGinecologica">
+      <soap12:operation soapAction="http://tempuri.org/InsertarCitologiaGinecologica" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarMaterialEnviado">
+      <soap12:operation soapAction="http://tempuri.org/InsertarMaterialEnviado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertarEmpleado">
+      <soap12:operation soapAction="http://tempuri.org/InsertarEmpleado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarCitologia">
+      <soap12:operation soapAction="http://tempuri.org/buscarCitologia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarCitologiaLiquidos">
+      <soap12:operation soapAction="http://tempuri.org/buscarCitologiaLiquidos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarBiopsia">
+      <soap12:operation soapAction="http://tempuri.org/buscarBiopsia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="buscarMuestraPorPaciente">
+      <soap12:operation soapAction="http://tempuri.org/buscarMuestraPorPaciente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BorrarMedico">
+      <soap12:operation soapAction="http://tempuri.org/BorrarMedico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BorrarMuestra">
+      <soap12:operation soapAction="http://tempuri.org/BorrarMuestra" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BorrarMaterial">
+      <soap12:operation soapAction="http://tempuri.org/BorrarMaterial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BorrarEmpleado">
+      <soap12:operation soapAction="http://tempuri.org/BorrarEmpleado" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarCitologia">
+      <soap12:operation soapAction="http://tempuri.org/ActualizarCitologia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarBiopsia">
+      <soap12:operation soapAction="http://tempuri.org/ActualizarBiopsia" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarCitologiaLiquidos">
+      <soap12:operation soapAction="http://tempuri.org/ActualizarCitologiaLiquidos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarMedico">
+      <soap12:operation soapAction="http://tempuri.org/ActualizarMedico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarPaciente">
+      <soap12:operation soapAction="http://tempuri.org/ActualizarPaciente" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ActualizarUsuario">
+      <soap12:operation soapAction="http://tempuri.org/ActualizarUsuario" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSClinica">
+    <wsdl:port name="WSClinicaSoap" binding="tns:WSClinicaSoap">
+      <soap:address location="http://localhost:5633/WSClinica.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSClinicaSoap12" binding="tns:WSClinicaSoap12">
+      <soap12:address location="http://localhost:5633/WSClinica.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

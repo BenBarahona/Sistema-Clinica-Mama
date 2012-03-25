@@ -1,0 +1,78 @@
+C:\Users\Ben\Desktop\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\bin\ProyectoSCA_Navigation.Web.dll
+C:\Users\Ben\Desktop\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\bin\ProyectoSCA_Navigation.Web.pdb
+C:\Users\Ben\Desktop\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.dll
+C:\Users\Ben\Desktop\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.pdb
+C:\Users\bbarahona\Documents\My Dropbox\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\bin\ProyectoSCA_Navigation.Web.dll
+C:\Users\bbarahona\Documents\My Dropbox\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\bin\ProyectoSCA_Navigation.Web.pdb
+C:\Users\bbarahona\Documents\My Dropbox\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bbarahona\Documents\My Dropbox\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.dll
+C:\Users\bbarahona\Documents\My Dropbox\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.pdb
+C:\Users\Ben\Dropbox\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\bin\ProyectoSCA_Navigation.Web.dll
+C:\Users\Ben\Dropbox\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\bin\ProyectoSCA_Navigation.Web.pdb
+C:\Users\Ben\Dropbox\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Dropbox\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.dll
+C:\Users\Ben\Dropbox\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.pdb
+C:\Users\Jairo\Documents\My Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\bin\ProyectoSCA_Navigation.Web.dll
+C:\Users\Jairo\Documents\My Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\bin\ProyectoSCA_Navigation.Web.pdb
+C:\Users\Jairo\Documents\My Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jairo\Documents\My Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.dll
+C:\Users\Jairo\Documents\My Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.pdb
+C:\Users\Ben\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.dll
+C:\Users\Ben\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.pdb
+C:\Users\KOTARO\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\KOTARO\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.dll
+C:\Users\KOTARO\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.pdb
+C:\Users\KOTARO\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\KOTARO\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.dll
+C:\Users\KOTARO\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.pdb
+C:\Users\KOTARO\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\bin\ProyectoSCA_Navigation.Web.dll
+C:\Users\KOTARO\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\bin\ProyectoSCA_Navigation.Web.pdb
+C:\Users\KOTARO\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\bin\DT.dll
+C:\Users\KOTARO\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\bin\DT.pdb
+C:\Users\dAnY\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\bin\ProyectoSCA_Navigation.Web.dll
+C:\Users\dAnY\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\bin\ProyectoSCA_Navigation.Web.pdb
+C:\Users\dAnY\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\bin\DT.dll
+C:\Users\dAnY\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\bin\DT.pdb
+C:\Users\dAnY\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\dAnY\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.dll
+C:\Users\dAnY\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.pdb
+C:\Users\Ben\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\bin\ProyectoSCA_Navigation.Web.dll
+C:\Users\Ben\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\bin\ProyectoSCA_Navigation.Web.pdb
+C:\Users\Ben\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\bin\DT.dll
+C:\Users\Ben\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\bin\DT.pdb
+C:\Users\Ben\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.dll
+C:\Users\Ben\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.pdb
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\ProyectoSCA_Navigation.Web\bin\ProyectoSCA_Navigation.Web.dll
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\ProyectoSCA_Navigation.Web\bin\ProyectoSCA_Navigation.Web.pdb
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\ProyectoSCA_Navigation.Web\bin\DT.dll
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\ProyectoSCA_Navigation.Web\bin\DT.pdb
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\ProyectoSCA_Navigation.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.dll
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.pdb
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\ProyectoSCA_Navigation.Web\bin\SD.dll
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\ProyectoSCA_Navigation.Web\bin\SD.pdb
+C:\Users\Ben\Dropbox\ADDS realese\ProyectoSCA_Navigation.Web\bin\ProyectoSCA_Navigation.Web.dll
+C:\Users\Ben\Dropbox\ADDS realese\ProyectoSCA_Navigation.Web\bin\ProyectoSCA_Navigation.Web.pdb
+C:\Users\Ben\Dropbox\ADDS realese\ProyectoSCA_Navigation.Web\bin\DT.dll
+C:\Users\Ben\Dropbox\ADDS realese\ProyectoSCA_Navigation.Web\bin\SD.dll
+C:\Users\Ben\Dropbox\ADDS realese\ProyectoSCA_Navigation.Web\bin\DT.pdb
+C:\Users\Ben\Dropbox\ADDS realese\ProyectoSCA_Navigation.Web\bin\SD.pdb
+C:\Users\Ben\Dropbox\ADDS realese\ProyectoSCA_Navigation.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Dropbox\ADDS realese\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.dll
+C:\Users\Ben\Dropbox\ADDS realese\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.pdb
+C:\Users\KOTARO\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\bin\SD.dll
+C:\Users\KOTARO\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\bin\SD.pdb
+C:\Users\dAnY\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\bin\SD.dll
+C:\Users\dAnY\Desktop\ADDS realese\ProyectoSCA_Navigation.Web\bin\SD.pdb
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\ProyectoSCA_Navigation.Web\bin\ProyectoSCA_Navigation.Web.dll
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\ProyectoSCA_Navigation.Web\bin\ProyectoSCA_Navigation.Web.pdb
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\ProyectoSCA_Navigation.Web\bin\DT.dll
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\ProyectoSCA_Navigation.Web\bin\SD.dll
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\ProyectoSCA_Navigation.Web\bin\DT.pdb
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\ProyectoSCA_Navigation.Web\bin\SD.pdb
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\ProyectoSCA_Navigation.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.dll
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\ProyectoSCA_Navigation.Web\obj\Debug\ProyectoSCA_Navigation.Web.pdb

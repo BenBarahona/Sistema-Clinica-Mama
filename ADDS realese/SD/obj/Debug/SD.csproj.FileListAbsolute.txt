@@ -1,0 +1,40 @@
+C:\Users\dAnY\Desktop\ADDS realese\SD\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\dAnY\Desktop\ADDS realese\SD\bin\Debug\SD.dll
+C:\Users\dAnY\Desktop\ADDS realese\SD\bin\Debug\SD.pdb
+C:\Users\dAnY\Desktop\ADDS realese\SD\obj\Debug\SD.dll
+C:\Users\dAnY\Desktop\ADDS realese\SD\obj\Debug\SD.pdb
+C:\Users\KOTARO\Desktop\ADDS realese\SD\bin\Debug\SD.dll
+C:\Users\KOTARO\Desktop\ADDS realese\SD\bin\Debug\SD.pdb
+C:\Users\KOTARO\Desktop\ADDS realese\SD\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\KOTARO\Desktop\ADDS realese\SD\obj\Debug\SD.dll
+C:\Users\KOTARO\Desktop\ADDS realese\SD\obj\Debug\SD.pdb
+C:\Users\Ben\Desktop\ADDS realese\SD\bin\Debug\SD.dll
+C:\Users\Ben\Desktop\ADDS realese\SD\bin\Debug\SD.pdb
+C:\Users\Ben\Desktop\ADDS realese\SD\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\ADDS realese\SD\obj\Debug\SD.dll
+C:\Users\Ben\Desktop\ADDS realese\SD\obj\Debug\SD.pdb
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\SD\bin\Debug\SD.dll
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\SD\bin\Debug\SD.pdb
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\SD\bin\Debug\DT.dll
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\SD\bin\Debug\DT.pdb
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\SD\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\SD\obj\Debug\SD.dll
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\SD\obj\Debug\SD.pdb
+C:\Users\Ben\Dropbox\ADDS realese\SD\bin\Debug\SD.dll
+C:\Users\Ben\Dropbox\ADDS realese\SD\bin\Debug\SD.pdb
+C:\Users\Ben\Dropbox\ADDS realese\SD\bin\Debug\DT.dll
+C:\Users\Ben\Dropbox\ADDS realese\SD\bin\Debug\DT.pdb
+C:\Users\Ben\Dropbox\ADDS realese\SD\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Dropbox\ADDS realese\SD\obj\Debug\SD.dll
+C:\Users\Ben\Dropbox\ADDS realese\SD\obj\Debug\SD.pdb
+C:\Users\KOTARO\Desktop\ADDS realese\SD\bin\Debug\DT.dll
+C:\Users\KOTARO\Desktop\ADDS realese\SD\bin\Debug\DT.pdb
+C:\Users\dAnY\Desktop\ADDS realese\SD\bin\Debug\DT.dll
+C:\Users\dAnY\Desktop\ADDS realese\SD\bin\Debug\DT.pdb
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\SD\bin\Debug\SD.dll
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\SD\bin\Debug\SD.pdb
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\SD\bin\Debug\DT.dll
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\SD\bin\Debug\DT.pdb
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\SD\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\SD\obj\Debug\SD.dll
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\SD\obj\Debug\SD.pdb

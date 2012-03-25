@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0D9EA82A-200C-41B2-B55B-D724DB7D268C}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sistema_BD_Clinica_Patologica</RootNamespace>
+    <AssemblyName>Sistema_BD_Clinica_Patologica</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>Sistema_BD_Clinica_Patologica.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>Sistema_BD_Clinica_Patologica.App</SilverlightAppEntry>
+    <TestPageFileName>Sistema_BD_Clinica_PatologicaTestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <EnableOutOfBrowser>false</EnableOutOfBrowser>
+    <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
+    <UsePlatformExtensions>false</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <LinkedServerProject>
+    </LinkedServerProject>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BaseDeDatosClinicaPatologica">
+      <HintPath>..\..\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica\Bin\Debug\BaseDeDatosClinicaPatologica.dll</HintPath>
+    </Reference>
+    <Reference Include="Lite.ExcelLibrary">
+      <HintPath>..\..\ADDS realese\Lite.ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Lite.Library">
+      <HintPath>..\..\ADDS realese\Lite.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="ProyectoSCA_Navigation">
+      <HintPath>..\..\ADDS realese\ProyectoSCA_Navigation\Bin\Debug\ProyectoSCA_Navigation.dll</HintPath>
+    </Reference>
+    <Reference Include="SilverlightTextEditor">
+      <HintPath>..\..\SilverlightTextEditor\SilverlightTextEditor\Bin\Debug\SilverlightTextEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations, Version=2.0.5.0, Culture=neutral, PublicKeyToken=ddd0da4d3e678217" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Controls.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Data.Input, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Input, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="System.Windows.Controls" />
+    <Reference Include="System.Windows.Controls.Navigation" />
+    <Reference Include="System.Xml.Linq, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\TC.cs" />
+    <Compile Include="CustomContentLoader.cs" />
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReferenceClinica\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Biopsia.xaml.cs">
+      <DependentUpon>Biopsia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Citologia.xaml.cs">
+      <DependentUpon>Citologia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Contabilidad_Page.xaml.cs">
+      <DependentUpon>Contabilidad_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ControlDeUsuarios.xaml.cs">
+      <DependentUpon>ControlDeUsuarios.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Creditos.xaml.cs">
+      <DependentUpon>Creditos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ErrorWindow.xaml.cs">
+      <DependentUpon>ErrorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Formulario.xaml.cs">
+      <DependentUpon>Formulario.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\Informes.xaml.cs">
+      <DependentUpon>Informes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Medico.xaml.cs">
+      <DependentUpon>Medico.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PrintPreview.xaml.cs">
+      <DependentUpon>PrintPreview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PrintPreview2.xaml.cs">
+      <DependentUpon>PrintPreview2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PrintPreview3.xaml.cs">
+      <DependentUpon>PrintPreview3.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Views\Creditos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Informes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Medico.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PrintPreview.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PrintPreview2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PrintPreview3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Resource Include="Assets\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Biopsia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Citologia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Contabilidad_Page.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ControlDeUsuarios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ErrorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Formulario.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.ActualizarBiopsiaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.ActualizarCitologiaLiquidosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.ActualizarCitologiaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.ActualizarMedicoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.ActualizarPacienteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.ActualizarUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.BorrarEmpleadoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.BorrarMaterialResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.BorrarMedicoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.BorrarMuestraResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.buscarBiopsiaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.buscarCitologiaLiquidosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.buscarCitologiaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.buscarMuestraPorPacienteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.consultaMedicoBiopsiasResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.consultaMedicoCitologiaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.esUsuarioValidoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.getAccesosDeUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.getCantidadDeExamenesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.getDatosEmpleadoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.getExamenesFiltradosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.getIDdeMedicoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.getIDdePacienteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.getIdExamenesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.getMaterialEnviadoBiopsiaImprimirResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.getMedicoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.getMedicosTodosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.getMedicos_NombresResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.getMuestraBiopsiaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.getMuestraGinecologicaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.getMuestraNo_GinecologicaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.getNombresPacientesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.getUsuariosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.InsertarBiopsiaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.InsertarCitologiaGinecologicaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.InsertarCitologiaNoGinecologicaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.InsertarEmpleadoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.InsertarMaterialEnviadoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.InsertarMaterialResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.InsertarMedicoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.InsertarPacienteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReferenceClinica\WSClinica.wsdl" />
+    <Resource Include="Images\Bad.png" />
+    <Resource Include="Images\Biopsia.jpg" />
+    <Resource Include="Images\Citologia.jpg" />
+    <Resource Include="Images\Good.png" />
+    <Resource Include="Images\icon.png" />
+    <Resource Include="Images\logo_transp.png" />
+    <Resource Include="Images\sizeUp.jpg" />
+    <Resource Include="Images\Button-Add-icon.png" />
+    <Resource Include="Images\Button-Close-icon.png" />
+    <Resource Include="Images\Button-Refresh-icon.png" />
+    <Resource Include="Images\Lens-icon.png" />
+    <Resource Include="Images\printer-icon.png" />
+    <Resource Include="Images\Button-Forward-icon.png" />
+    <Resource Include="Images\Button-Rewind-icon.png" />
+    <Resource Include="Images\navigate-left-icon.png" />
+    <Resource Include="Images\navigate-right-icon.png" />
+    <Resource Include="Images\text-bold-icon.png" />
+    <Resource Include="Images\text-underline-icon.png" />
+    <Resource Include="Images\World-icon.png" />
+    <Resource Include="Images\printer-icon1.png" />
+    <Resource Include="Images\LilDwarf Pro Pic.jpg" />
+    <Resource Include="Images\coins-delete-icon.png" />
+    <Resource Include="Images\income.png" />
+    <Resource Include="Images\Bold.png" />
+    <Resource Include="Images\Italic.png" />
+    <Resource Include="Images\Underline.png" />
+    <Resource Include="Images\angry faic.png" />
+    <Content Include="ServiceReferences.ClientConfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReferenceClinica\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceClinica\WSClinica.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceClinica\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceClinica\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReferenceClinica\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Contabilidad_Choose\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{399ACE2F-AE59-45DA-8472-A7C994C8A33B}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ProyectoSCA_Navigation</RootNamespace>
+    <AssemblyName>ProyectoSCA_Navigation</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>ProyectoSCA_Navigation.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>ProyectoSCA_Navigation.App</SilverlightAppEntry>
+    <TestPageFileName>ProyectoSCA_NavigationTestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <EnableOutOfBrowser>false</EnableOutOfBrowser>
+    <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
+    <UsePlatformExtensions>false</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <LinkedServerProject>
+    </LinkedServerProject>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lite.ExcelLibrary">
+      <HintPath>..\Lite.ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Lite.Library">
+      <HintPath>..\Lite.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="System.ComponentModel.DataAnnotations, Version=2.0.5.0, Culture=neutral, PublicKeyToken=ddd0da4d3e678217" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Controls.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Data.Input, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Input, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="System.Windows.Controls" />
+    <Reference Include="System.Windows.Controls.Navigation" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Clases Para los Grids\aportacionCapitalizarGrid.cs" />
+    <Compile Include="Clases\Clases Para los Grids\aportacionesPorPagarGrid.cs" />
+    <Compile Include="Clases\Clases Para los Grids\AportacionOE.cs" />
+    <Compile Include="Clases\Clases Para los Grids\BeneficiarioGrid.cs" />
+    <Compile Include="Clases\Clases Para los Grids\controlDePagoGrid.cs" />
+    <Compile Include="Clases\Clases Para los Grids\estadoDeCuentaGrid.cs" />
+    <Compile Include="Clases\Clases Para los Grids\filtrosAfiliadoGrid.cs" />
+    <Compile Include="Clases\Clases Para los Grids\reporteEstadoCuentaTodosGrid.cs" />
+    <Compile Include="Clases\Clases Para los Grids\reporteTodosSaldosGrid.cs" />
+    <Compile Include="Clases\Persona\Afiliado.cs" />
+    <Compile Include="Clases\Aportacion\Aportacion.cs" />
+    <Compile Include="Clases\Aportacion\AportacionObligatoria.cs" />
+    <Compile Include="Clases\Aportacion\aportacionObligatoriaEspecial.cs" />
+    <Compile Include="Clases\Aportacion\AportacionVoluntaria.cs" />
+    <Compile Include="Clases\Beneficiario\Beneficiario.cs" />
+    <Compile Include="Clases\Beneficiario\BeneficiarioContingencia.cs" />
+    <Compile Include="Clases\Beneficiario\BeneficiarioNormal.cs" />
+    <Compile Include="Clases\Persona\Celular.cs" />
+    <Compile Include="Clases\Persona\Cuenta.cs" />
+    <Compile Include="Clases\Persona\Empleado.cs" />
+    <Compile Include="Clases\Parametrizables\Interes.cs" />
+    <Compile Include="Clases\Parametrizables\Limite.cs" />
+    <Compile Include="Clases\Parametrizables\montoAportacionObligatoria.cs" />
+    <Compile Include="Clases\Parametrizables\Motivo.cs" />
+    <Compile Include="Clases\Parametrizables\Ocupacion.cs" />
+    <Compile Include="Clases\Parametrizables\Parentesco.cs" />
+    <Compile Include="Clases\Persona\Permisos.cs" />
+    <Compile Include="Clases\Persona\Persona.cs" />
+    <Compile Include="Clases\Persona\Rol.cs" />
+    <Compile Include="Clases\Clases Para los Grids\profesionGrid.cs" />
+    <Compile Include="Clases\Clases Para los Grids\saldoCapitalizarGrid.cs" />
+    <Compile Include="Clases\TC.cs" />
+    <Compile Include="Clases\Persona\TelefonoPersonal.cs" />
+    <Compile Include="Clases\Persona\Usuario.cs" />
+    <Compile Include="CustomContentLoader.cs" />
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Capitalizacion.xaml.cs">
+      <DependentUpon>Capitalizacion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Consulta\ConsultarEstadoDeCuenta.xaml.cs">
+      <DependentUpon>ConsultarEstadoDeCuenta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Consulta\ConsultarPerfil.xaml.cs">
+      <DependentUpon>ConsultarPerfil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Consulta\EstadoDeCuentaTodos.xaml.cs">
+      <DependentUpon>EstadoDeCuentaTodos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ErrorWindow.xaml.cs">
+      <DependentUpon>ErrorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FiltrosBusqueda.xaml.cs">
+      <DependentUpon>FiltrosBusqueda.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ingresar.xaml.cs">
+      <DependentUpon>Ingresar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ingresar\IngresarAfiliado.xaml.cs">
+      <DependentUpon>IngresarAfiliado.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IngresarAportacion.xaml.cs">
+      <DependentUpon>IngresarAportacion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Ingresar\IngresarEmpleado.xaml.cs">
+      <DependentUpon>IngresarEmpleado.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MiPerfil.xaml.cs">
+      <DependentUpon>MiPerfil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\ModificarPerfil.xaml.cs">
+      <DependentUpon>ModificarPerfil.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Parametrizacion.xaml.cs">
+      <DependentUpon>Parametrizacion.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Seguridad.xaml.cs">
+      <DependentUpon>Seguridad.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\FiltrosBusqueda.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ModificarPerfil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Parametrizacion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Seguridad.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Resource Include="Assets\Styles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+    <Page Include="Views\Capitalizacion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Consulta\ConsultarEstadoDeCuenta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Consulta\ConsultarPerfil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Consulta\EstadoDeCuentaTodos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ErrorWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Ingresar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Ingresar\IngresarAfiliado.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\IngresarAportacion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Ingresar\IngresarEmpleado.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MiPerfil.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Service References\ServiceReference\ProyectoSCA_Navigation.ServiceReference.AgregarPeticionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceReference\WSCosecol.wsdl" />
+    <Resource Include="Images\Bad.png" />
+    <Resource Include="Images\Good.png" />
+    <Content Include="ServiceReferences.ClientConfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\logocooperativa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceReference\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference\WSCosecol.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

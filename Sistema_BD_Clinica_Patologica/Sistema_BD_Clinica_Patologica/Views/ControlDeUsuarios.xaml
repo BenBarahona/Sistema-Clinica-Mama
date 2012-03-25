@@ -1,0 +1,97 @@
+﻿<navigation:Page x:Class="Sistema_BD_Clinica_Patologica.Views.ControlDeUsuarios" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="800" d:DesignHeight="679"
+           Title="Control De Usuarios" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+    <Grid x:Name="LayoutRoot">
+        <ScrollViewer x:Name="PageScrollViewer" Style="{StaticResource PageScrollViewerStyle}" Margin="-58,-15,-58,-46">
+            <StackPanel x:Name="ContentStackPanel" Height="731">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#FFF6FF69" Offset="1" />
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+<Grid Height="652" Margin="0,22,0,-55" Width="769">
+                    <TextBlock Text="Control De Usuarios" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="274,6,0,0" Name="label58" VerticalAlignment="Top" Width="204" FontSize="18" />
+                    <Button Content="Buscar  " FontSize="12" FontWeight="Bold" Height="38" HorizontalAlignment="Left" Margin="465,237,0,0" Name="buscar_btn" Padding="5" VerticalAlignment="Top" Width="110" TabIndex="2" BorderThickness="3" HorizontalContentAlignment="Right" Click="buscar_btn_Click" />
+                    <TextBlock Text="Cargando los Usuarios Registrados..." Height="38" HorizontalAlignment="Left" Margin="135,200,0,0" Name="estado" VerticalAlignment="Top" Width="466" TextWrapping="Wrap" TextAlignment="Center" FontWeight="Bold" FontSize="12" />
+                    <sdk:Label Content=" " Height="24" HorizontalAlignment="Left" Margin="471,244,0,0" Name="buscar_icon" VerticalAlignment="Top" Width="32" IsEnabled="False">
+                        <sdk:Label.Background>
+                            <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/Lens-icon.png" Stretch="Uniform" />
+                        </sdk:Label.Background>
+                    </sdk:Label>
+                    <Image Height="19" HorizontalAlignment="Left" Margin="430,242,0,0" Name="nombreAuto_error" Stretch="Fill" VerticalAlignment="Top" Width="19" />
+                    <sdk:DataGrid AutoGenerateColumns="True" Height="123" HorizontalAlignment="Left" Margin="116,63,0,0" Name="usuarios_grid" VerticalAlignment="Top" Width="501" IsReadOnly="False" TabIndex="3" />
+                    <sdk:AutoCompleteBox Height="28" HorizontalAlignment="Left" Margin="158,242,0,0" Name="usuarioNombre_auto" VerticalAlignment="Top" Width="266" FilterMode="Contains" TabIndex="1" TextChanged="usuarioNombre_auto_TextChanged" />
+                    <Border BorderBrush="Silver" BorderThickness="1" Height="332" HorizontalAlignment="Left" Margin="10,291,0,0" Name="border1" VerticalAlignment="Top" Width="746">
+                        <Grid Height="319" Name="grid1" Width="724">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="20*" />
+                                <ColumnDefinition Width="679*" />
+                            </Grid.ColumnDefinitions>
+                            <Button Content="Guardar " FontSize="12" FontWeight="Bold" Height="38" HorizontalAlignment="Left" Margin="232,47,0,0" Name="guardar_btn" Padding="5" VerticalAlignment="Top" Width="110" Click="guardar_btn5_Click" TabIndex="4" BorderThickness="3" HorizontalContentAlignment="Right" Grid.Column="1" />
+                            <Button Content="Borrar   " FontSize="12" FontWeight="Bold" Height="38" HorizontalAlignment="Left" Margin="498,47,0,0" Name="borrar_btn" Padding="5" VerticalAlignment="Top" Width="110" TabIndex="6" BorderThickness="3" HorizontalContentAlignment="Right" Grid.Column="1" Click="borrar_btn_Click" />
+                            <TextBlock Text="Ingresar Nuevo Usuario / Actualizar Usuario Existente" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="6,13,0,0" Name="label59" VerticalAlignment="Top" Width="712" FontSize="17" FontStyle="Italic" TextAlignment="Center" Grid.ColumnSpan="2" />
+                            <Button Content="Actualizar" FontSize="12" FontWeight="Bold" Height="38" HorizontalAlignment="Left" Margin="364,47,0,0" Name="actualizar_btn" Padding="5" TabIndex="5" VerticalAlignment="Top" Width="110" BorderThickness="3" HorizontalContentAlignment="Right" Grid.Column="1" Click="actualizar_btn_Click" />
+                            <sdk:Label Content=" " Height="24" Margin="235,53,0,0" Name="guardar_icon" VerticalAlignment="Top" HorizontalAlignment="Left" Width="32" IsEnabled="False" Grid.Column="1">
+                                <sdk:Label.Background>
+                                    <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/Button-Add-icon.png" Stretch="Uniform" />
+                                </sdk:Label.Background>
+                            </sdk:Label>
+                            <sdk:Label Content=" " Height="24" HorizontalAlignment="Left" Margin="367,53,0,0" Name="actualizar_icon" VerticalAlignment="Top" Width="32" IsEnabled="False" Grid.Column="1">
+                                <sdk:Label.Background>
+                                    <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/Button-Refresh-icon.png" Stretch="Uniform" />
+                                </sdk:Label.Background>
+                            </sdk:Label>
+                            <sdk:Label Content=" " Height="24" HorizontalAlignment="Left" Margin="501,53,0,0" Name="borrar_icon" VerticalAlignment="Top" Width="32" IsEnabled="False" Grid.Column="1">
+                                <sdk:Label.Background>
+                                    <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/Button-Close-icon.png" Stretch="Uniform" />
+                                </sdk:Label.Background>
+                            </sdk:Label>
+                            <Button BorderThickness="3" Content="Reiniciar Campos" FontSize="11" FontWeight="Bold" Height="38" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="67,47,0,0" Name="resetFields_btn" Padding="5" TabIndex="3" VerticalAlignment="Top" Width="147" Click="resetFields_Click" Grid.Column="1" />
+                            <sdk:Label Content=" " Height="24" IsEnabled="False" Margin="72,53,0,0" Name="reset_icon" VerticalAlignment="Top" HorizontalAlignment="Left" Width="28" Grid.Column="1">
+                                <sdk:Label.Background>
+                                    <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/World-icon.png" Stretch="Uniform" />
+                                </sdk:Label.Background>
+                            </sdk:Label>
+                            <TextBlock Text="*Nombre:" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="0,197,0,0" Name="label36" VerticalAlignment="Top" Width="72" Grid.Column="1" />
+                            <TextBlock Text="*Contraseña:" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="0,160,0,0" Name="label37" VerticalAlignment="Top" Width="87" Grid.Column="1" />
+                            <TextBlock Text="*Apellido:" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="385,197,0,0" Name="label41" VerticalAlignment="Top" Width="79" Grid.Column="1" />
+                            <TextBox Height="23" HorizontalAlignment="Left" Margin="474,193,0,0" MaxLength="9" Name="apellido_txt" TabIndex="12" VerticalAlignment="Top" Width="199" Grid.Column="1" TextChanged="apellido_txt_TextChanged" />
+                            <TextBox Height="23" HorizontalAlignment="Left" Margin="124,120,0,0" Name="usuario_txt" TabIndex="7" VerticalAlignment="Top" Width="199" Grid.Column="1" />
+                            <TextBlock FontWeight="Bold" Height="33" HorizontalAlignment="Left" Margin="385,155,0,0" Name="textBlock1" Text="*Confirme Contraseña:" VerticalAlignment="Top" Width="87" Grid.Column="1" TextWrapping="Wrap" />
+                            <TextBox Height="23" HorizontalAlignment="Left" Margin="474,120,0,0" MaxLength="255" Name="correo_txt" TabIndex="8" VerticalAlignment="Top" Width="199" Grid.Column="1" />
+                            <TextBlock FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="0,124,0,0" Name="textBlock2" Text="*Usuario:" VerticalAlignment="Top" Width="87" Grid.Column="1" />
+                            <TextBlock Height="23" HorizontalAlignment="Left" Margin="0,91,0,0" Name="textBlock4" Text="*Campo Obligatrorio" VerticalAlignment="Top" Grid.Column="1" />
+                            <Image Height="19" HorizontalAlignment="Left" Margin="329,120,0,0" Name="id_error" Stretch="Fill" VerticalAlignment="Top" Width="19" Grid.Column="1" />
+                            <TextBlock FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="385,124,0,0" Name="textBlock5" Text="Correo:" VerticalAlignment="Top" Width="87" Grid.Column="1" />
+                            <TextBox Height="23" HorizontalAlignment="Left" Margin="124,193,0,0" MaxLength="255" Name="nombre_txt" TabIndex="11" VerticalAlignment="Top" Width="199" Grid.Column="1" Text="" TextChanged="nombre_txt_TextChanged" />
+                            <TextBlock FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="0,230,0,0" Name="textBlock6" Text="Tipo de Empleado:" VerticalAlignment="Top" Width="130" Grid.Column="1" />
+                            <TextBox Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="124,226,0,0" MaxLength="9" Name="tipoEmpleado_txt" TabIndex="13" VerticalAlignment="Top" Width="199" />
+                            <Image Height="19" HorizontalAlignment="Left" Margin="329,156,0,0" Name="password_error" Stretch="Fill" VerticalAlignment="Top" Width="19" Grid.Column="1" />
+                            <Image Height="19" HorizontalAlignment="Left" Margin="329,193,0,0" Name="nombre_error" Stretch="Fill" VerticalAlignment="Top" Width="19" Grid.Column="1" />
+                            <Image Height="19" HorizontalAlignment="Left" Margin="678,193,0,0" Name="apellido_error" Stretch="Fill" VerticalAlignment="Top" Width="19" Grid.Column="1" />
+                            <TextBlock Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="168,286,0,0" Name="textBlock7" Text="" VerticalAlignment="Top" />
+                            <TextBlock FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="0,266,0,0" Name="textBlock8" Text="*Accesos:" VerticalAlignment="Top" Width="71" Grid.Column="1" />
+                            <CheckBox Content="Control de Usuarios" Height="16" HorizontalAlignment="Left" Margin="93,273,0,0" Name="controlUsuario_check" TabIndex="14" VerticalAlignment="Top" Grid.Column="1" Checked="controlUsuario_check_Checked" Unchecked="controlUsuario_check_Unchecked" />
+                            <CheckBox Content="Ingresos" Height="16" HorizontalAlignment="Left" Margin="93,293,0,0" Name="ingresos_check" TabIndex="17" VerticalAlignment="Top" Grid.Column="1" Checked="ingresos_check_Checked" Unchecked="ingresos_check_Unchecked" />
+                            <CheckBox Content="Consultas" Height="16" HorizontalAlignment="Left" Margin="244,273,0,0" Name="consultas_check" TabIndex="15" VerticalAlignment="Top" Grid.Column="1" Checked="consultas_check_Checked" Unchecked="consultas_check_Unchecked" />
+                            <CheckBox Content="Egresos" Height="16" HorizontalAlignment="Left" Margin="244,295,0,0" Name="egresos_check" TabIndex="18" VerticalAlignment="Top" Grid.Column="1" Checked="egresos_check_Checked" Unchecked="egresos_check_Unchecked" />
+                            <Image Height="19" HorizontalAlignment="Left" Margin="678,155,0,0" Name="password2_error" Stretch="Fill" VerticalAlignment="Top" Width="19" Grid.Column="1" />
+                            <PasswordBox Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="124,156,0,0" Name="passwordBox1" VerticalAlignment="Top" Width="199" PasswordChanged="passwordBox1_PasswordChanged" TabIndex="9" />
+                            <PasswordBox Height="23" HorizontalAlignment="Left" Margin="474,155,0,0" Name="passwordBox2" VerticalAlignment="Top" Width="199" Grid.Column="1" PasswordChanged="passwordBox2_PasswordChanged" TabIndex="10" />
+                            <CheckBox Content="Ingresar Examenes" Height="16" HorizontalAlignment="Left" Margin="349,273,0,0" Name="examenes_check" TabIndex="16" VerticalAlignment="Top" Grid.Column="1" Checked="examenes_check_Checked" Unchecked="examenes_check_Unchecked" />
+                            <Image Height="19" HorizontalAlignment="Left" Margin="491,282,0,0" Name="acceso_error" Stretch="Fill" VerticalAlignment="Top" Width="19" Grid.Column="1" />
+                        </Grid>
+                    </Border>
+                </Grid>
+            </StackPanel>
+
+        </ScrollViewer>
+    </Grid>
+</navigation:Page>

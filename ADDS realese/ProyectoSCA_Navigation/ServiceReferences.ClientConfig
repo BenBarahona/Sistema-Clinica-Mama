@@ -1,0 +1,16 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="WSCosecolSoap" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:1809/WSCosecol.asmx" binding="basicHttpBinding"
+                bindingConfiguration="WSCosecolSoap" contract="ServiceReference.WSCosecolSoap"
+                name="WSCosecolSoap" />
+        </client>
+    </system.serviceModel>
+</configuration>

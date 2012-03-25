@@ -1,0 +1,12 @@
+Este es el protocolo DK Jr, que lo uso yo para saber que hacer cuando mando un pedido al controlador y como reaccionar en sentido de los campos habilitados, etc y que hacer cuando recibo una respuesta.
+
+1. Se carga la pantalla
+2. Todos los campos de aggregar o eliminar estan deshabilitados.  Esto aplica a
+   los campos que involucran alguna peticion al iniciarse la pantalla.
+3. Al recibir la respuesta, se despliega la respuesta en el grid o lo q sea
+4. Se habilitan todos los campos
+5. Se hace una peticion
+6. Se deshabilitan todos los campos involucrados con esta peticion y se resetea 
+7. Espera Respueta
+8. Al responderle, recibe la respuesta y la despliega en los grids o lo q sea
+9. Se habilitan todos los campos

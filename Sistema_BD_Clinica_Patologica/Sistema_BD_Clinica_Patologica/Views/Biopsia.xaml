@@ -1,0 +1,227 @@
+﻿<navigation:Page x:Class="Sistema_BD_Clinica_Patologica.Views.Biopsia" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="800"
+           Title="Ingresar Biopsia" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" d:DesignHeight="1414">
+    <Grid x:Name="Home">
+        <ScrollViewer x:Name="PageScrollViewer" Style="{StaticResource PageScrollViewerStyle}">
+            <StackPanel x:Name="ContentStackPanel" Margin="0,12,0,43" Height="1382">
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#FFF6FF69" Offset="1" />
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <Grid Height="1376" Width="758">
+                    <Grid.Background>
+                        <ImageBrush />
+                    </Grid.Background>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="19*" />
+                        <ColumnDefinition Width="29*" />
+                        <ColumnDefinition Width="26*" />
+                        <ColumnDefinition Width="664*" />
+                        <ColumnDefinition Width="20*" />
+                    </Grid.ColumnDefinitions>
+                    <Border BorderBrush="Silver" BorderThickness="1" Grid.Column="1" Grid.ColumnSpan="4" Height="813" HorizontalAlignment="Left" Margin="2,557,0,0" Name="border2" VerticalAlignment="Top" Width="719" />
+                    <Grid Grid.Column="1" Grid.ColumnSpan="3" Margin="14,569,11,0" VerticalAlignment="Top" Height="792">
+                        <sdk:Label Content="Descripcion Microscópica:" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="22,317,0,0" Name="label52" VerticalAlignment="Top" Width="201" FontSize="13" />
+                        <sdk:Label Content="Diagnostico:" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="22,552,0,0" Name="label50" VerticalAlignment="Top" Width="128" FontSize="13" />
+                        <sdk:Label Content="Descripcion Macroscópica:" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="26,75,0,0" Name="label43" VerticalAlignment="Top" Width="212" FontSize="13" />
+                        <RichTextBox HorizontalAlignment="Left" Margin="49,96,0,0" Name="macroscopica_txtR" VerticalAlignment="Top" Width="627" Height="200" FontSize="13" />
+                        
+                        <Grid Height="42" HorizontalAlignment="Left" Margin="154,19,0,0" Name="grid1" VerticalAlignment="Top" Width="413" >
+                            <Rectangle Height="42" HorizontalAlignment="Left" Margin="-2,-1,0,0" Name="rectangle1" Stroke="Black" StrokeThickness="1" VerticalAlignment="Top" Width="415" Fill="#46239600"></Rectangle>
+                            <ComboBox x:Name="cmbFonts" FontFamily="{Binding SelectedItem.FontFamily, RelativeSource={RelativeSource Self}}" FontSize="{Binding SelectedItem.FontSize, RelativeSource={RelativeSource Self}}" SelectionChanged="cmbFonts_SelectionChanged" Margin="124,7,0,0" Height="22" VerticalAlignment="Top" HorizontalAlignment="Left" Width="113">
+                                <ComboBoxItem Content="Arial" Tag="Arial" FontFamily="Arial" FontSize="12"/>
+                                <ComboBoxItem Content="Arial Black" Tag="Arial Black" FontFamily="Arial Black" FontSize="12"/>
+                                <ComboBoxItem Content="Calibri" Tag="Calibri" FontFamily="Calibri" FontSize="14"/>
+                                <ComboBoxItem Content="Comic Sans MS" Tag="Comic Sans MS" FontFamily="Comic Sans MS" FontSize="12"/>
+                                <ComboBoxItem Content="Courier New" Tag="Courier New" FontFamily="Courier New" FontSize="12"/>
+                                <ComboBoxItem Content="Georgia" Tag="Georgia" FontFamily="Georgia" FontSize="12"/>
+                                <ComboBoxItem Content="Lucida Sans Unicode" Tag="Lucida Sans Unicode" FontFamily="Lucida Sans Unicode" FontSize="12"/>
+                                <ComboBoxItem Content="Portable User Interface" Tag="Portable User Interface" IsSelected ="True" FontFamily="Portable User Interface" FontSize="12"/>
+                                <ComboBoxItem Content="Times New Roman" Tag="Times New Roman" FontFamily="Times New Roman" FontSize="12"/>
+                                <ComboBoxItem Content="Trebuchet MS" Tag="Trebuchet MS" FontFamily="Trebuchet MS" FontSize="12"/>
+                                <ComboBoxItem Content="Verdana" Tag="Verdana" FontFamily="Verdana" FontSize="12"/>
+                                <ComboBoxItem Content="Webdings" Tag="Webdings" FontSize="12"/>
+                            </ComboBox>
+
+                            <ComboBox x:Name="cmbFontSizes" Width="55" FontSize="14" SelectionChanged="cmbFontSizes_SelectionChanged" HorizontalAlignment="Left" Margin="263,7,0,0" Height="22" VerticalAlignment="Top">
+                                <ComboBoxItem Content="8" Tag="8"/>
+                                <ComboBoxItem Content="9" Tag="9"/>
+                                <ComboBoxItem Content="10" Tag="10"/>
+                                <ComboBoxItem Content="11" Tag="11"/>
+                                <ComboBoxItem Content="12" Tag="12" />
+                                <ComboBoxItem Content="13" Tag="13" IsSelected="True"/>
+                                <ComboBoxItem Content="14" Tag="14"/>
+                                <ComboBoxItem Content="16" Tag="16"/>
+                                <ComboBoxItem Content="18" Tag="18"/>
+                                <ComboBoxItem Content="20" Tag="20"/>
+                                <ComboBoxItem Content="22" Tag="22"/>
+                                <ComboBoxItem Content="24" Tag="24"/>
+                                <ComboBoxItem Content="26" Tag="26"/>
+                                <ComboBoxItem Content="28" Tag="28"/>
+                                <ComboBoxItem Content="36" Tag="36"/>
+                                <ComboBoxItem Content="48" Tag="48"/>
+                                <ComboBoxItem Content="72" Tag="72"/>
+                            </ComboBox>
+                            
+                            <Button x:Name="btnBold" Click="btnBold_Click" Margin="8,7,0,0" HorizontalAlignment="Left" Width="26" Height="24" VerticalAlignment="Top">
+    						<ToolTipService.ToolTip>
+    							<ToolTip FontSize="16" Content="Negrita"/>
+    						</ToolTipService.ToolTip>
+                                <Image Source="/Sistema_BD_Clinica_Patologica;component/Images/Bold.png" d:IsLocked="True"/>
+    					</Button>
+
+    					<Button x:Name="btnItalic" Click="btnItalic_Click" Margin="43,7,0,0" HorizontalAlignment="Left" Width="26" Height="24" VerticalAlignment="Top">
+    						<ToolTipService.ToolTip>
+    							<ToolTip FontSize="16" Content="Italica"/>
+    						</ToolTipService.ToolTip>
+                                <Image Source="/Sistema_BD_Clinica_Patologica;component/Images/Italic.png"/>
+    					</Button>
+
+    					<Button x:Name="btnUnderline" Click="btnUnderline_Click" Margin="79,7,0,0" HorizontalAlignment="Left" Width="26" Height="24" VerticalAlignment="Top">
+    						<ToolTipService.ToolTip>
+    							<ToolTip FontSize="16" Content="Subrayado"/>
+    						</ToolTipService.ToolTip>
+                                <Image Source="/Sistema_BD_Clinica_Patologica;component/Images/Underline.png"/>
+    					</Button>
+					
+    					<ComboBox x:Name="cmbFontColors" SelectionChanged="cmbFontColors_SelectionChanged" SelectedIndex="0" Margin="346,7,0,0" HorizontalAlignment="Left" Width="55" Height="22" VerticalAlignment="Top">
+    						<ComboBoxItem Tag="FFFF0000">
+    							<Rectangle Width="22" Height="14" Fill="Red" Margin="2,0,0,0" />    
+    						</ComboBoxItem>
+    						<ComboBoxItem Tag="FF008000">
+    							<Rectangle Width="22" Height="14" Fill="Green" Margin="2,0,0,0" />
+    						</ComboBoxItem>
+    						<ComboBoxItem Tag="FF0000FF">
+    							<Rectangle Width="22" Height="14" Fill="Blue" Margin="2,0,0,0" />
+    						</ComboBoxItem>
+    						<ComboBoxItem Tag="FFFFFF00">
+    							<Rectangle Width="22" Height="14" Fill="Yellow" Margin="2,0,0,0" />
+    						</ComboBoxItem>
+    						<ComboBoxItem Tag="FF000000" IsSelected="True">
+    							<Rectangle Width="22" Height="14" Fill="Black" Margin="2,0,0,0" />
+    						</ComboBoxItem>
+    					</ComboBox>
+                        </Grid>
+                        <RichTextBox Height="200" HorizontalAlignment="Left" Margin="49,338,0,0" VerticalAlignment="Top" Width="627" FontSize="13" Name="micro_txtR" />
+                        <RichTextBox Height="200" HorizontalAlignment="Left" Margin="48,566,0,0" Name="diagnosticoBiopsia_txtR" VerticalAlignment="Top" Width="627" FontSize="13" />
+                    </Grid>
+                    <sdk:Label Content="Muestra No. :" FontWeight="Bold" Grid.Column="3" Height="23" HorizontalAlignment="Left" Margin="55,126,0,0" Name="label42" VerticalAlignment="Top" Width="100" FontSize="13" />
+                    <sdk:DatePicker Grid.Column="3" Height="23" HorizontalAlignment="Left" Margin="509,158,0,0" Name="fechaBiopsia_txt" SelectedDateChanged="fechaBiopsia_txt_SelectedDateChanged" TabIndex="12" VerticalAlignment="Top" Width="120" />
+                    <sdk:Label Content="Diagnostico Clinico:" FontWeight="Bold" Grid.Column="1" Grid.ColumnSpan="3" Height="19" HorizontalAlignment="Left" Margin="2,226,0,0" Name="label45" VerticalAlignment="Top" Width="129" />
+                    <TextBox Grid.Column="3" Height="23" HorizontalAlignment="Left" IsEnabled="True" Margin="160,125,0,0" Name="idMuestra_txt6" TabIndex="8" VerticalAlignment="Top" Width="164" TextChanged="idMuestra_txt6_TextChanged" />
+                    <sdk:Label Content="Paciente:" FontWeight="Bold" Grid.Column="1" Grid.ColumnSpan="3" Height="23" HorizontalAlignment="Left" Margin="2,160,0,0" Name="label46" VerticalAlignment="Top" Width="87" />
+                    <sdk:Label Content="Medico:" FontWeight="Bold" Grid.Column="1" Grid.ColumnSpan="3" Height="23" HorizontalAlignment="Left" Margin="2,191,0,0" Name="label47" VerticalAlignment="Top" Width="87" />
+                    <sdk:Label Content="Edad:" FontWeight="Bold" Grid.Column="3" Height="23" HorizontalAlignment="Left" Margin="393,189,0,0" Name="label48" VerticalAlignment="Top" Width="63" />
+                    <TextBox Grid.Column="3" Height="23" HorizontalAlignment="Left" Margin="509,187,0,0" Name="edadBiopsia_txt" TabIndex="14" VerticalAlignment="Top" Width="40" LostFocus="edadBiopsia_txt_LostFocus" TextChanged="edadBiopsia_txt_TextChanged" />
+                    <sdk:Label Content="Fecha de Muestra:" FontWeight="Bold" Grid.Column="3" Height="23" HorizontalAlignment="Left" Margin="393,158,0,0" Name="label51" VerticalAlignment="Top" Width="114" />
+                    <sdk:Label Content="Valor:" FontWeight="Bold" Grid.Column="3" Height="23" Margin="368,122,0,0" Name="label54" VerticalAlignment="Top" FontSize="13" HorizontalAlignment="Left" Width="63" />
+                    <TextBox Grid.Column="3" Height="23" HorizontalAlignment="Left" Margin="419,123,0,0" Name="valorBiopsia_txt" TabIndex="9" VerticalAlignment="Top" Width="40" LostFocus="valorBiopsia_txt_LostFocus" />
+                    <RadioButton Checked="biopsia_radioBtn_Checked" Content="Biopsia Adicional" Grid.Column="3" Height="16" HorizontalAlignment="Left" IsChecked="True" Margin="169,57,0,0" Name="biopsia_radioBtn" TabIndex="6" Unchecked="biopsia_radioBtn_Unchecked" VerticalAlignment="Top" />
+                    <RadioButton Checked="citologiaLiquido_radioBtn_Checked" Content="Citología de Líquidos" Grid.Column="3" Height="16" HorizontalAlignment="Left" Margin="311,57,0,0" Name="citologiaLiquido_radioBtn" TabIndex="7" Unchecked="citologiaLiquido_radioBtn_Unchecked" VerticalAlignment="Top" />
+                    <sdk:Label Content="Codificación:" FontWeight="Bold" Grid.Column="1" Grid.ColumnSpan="3" Height="26" HorizontalAlignment="Left" Margin="2,293,0,0" Name="label49" VerticalAlignment="Top" Width="89" />
+                    <TextBox Grid.Column="3" Height="23" HorizontalAlignment="Left" Margin="32,293,0,0" Name="codificacion_txt" TabIndex="24" VerticalAlignment="Top" Width="135" />
+                    <Button Click="registrarBiopsia_btn_Click" Content="Registrar " FontSize="12" FontWeight="Bold" Grid.Column="3" Height="38" HorizontalAlignment="Left" Margin="107,9,0,0" Name="registrarBiopsia_btn" Padding="5" VerticalAlignment="Top" Width="115" HorizontalContentAlignment="Right" BorderThickness="3" TabIndex="2" />
+                    <Button Click="borrarBiopsia_Click" Content="Borrar     " FontSize="12" FontWeight="Bold" Grid.Column="3" Height="38" HorizontalAlignment="Left" Margin="524,9,0,0" Name="borrarBiopsia" Padding="5" VerticalAlignment="Top" Width="115" BorderThickness="3" HorizontalContentAlignment="Right" TabIndex="5" />
+                    <Button Click="buscarBiopsia_btn_Click" Content="Buscar    " FontSize="12" FontWeight="Bold" Grid.Column="3" Height="38" HorizontalAlignment="Left" Margin="247,9,0,0" Name="buscarBiopsia_btn" Padding="5" TabIndex="3" VerticalAlignment="Top" Width="115" BorderThickness="3" HorizontalContentAlignment="Right" />
+                    <TextBox Grid.Column="2" Grid.ColumnSpan="2" Height="23" HorizontalAlignment="Left" Margin="0,247,0,0" Name="diagnosticoClinicoBiopsia_txt" TabIndex="16" VerticalAlignment="Top" Width="657" />
+                    <sdk:Label Content="Material Enviado:" FontWeight="Bold" Grid.Column="1" Grid.ColumnSpan="3" Height="28" HorizontalAlignment="Left" Margin="2,342,0,0" Name="label44" VerticalAlignment="Top" Width="116" />
+                    <Button Click="button1_Click" Content=" " FontWeight="Bold" Grid.Column="3" Height="32" HorizontalAlignment="Left" Margin="149,406,0,0" Name="button1" TabIndex="18" VerticalAlignment="Top" Width="75" BorderThickness="3" />
+                    <Button Click="button2_Click" Content=" " FontWeight="Bold" Grid.Column="3" Height="32" HorizontalAlignment="Left" Margin="149,449,0,0" Name="button2" TabIndex="19" VerticalAlignment="Top" Width="75" BorderThickness="3" />
+                    <Button Click="agregarMaterialEnviado_Click" Content="Agregar Material" FontSize="12" FontWeight="Bold" Grid.Column="3" Height="38" HorizontalAlignment="Left" Margin="418,409,0,0" Name="agregarMaterialEnviado" Padding="5" TabIndex="22" VerticalAlignment="Top" Width="154" BorderThickness="3" HorizontalContentAlignment="Right" />
+                    <sdk:Label Content="Materiales Existentes:" FontWeight="Bold" Grid.Column="3" Height="28" HorizontalAlignment="Left" Margin="252,342,0,0" Name="label60" VerticalAlignment="Top" Width="139" />
+                    <ListBox Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="0,369,0,0" Name="materialEnviadoSelect" TabIndex="17" Width="156" Height="171" VerticalAlignment="Top" />
+                    <ListBox Grid.Column="3" Height="171" HorizontalAlignment="Left" Margin="241,369,0,0" Name="materialEnviadoTodos" TabIndex="20" VerticalAlignment="Top" Width="157" />
+                    <TextBox Grid.Column="3" Height="23" HorizontalAlignment="Left" Margin="449,369,0,0" Name="materialEnviado_txt" TabIndex="21" VerticalAlignment="Top" Width="160" TextChanged="materialEnviado_txt_TextChanged" />
+                    <TextBlock Text=" Obteniendo datos...." Grid.Column="3" Height="44" HorizontalAlignment="Left" Margin="422,453,0,0" Name="matEnviadoStatus" VerticalAlignment="Top" Width="242" FontSize="12" TextWrapping="Wrap" FlowDirection="LeftToRight" TextAlignment="Center" />
+                    <TextBlock Text=" Obteniendo datos..." FontSize="14" FontWeight="Bold" Grid.Column="3" Height="45" HorizontalAlignment="Left" Margin="40,81,0,0" Name="estadoBiopsia" VerticalAlignment="Top" Width="544" TextWrapping="Wrap" TextAlignment="Center" />
+                    <ComboBox Grid.Column="3" Height="23" HorizontalAlignment="Left" Margin="32,189,0,0" Name="nombreMedico2" TabIndex="13" VerticalAlignment="Top" Width="239" />
+                    <Button Click="borrarMaterial_btn_Click" Content="Borrar " FontSize="12" FontWeight="Bold" Grid.Column="3" Height="38" HorizontalAlignment="Left" Margin="577,409,0,0" Name="borrarMaterial_btn" Padding="5" TabIndex="23" VerticalAlignment="Top" Width="87" BorderThickness="3" HorizontalContentAlignment="Right" />
+                    <TextBox Grid.Column="3" Height="23" HorizontalAlignment="Left" Margin="32,160,0,0" Name="nombrePacienteB" TabIndex="10" VerticalAlignment="Top" Width="118" TextChanged="nombrePacienteB_TextChanged" />
+                    <TextBox Grid.Column="3" Height="23" HorizontalAlignment="Left" Margin="153,160,0,0" Name="apellidoPacienteB" TabIndex="11" VerticalAlignment="Top" Width="118" TextChanged="nombrePacienteB_TextChanged" />
+                    <sdk:Label Content="Expediente:" FontWeight="Bold" Grid.Column="3" Height="23" HorizontalAlignment="Left" Margin="393,216,0,0" Name="label62" VerticalAlignment="Top" Width="87" />
+                    <TextBox Grid.Column="3" Height="23" HorizontalAlignment="Left" IsEnabled="True" Margin="509,217,0,0" Name="expedienteBiopsia_txt" TabIndex="15" VerticalAlignment="Top" Width="122" />
+                    <Button Content="Imprimir " FontSize="12" FontWeight="Bold" Grid.ColumnSpan="3" Height="38" HorizontalAlignment="Left" Margin="28,9,0,0" Name="imprimir_btn" Padding="5" VerticalAlignment="Top" Width="115" Grid.Column="1" Click="imprimir_btn_Click" BorderThickness="3" HorizontalContentAlignment="Right" TabIndex="1" />
+                    <Button Content="Actualizar " FontSize="12" FontWeight="Bold" Height="38" HorizontalAlignment="Left" Margin="384,9,0,0" Name="actualizarBiopsia" Padding="5" VerticalAlignment="Top" Width="115" Grid.Column="3" Click="actualizarBiopsia_Click" HorizontalContentAlignment="Right" BorderThickness="3" TabIndex="4" />
+                    <sdk:Label Content=" " Grid.ColumnSpan="2" Height="24" HorizontalAlignment="Left" Margin="1,16,0,0" Name="print_icon" VerticalAlignment="Top" Width="32" Grid.Column="2" IsEnabled="False">
+                        <sdk:Label.Background>
+                            <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/printer-icon.png" Stretch="Uniform" />
+                        </sdk:Label.Background>
+                    </sdk:Label>
+                    <sdk:Label Content=" " Grid.Column="3" Height="24" HorizontalAlignment="Left" Margin="111,16,0,0" Name="registrar_icon" VerticalAlignment="Top" Width="32" IsEnabled="False">
+                        <sdk:Label.Background>
+                            <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/Button-Add-icon.png" Stretch="Uniform" />
+                        </sdk:Label.Background>
+                    </sdk:Label>
+                    <sdk:Label Content=" " Grid.Column="3" Height="24" HorizontalAlignment="Left" Margin="252,16,0,0" Name="buscar_icon" VerticalAlignment="Top" Width="32" IsEnabled="False">
+                        <sdk:Label.Background>
+                            <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/Lens-icon.png" Stretch="Uniform" />
+                        </sdk:Label.Background>
+                    </sdk:Label>
+                    <sdk:Label Content=" " Grid.Column="3" Height="24" HorizontalAlignment="Left" Margin="386,16,0,0" Name="actualizar_icon" VerticalAlignment="Top" Width="32" IsEnabled="False">
+                        <sdk:Label.Background>
+                            <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/Button-Refresh-icon.png" Stretch="Uniform" />
+                        </sdk:Label.Background>
+                    </sdk:Label>
+                    <sdk:Label Content=" " Grid.Column="3" Height="24" HorizontalAlignment="Left" Margin="527,16,0,0" Name="borrar_icon" VerticalAlignment="Top" Width="32" IsEnabled="False">
+                        <sdk:Label.Background>
+                            <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/Button-Close-icon.png" Stretch="Uniform" />
+                        </sdk:Label.Background>
+                    </sdk:Label>
+                    <sdk:Label Content=" " Height="16" Margin="165,414,0,0" Name="left1" VerticalAlignment="Top" Grid.Column="3" IsEnabled="False" HorizontalAlignment="Left" Width="32">
+                        <sdk:Label.Background>
+                            <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/navigate-left-icon.png" Stretch="Uniform" />
+                        </sdk:Label.Background>
+                    </sdk:Label>
+                    <sdk:Label Content=" " Height="16" HorizontalAlignment="Left" Margin="177,414,0,0" Name="left2" VerticalAlignment="Top" Width="32" Grid.Column="3" IsEnabled="False">
+                        <sdk:Label.Background>
+                            <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/navigate-left-icon.png" Stretch="Uniform" />
+                        </sdk:Label.Background>
+                    </sdk:Label>
+                    <sdk:Label Content=" " Height="16" Margin="166,457,0,0" Name="right1" VerticalAlignment="Top" Grid.Column="3" IsEnabled="False" HorizontalAlignment="Left" Width="32">
+                        <sdk:Label.Background>
+                            <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/navigate-right-icon.png" Stretch="Uniform" />
+                        </sdk:Label.Background>
+                    </sdk:Label>
+                    <sdk:Label Content=" " Grid.Column="3" Height="16" HorizontalAlignment="Left" Margin="178,457,0,0" Name="right2" VerticalAlignment="Top" Width="32" IsEnabled="False">
+                        <sdk:Label.Background>
+                            <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/navigate-right-icon.png" Stretch="Uniform" />
+                        </sdk:Label.Background>
+                    </sdk:Label>
+                    <sdk:Label Content=" " Height="20" HorizontalAlignment="Left" Margin="422,418,0,0" Name="label4" VerticalAlignment="Top" Width="32" Grid.Column="3" IsEnabled="False">
+                        <sdk:Label.Background>
+                            <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/Button-Add-icon.png" Stretch="Uniform" />
+                        </sdk:Label.Background>
+                    </sdk:Label>
+                    <sdk:Label Content=" " Grid.Column="3" Height="20" HorizontalAlignment="Left" Margin="577,418,0,0" Name="label8" VerticalAlignment="Top" Width="32" IsEnabled="False">
+                        <sdk:Label.Background>
+                            <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/Button-Close-icon.png" Stretch="Uniform" />
+                        </sdk:Label.Background>
+                    </sdk:Label>
+                    <Image Height="19" HorizontalAlignment="Left" Margin="331,126,0,0" Name="id_error" Stretch="Fill" VerticalAlignment="Top" Width="19" Grid.Column="3" />
+                    <Image Height="19" HorizontalAlignment="Left" Margin="465,125,0,0" Name="valor_error" Stretch="Fill" VerticalAlignment="Top" Width="19" Grid.Column="3" />
+                    <Image Height="19" HorizontalAlignment="Left" Margin="277,162,0,0" Name="nombre_error" Stretch="Fill" VerticalAlignment="Top" Width="19" Grid.Column="3" />
+                    <Image Height="19" HorizontalAlignment="Left" Margin="277,191,0,0" Name="medico_error" Stretch="Fill" VerticalAlignment="Top" Width="19" Grid.Column="3" />
+                    <Image Height="19" HorizontalAlignment="Left" Margin="553,190,0,0" Name="edad_error" Stretch="Fill" VerticalAlignment="Top" Width="19" Grid.Column="3" />
+                    <Image Height="19" HorizontalAlignment="Left" Margin="634,160,0,0" Name="fecha_error" Stretch="Fill" VerticalAlignment="Top" Width="19" Grid.Column="3" />
+                    <Image Height="19" HorizontalAlignment="Left" Margin="612,372,0,0" Name="material_error" Stretch="Fill" VerticalAlignment="Top" Width="19" Grid.Column="3" />
+                    <Button BorderThickness="3" Content="Reiniciar Campos " FontSize="11" FontWeight="Bold" Height="29" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="0,57,0,0" Name="resetFields_btn" Padding="5" TabIndex="1000" VerticalAlignment="Top" Width="156" Grid.Column="2" Grid.ColumnSpan="2" Click="resetFields_btn_Click" />
+                    <sdk:Label Content=" " Height="20" IsEnabled="False" Margin="4,61,0,0" Name="reset_icon" VerticalAlignment="Top" Grid.Column="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Width="28">
+                        <sdk:Label.Background>
+                            <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/World-icon.png" Stretch="Uniform" />
+                        </sdk:Label.Background>
+                    </sdk:Label>
+                    <sdk:DatePicker Grid.Column="3" Height="23" HorizontalAlignment="Left" Margin="509,293,0,0" Name="fechaRecibida_txt" TabIndex="12" VerticalAlignment="Top" Width="120" />
+                    <TextBlock Grid.Column="3" Height="36" HorizontalAlignment="Left" Margin="386,286,0,0" Name="textBlock1" Text="Fecha que se recibió la muestra:" VerticalAlignment="Top" TextWrapping="Wrap" FontWeight="Bold" Width="122" />
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</navigation:Page>

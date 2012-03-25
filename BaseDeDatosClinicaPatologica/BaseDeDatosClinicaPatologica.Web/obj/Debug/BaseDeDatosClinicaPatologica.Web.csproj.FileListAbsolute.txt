@@ -1,0 +1,125 @@
+C:\Users\bbarahona\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\bbarahona\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\bbarahona\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bbarahona\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\bbarahona\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.pdb
+H:\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.dll
+H:\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.pdb
+H:\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\obj\Debug\ResolveAssemblyReference.cache
+H:\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.dll
+H:\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.pdb
+E:\My Documents\Clases\Teoria Base de Datos I\Proyecto\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.dll
+E:\My Documents\Clases\Teoria Base de Datos I\Proyecto\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.pdb
+E:\My Documents\Clases\Teoria Base de Datos I\Proyecto\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\obj\Debug\ResolveAssemblyReference.cache
+E:\My Documents\Clases\Teoria Base de Datos I\Proyecto\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.dll
+E:\My Documents\Clases\Teoria Base de Datos I\Proyecto\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Otto\Desktop\Clinica Patologica Final !!\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Otto\Desktop\Clinica Patologica Final !!\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Otto\Desktop\Clinica Patologica Final !!\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.dll
+C:\Users\Otto\Desktop\Clinica Patologica Final !!\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.pdb
+C:\Users\Otto\Desktop\Clinica Patologica Final !!\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Otto\Desktop\Clinica Patologica Final !!\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Otto\Desktop\Clinica Patologica Final !!\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.pdb
+E:\My Documents\Clases\Teoria Base de Datos I\Proyecto\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.dll
+E:\My Documents\Clases\Teoria Base de Datos I\Proyecto\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.pdb
+E:\My Documents\Clases\Teoria Base de Datos I\Proyecto\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.dll
+E:\My Documents\Clases\Teoria Base de Datos I\Proyecto\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.pdb
+E:\My Documents\Clases\Teoria Base de Datos I\Proyecto\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\ResolveAssemblyReference.cache
+E:\My Documents\Clases\Teoria Base de Datos I\Proyecto\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.dll
+E:\My Documents\Clases\Teoria Base de Datos I\Proyecto\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.dll
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.pdb
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Kotaro\Desktop\Temp\kotaro\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Kotaro\Desktop\Temp\kotaro\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Kotaro\Desktop\Temp\kotaro\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.dll
+C:\Users\Kotaro\Desktop\Temp\kotaro\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.pdb
+C:\Users\Kotaro\Desktop\Temp\kotaro\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Kotaro\Desktop\Temp\kotaro\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Kotaro\Desktop\Temp\kotaro\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Kotaro\Desktop\Backup\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Kotaro\Desktop\Backup\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Kotaro\Desktop\Backup\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.dll
+C:\Users\Kotaro\Desktop\Backup\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.pdb
+C:\Users\Kotaro\Desktop\Backup\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Kotaro\Desktop\Backup\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Kotaro\Desktop\Backup\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.pdb
+E:\Downloads\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.dll
+E:\Downloads\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.pdb
+E:\Downloads\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.dll
+E:\Downloads\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.pdb
+E:\Downloads\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\ResolveAssemblyReference.cache
+E:\Downloads\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.dll
+E:\Downloads\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.dll
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.pdb
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Kotaro\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica2\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS\BaseDeDatosClinicaPatologica.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS - Copy\BaseDeDatosClinicaPatologica.Web\bin\odessapatlab.Web.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS - Copy\BaseDeDatosClinicaPatologica.Web\bin\odessapatlab.Web.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS - Copy\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS - Copy\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.pdb
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS - Copy\BaseDeDatosClinicaPatologica.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS - Copy\BaseDeDatosClinicaPatologica.Web\obj\Debug\odessapatlab.Web.dll
+C:\Users\Ben\Desktop\BaseDeDatosClinicaPatologica BACKUP DOS - Copy\BaseDeDatosClinicaPatologica.Web\obj\Debug\odessapatlab.Web.pdb
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.dll
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.pdb
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica AMBIENTE DE PRUEBA\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica AMBIENTE DE PRUEBA\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica AMBIENTE DE PRUEBA\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.dll
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica AMBIENTE DE PRUEBA\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.pdb
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica AMBIENTE DE PRUEBA\BaseDeDatosClinicaPatologica.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica AMBIENTE DE PRUEBA\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Ben\Desktop\BDD Clinica\BaseDeDatosClinicaPatologica AMBIENTE DE PRUEBA\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\bin\BaseDeDatosClinicaPatologica.Web.pdb
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.dll
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\bin\DataTransaction.pdb
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.dll
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\BaseDeDatosClinicaPatologica\BaseDeDatosClinicaPatologica.Web\obj\Debug\BaseDeDatosClinicaPatologica.Web.pdb

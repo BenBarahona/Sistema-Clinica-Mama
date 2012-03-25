@@ -1,0 +1,5 @@
+F:\basePruebas\DataTransaction\bin\Debug\DataTransaction.dll
+F:\basePruebas\DataTransaction\bin\Debug\DataTransaction.pdb
+F:\basePruebas\DataTransaction\obj\Debug\ResolveAssemblyReference.cache
+F:\basePruebas\DataTransaction\obj\Debug\DataTransaction.dll
+F:\basePruebas\DataTransaction\obj\Debug\DataTransaction.pdb

@@ -1,0 +1,612 @@
+﻿USE [SCA]
+GO
+/****** Object:  Table [dbo].[Usuario]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Usuario](
+	[ID_Usuario] [int] IDENTITY(1,1) NOT NULL,
+	[Correo_Electronico] [nchar](50) NOT NULL,
+	[Pass] [nchar](32) NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL,
+ CONSTRAINT [PK_Usuario] PRIMARY KEY CLUSTERED 
+(
+	[Correo_Electronico] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Tiene]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Tiene](
+	[ID_Permiso] [int] NOT NULL,
+	[ID_Rol] [int] NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Telefono_Personal]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Telefono_Personal](
+	[ID_Persona] [int] NOT NULL,
+	[Telefono] [nchar](10) NOT NULL,
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Rol]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Rol](
+	[ID_Rol] [int] IDENTITY(1,1) NOT NULL,
+	[Nombre] [nchar](100) NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Persona_Temp]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Persona_Temp](
+	[ID_Persona_Temp] [int] IDENTITY(1,1) NOT NULL,
+	[ID_Persona] [int] NOT NULL,
+	[Valido] [bit] NOT NULL,
+	[String_DK] [ntext] NOT NULL,
+ CONSTRAINT [PK_Persona_Temp] PRIMARY KEY CLUSTERED 
+(
+	[ID_Persona_Temp] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Persona]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Persona](
+	[ID_Persona] [int] IDENTITY(1,1) NOT NULL,
+	[P_Nombre] [nchar](100) NOT NULL,
+	[S_Nombre] [nchar](100) NULL,
+	[P_Apellido] [nchar](100) NOT NULL,
+	[S_Apellido] [nchar](100) NULL,
+	[No_Identidad] [nchar](20) NOT NULL,
+	[Fecha_Nacimiento] [date] NOT NULL,
+	[Estado_Civil] [nchar](20) NOT NULL,
+	[Genero] [nchar](10) NOT NULL,
+	[Direccion] [nchar](500) NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL,
+ CONSTRAINT [PK_Persona] PRIMARY KEY CLUSTERED 
+(
+	[No_Identidad] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Permiso]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Permiso](
+	[ID_Permiso] [int] IDENTITY(1,1) NOT NULL,
+	[Nombre] [nchar](100) NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Parentesco]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Parentesco](
+	[ID_Parentesco] [int] IDENTITY(1,1) NOT NULL,
+	[Parentesco] [nchar](50) NOT NULL,
+	[Valido] [bit] NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL,
+ CONSTRAINT [PK_Parentesco] PRIMARY KEY CLUSTERED 
+(
+	[ID_Parentesco] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Ocupacion]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Ocupacion](
+	[ID_Ocupacion] [int] IDENTITY(1,1) NOT NULL,
+	[Ocupacion] [nchar](150) NOT NULL,
+	[Valido] [bit] NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL,
+ CONSTRAINT [PK_Ocupacion] PRIMARY KEY CLUSTERED 
+(
+	[ID_Ocupacion] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Motivo]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Motivo](
+	[ID_Motivo] [int] IDENTITY(1,1) NOT NULL,
+	[Motivo] [nchar](300) NOT NULL,
+	[Valido] [bit] NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL,
+ CONSTRAINT [PK_Motivo] PRIMARY KEY CLUSTERED 
+(
+	[ID_Motivo] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Monto]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Monto](
+	[ID_Monto] [int] IDENTITY(1,1) NOT NULL,
+	[Monto] [int] NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL,
+ CONSTRAINT [PK_Monto] PRIMARY KEY CLUSTERED 
+(
+	[ID_Monto] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[LOG]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[LOG](
+	[ID_Actividad] [int] IDENTITY(1,1) NOT NULL,
+	[Responsable] [nchar](50) NOT NULL,
+	[Fecha] [datetime] NOT NULL,
+	[Actividad] [nchar](50) NOT NULL,
+	[Tabla] [nchar](50) NULL,
+	[Valor_Nuevo] [ntext] NULL,
+	[Valor_Anterior] [ntext] NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Limite]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Limite](
+	[ID_Limite] [int] IDENTITY(1,1) NOT NULL,
+	[Cantidad] [int] NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL,
+ CONSTRAINT [PK_Limite] PRIMARY KEY CLUSTERED 
+(
+	[ID_Limite] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Interes]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Interes](
+	[ID_Interes] [int] IDENTITY(1,1) NOT NULL,
+	[Nombre] [nchar](250) NOT NULL,
+	[Taza] [int] NOT NULL,
+	[Valido] [bit] NOT NULL,
+	[Aplica_Obligatoria] [bit] NOT NULL,
+	[Aplica_Voluntaria] [bit] NOT NULL,
+	[Aplica_Obligatoria_Especial] [bit] NOT NULL,
+	[Aplica_Voluntaria_ArribaDe] [bit] NOT NULL,
+	[ArribaDe] [int] NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL,
+ CONSTRAINT [PK_Interes] PRIMARY KEY CLUSTERED 
+(
+	[ID_Interes] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Empleado]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Empleado](
+	[ID_Empleado] [int] IDENTITY(1,1) NOT NULL,
+	[Fecha_Inicio_Labores] [date] NOT NULL,
+	[ID_Persona] [int] NOT NULL,
+	[ID_Usuario] [int] NOT NULL,
+	[Puesto] [nchar](50) NOT NULL,
+	[Valido] [bit] NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL,
+ CONSTRAINT [PK_Empleado] PRIMARY KEY CLUSTERED 
+(
+	[ID_Empleado] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Desempenia]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Desempenia](
+	[ID_Usuario] [int] NOT NULL,
+	[ID_Rol] [int] NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Cuenta]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Cuenta](
+	[Num_Certificado] [int] IDENTITY(1,1) NOT NULL,
+	[Saldo] [float] NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL,
+ CONSTRAINT [PK_Cuenta] PRIMARY KEY CLUSTERED 
+(
+	[Num_Certificado] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Celular]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Celular](
+	[ID_Persona] [int] NOT NULL,
+	[Celular] [nchar](10) NOT NULL,
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Beneficiario_Normal]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Beneficiario_Normal](
+	[ID_Beneficiario] [int] NOT NULL,
+	[Porcentaje_Seguro] [int] NOT NULL,
+	[Procentaje_Aportaciones] [int] NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL,
+ CONSTRAINT [PK_Beneficiario_Normal] PRIMARY KEY CLUSTERED 
+(
+	[ID_Beneficiario] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Beneficiario_Contingencia]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Beneficiario_Contingencia](
+	[ID_Beneficiario] [int] NOT NULL,
+	[Activo] [bit] NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL,
+ CONSTRAINT [PK_Beneficiario_Contingencia] PRIMARY KEY CLUSTERED 
+(
+	[ID_Beneficiario] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Beneficiario]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Beneficiario](
+	[ID_Beneficiario] [int] IDENTITY(1,1) NOT NULL,
+	[ID_Persona] [int] NOT NULL,
+	[ID_Afiliado] [int] NOT NULL,
+	[ID_Parentesco] [int] NOT NULL,
+	[Valido] [bit] NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL,
+ CONSTRAINT [PK_Beneficiario] PRIMARY KEY CLUSTERED 
+(
+	[ID_Beneficiario] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Aportacion_Voluntaria]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Aportacion_Voluntaria](
+	[ID_Aportacion] [int] NOT NULL,
+	[Aceptaba] [bit] NOT NULL,
+	[ID_Limite] [int] NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL,
+ CONSTRAINT [PK_Aportacion_Voluntaria] PRIMARY KEY CLUSTERED 
+(
+	[ID_Aportacion] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Aportacion_Obligatoria_Especial]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Aportacion_Obligatoria_Especial](
+	[ID_Aportacion] [int] NOT NULL,
+	[Fecha_Plazo] [date] NOT NULL,
+	[Cancelado] [bit] NOT NULL,
+	[ID_Motivo] [int] NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL,
+ CONSTRAINT [PK_Aportacion_Obligatoria_Especial] PRIMARY KEY CLUSTERED 
+(
+	[ID_Aportacion] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Aportacion_Obligatoria]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Aportacion_Obligatoria](
+	[ID_Aportacion] [int] NOT NULL,
+	[Fecha_Plazo] [date] NOT NULL,
+	[ID_Monto] [int] NOT NULL,
+	[Cancelado] [bit] NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL,
+ CONSTRAINT [PK_Aportacion_Obligatoria] PRIMARY KEY CLUSTERED 
+(
+	[ID_Aportacion] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Aportacion]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Aportacion](
+	[ID_Aportacion] [int] IDENTITY(1,1) NOT NULL,
+	[ID_Afiliado] [int] NOT NULL,
+	[valido] [bit] NOT NULL,
+	[Monto] [int] NOT NULL,
+	[Descripcion] [nchar](500) NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL,
+	[Fecha_Realizacion] [datetime] NULL,
+ CONSTRAINT [PK_Aportacion] PRIMARY KEY CLUSTERED 
+(
+	[ID_Aportacion] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Aplica]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Aplica](
+	[ID_Interes] [int] NOT NULL,
+	[ID_Aportacion] [int] NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL
+) ON [PRIMARY]
+GO
+/****** Object:  Table [dbo].[Afiliado]    Script Date: 05/12/2011 09:26:51 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Afiliado](
+	[ID_Afiliado] [int] IDENTITY(1,1) NOT NULL,
+	[ID_Persona] [int] NOT NULL,
+	[Fecha_Ingreso] [date] NOT NULL,
+	[ID_Usuario] [int] NOT NULL,
+	[Num_Certificado] [int] NOT NULL,
+	[ID_Ocupacion] [int] NOT NULL,
+	[Empresa_Nombre] [nchar](50) NOT NULL,
+	[Empresa_Telefono] [nchar](10) NOT NULL,
+	[Empresa_Direccion] [nchar](500) NOT NULL,
+	[Empresa_Tiempo_Laboracion] [date] NOT NULL,
+	[Empresa_Dpto] [nchar](50) NOT NULL,
+	[Lugar_Nacimiento] [nchar](100) NOT NULL,
+	[Estado] [nchar](10) NOT NULL,
+	[Fecha_Creacion] [datetime] NOT NULL,
+	[Fecha_Modificacion] [datetime] NOT NULL,
+	[Usuario_Responsable] [nchar](50) NOT NULL,
+	[Creador] [nchar](50) NOT NULL,
+ CONSTRAINT [PK_Afiliado] PRIMARY KEY CLUSTERED 
+(
+	[ID_Afiliado] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+INSERT INTO Permiso VALUES ( 'Registrar Persona' , GETDATE() , GETDATE() , 
+	'SCA Default' , 'SCA Default' )
+INSERT INTO Permiso VALUES ( 'Control de Pago' , GETDATE() , GETDATE() , 
+	'SCA Default' , 'SCA Default' )
+INSERT INTO Permiso VALUES ( 'Capitalizacion' , GETDATE() , GETDATE() , 
+	'SCA Default' , 'SCA Default' )
+INSERT INTO Permiso VALUES ( 'Consultas' , GETDATE() , GETDATE() , 
+	'SCA Default' , 'SCA Default' )
+INSERT INTO Permiso VALUES ( 'Parametrizacion' , GETDATE() , GETDATE() , 
+	'SCA Default' , 'SCA Default' )
+INSERT INTO Permiso VALUES ( 'Seguridad' , GETDATE() , GETDATE() , 
+	'SCA Default' , 'SCA Default' )
+	
+INSERT INTO Rol VALUES ('Afiliado' , GETDATE() , GETDATE() , 
+	'SCA Default' , 'SCA Default' )
+INSERT INTO Rol VALUES ('Empleado' , GETDATE() , GETDATE() , 
+	'SCA Default' , 'SCA Default' )
+INSERT INTO Rol VALUES ('Administrador' , GETDATE() , GETDATE() , 
+	'SCA Default' , 'SCA Default' )
+	
+INSERT INTO Tiene VALUES ( (SELECT ID_Permiso FROM Permiso 
+                            WHERE Nombre = 'Registrar Persona') ,
+                           (SELECT ID_Rol FROM Rol
+                            WHERE Nombre = 'Administrador') ,
+                            GETDATE() , GETDATE() , 
+	'SCA Default' , 'SCA Default' )
+INSERT INTO Tiene VALUES ( (SELECT ID_Permiso FROM Permiso 
+                            WHERE Nombre = 'Control de Pago') ,
+                           (SELECT ID_Rol FROM Rol
+                            WHERE Nombre = 'Administrador') ,
+                            GETDATE() , GETDATE() , 
+	'SCA Default' , 'SCA Default' )
+INSERT INTO Tiene VALUES ( (SELECT ID_Permiso FROM Permiso 
+                            WHERE Nombre = 'Capitalizacion') ,
+                           (SELECT ID_Rol FROM Rol
+                            WHERE Nombre = 'Administrador') ,
+                            GETDATE() , GETDATE() , 
+	'SCA Default' , 'SCA Default' )
+INSERT INTO Tiene VALUES ( (SELECT ID_Permiso FROM Permiso 
+                            WHERE Nombre = 'Consultas') ,
+                           (SELECT ID_Rol FROM Rol
+                            WHERE Nombre = 'Administrador') ,
+                            GETDATE() , GETDATE() , 
+	'SCA Default' , 'SCA Default' )
+INSERT INTO Tiene VALUES ( (SELECT ID_Permiso FROM Permiso 
+                            WHERE Nombre =  'Parametrizacion') ,
+                           (SELECT ID_Rol FROM Rol
+                            WHERE Nombre = 'Administrador') ,
+                            GETDATE() , GETDATE() , 
+	'SCA Default' , 'SCA Default' )
+	
+	
+
+INSERT INTO Tiene VALUES ( (SELECT ID_Permiso FROM Permiso 
+                            WHERE Nombre = 'Control de Pago') ,
+                           (SELECT ID_Rol FROM Rol
+                            WHERE Nombre = 'Empleado') ,
+                            GETDATE() , GETDATE() , 
+	'SCA Default' , 'SCA Default' )
+INSERT INTO Tiene VALUES ( (SELECT ID_Permiso FROM Permiso 
+                            WHERE Nombre = 'Consultas') ,
+                           (SELECT ID_Rol FROM Rol
+                            WHERE Nombre = 'Empleado') ,
+                            GETDATE() , GETDATE() , 
+	'SCA Default' , 'SCA Default' )
+	
+	
+INSERT INTO Tiene VALUES ( (SELECT ID_Permiso FROM Permiso 
+                            WHERE Nombre = 'Consultas') ,
+                           (SELECT ID_Rol FROM Rol
+                            WHERE Nombre = 'Afiliado') ,
+                            GETDATE() , GETDATE() , 
+	'SCA Default' , 'SCA Default' )
+
+INSERT INTO Tiene VALUES ( (SELECT ID_Permiso FROM Permiso 
+                            WHERE Nombre = 'Seguridad') ,
+                           (SELECT ID_Rol FROM Rol
+                            WHERE Nombre = 'Administrador') ,
+                            GETDATE() , GETDATE() , 
+	'SCA Default' , 'SCA Default' )
+
+INSERT INTO Monto VALUES(0,GETDATE(),GETDATE(),'SCA Default','SCA Default') 
+INSERT INTO Limite VALUES(0,GETDATE(),GETDATE(),'SCA Default','SCA Default') 
+
+INSERT INTO LOG VALUES( 'SCA' , GETDATE() , 'CAPITALIZACION' , NULL , NULL , NULL )
+
+INSERT INTO Interes VALUES( 'Interes de Mora', 50 , 'TRUE' , 'TRUE' , 'FALSE' , 'TRUE' ,
+ 'FALSE' , 0 , GETDATE() , GETDATE() , 'SCA Default' , 'SCA Default' )
+
+INSERT INTO Persona 
+VALUES ('Administrador','','Sca','','0000-0000-00000','2011-12-31','Soltero','Masculino','COSECOL' ,
+ GETDATE() , GETDATE() , 'SCA Default' , 'SCA Default')  
+ 
+ INSERT INTO Telefono_Personal VALUES((SELECT Persona.ID_Persona 
+ FROM Persona WHERE Persona.No_Identidad = '0000-0000-00000'),'00000000')  
+ 
+ INSERT INTO Celular VALUES((SELECT Persona.ID_Persona 
+ FROM Persona WHERE Persona.No_Identidad = '0000-0000-00000'),'00000000' ) 
+ 
+  INSERT INTO Usuario VALUES('sca@sca.com' , 'd6288b8ae441ed58142bb70133276b72', GETDATE() , GETDATE() , 
+  'SCA Default' , 'SCA Default')  
+  
+  INSERT INTO Desempenia VALUES((SELECT Usuario.ID_Usuario FROM Usuario 
+  WHERE Usuario.Correo_Electronico = 'sca@sca.com'),
+  (SELECT Rol.ID_Rol FROM Rol WHERE Rol.Nombre = 'Administrador'), GETDATE() , GETDATE() ,
+   'SCA Default' , 'SCA Default')  
+   
+   
+   INSERT INTO Empleado VALUES ( (CONVERT(date,GETDATE())) ,
+   (SELECT Persona.ID_Persona FROM Persona WHERE Persona.No_Identidad = '0000-0000-00000'),
+  (SELECT Usuario.ID_Usuario FROM Usuario WHERE
+  Usuario.Correo_Electronico = 'sca@sca.com'),'Aministrador SCA', 'TRUE' ,GETDATE() , GETDATE() , 
+  'SCA Default' , 'SCA Default')  
+  
+  
+
+ 

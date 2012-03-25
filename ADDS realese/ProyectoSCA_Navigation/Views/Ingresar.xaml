@@ -1,0 +1,35 @@
+﻿<navigation:Page x:Class="ProyectoSCA_Navigation.Views.Ingresar" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="800
+                 " d:DesignHeight="480"
+    Title="Ingresar"
+    Style="{StaticResource PageStyle}">
+
+    <Grid x:Name="LayoutRoot">
+        <ScrollViewer x:Name="PageScrollViewer" Style="{StaticResource PageScrollViewerStyle}">
+            <Grid Name="grid2" Width="800">
+                <Grid.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#FFA9FF89" Offset="1" />
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <TextBlock Height="36" HorizontalAlignment="Left" Margin="214,14,0,0" Name="textBlock1" Text="Escoja un módulo de Ingreso:" VerticalAlignment="Top" FontSize="20" Width="347" FontWeight="Bold" />
+                <Border HorizontalAlignment="Left" Margin="241,86,0,0" Name="LinksBorder" Style="{StaticResource LinksBorderStyle}" Width="287" Background="#FF38CB0A" Height="42" VerticalAlignment="Top">
+                    <StackPanel Name="LinksStackPanel" Style="{StaticResource LinksStackPanelStyle}">
+                        <HyperlinkButton Content="Ingresar Empleado" Name="empleado" NavigateUri="/Ingresar/IngresarEmpleado" Style="{StaticResource LinkStyle}" TargetName="ContentFrame" Foreground="Black" FontWeight="Bold" />
+                        <Rectangle Name="Divider1" Style="{StaticResource DividerStyle}" />
+                        <HyperlinkButton Content="Ingresar Afiliado" Name="afiliado" NavigateUri="/Ingresar/IngresarAfiliado" Style="{StaticResource LinkStyle}" TargetName="ContentFrame" Foreground="Black" FontWeight="Bold" />
+
+                    </StackPanel>
+                </Border>
+            </Grid>
+
+        </ScrollViewer>
+    </Grid>
+</navigation:Page>

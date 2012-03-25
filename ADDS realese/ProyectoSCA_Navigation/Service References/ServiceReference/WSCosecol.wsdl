@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="AgregarPeticion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="codigo_peticion" type="tns:peticion" />
+            <s:element minOccurs="0" maxOccurs="1" name="String_DK" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:simpleType name="peticion">
+        <s:restriction base="s:string">
+          <s:enumeration value="ingresar_afiliado" />
+          <s:enumeration value="ingresar_empleado" />
+          <s:enumeration value="solicitudModificarPerfil" />
+          <s:enumeration value="mostrar_perfil_afiliado" />
+          <s:enumeration value="mostrar_perfil_empleado" />
+          <s:enumeration value="reingresar_afiliado" />
+          <s:enumeration value="ingresar_aportacion" />
+          <s:enumeration value="capitalizar_extra" />
+          <s:enumeration value="login" />
+          <s:enumeration value="ingresar_ocupacion" />
+          <s:enumeration value="ingresar_AOS" />
+          <s:enumeration value="ingresar_monto_AO" />
+          <s:enumeration value="limite_AV" />
+          <s:enumeration value="ingresar_motivo" />
+          <s:enumeration value="ingresar_parentesco" />
+          <s:enumeration value="ingresar_interes" />
+          <s:enumeration value="getOcupacion" />
+          <s:enumeration value="getParentesco" />
+          <s:enumeration value="getAfiliado" />
+          <s:enumeration value="getEmpleado" />
+          <s:enumeration value="getIntereses" />
+          <s:enumeration value="getMotivos" />
+          <s:enumeration value="getMontoActual" />
+          <s:enumeration value="getLimiteActual" />
+          <s:enumeration value="eliminarOcupacion" />
+          <s:enumeration value="eliminarMotivo" />
+          <s:enumeration value="eliminarParentesco" />
+          <s:enumeration value="eliminarInteres" />
+          <s:enumeration value="getAfiliadosPagar" />
+          <s:enumeration value="getControlPagos" />
+          <s:enumeration value="modificarOcupacion" />
+          <s:enumeration value="modificarMotivo" />
+          <s:enumeration value="modificarParentesco" />
+          <s:enumeration value="modificarInteres" />
+          <s:enumeration value="getPermisosSeguridad" />
+          <s:enumeration value="modificarPermisosSeguridad" />
+          <s:enumeration value="getPermisosPersona" />
+          <s:enumeration value="getProximoNumeroCertificado" />
+          <s:enumeration value="insertarAportacionOE" />
+          <s:enumeration value="pagarAportaciones" />
+          <s:enumeration value="getAportacion_OE" />
+          <s:enumeration value="getAportacionesACapitalizar" />
+          <s:enumeration value="getSaldosACapitalizar" />
+          <s:enumeration value="capitalizarExtraordinaria" />
+          <s:enumeration value="buscarAfiliados" />
+          <s:enumeration value="consultarEstadoDeCuenta" />
+          <s:enumeration value="getPersonaTemporal" />
+          <s:enumeration value="reporteAportaciones" />
+          <s:enumeration value="reporteSaldos" />
+          <s:enumeration value="modificarPerfil" />
+          <s:enumeration value="getPerfilNuevo" />
+          <s:enumeration value="rechazarPerfil" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="AgregarPeticionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AgregarPeticionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AgregarPeticionSoapIn">
+    <wsdl:part name="parameters" element="tns:AgregarPeticion" />
+  </wsdl:message>
+  <wsdl:message name="AgregarPeticionSoapOut">
+    <wsdl:part name="parameters" element="tns:AgregarPeticionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WSCosecolSoap">
+    <wsdl:operation name="AgregarPeticion">
+      <wsdl:input message="tns:AgregarPeticionSoapIn" />
+      <wsdl:output message="tns:AgregarPeticionSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSCosecolSoap" type="tns:WSCosecolSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AgregarPeticion">
+      <soap:operation soapAction="http://tempuri.org/AgregarPeticion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WSCosecolSoap12" type="tns:WSCosecolSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AgregarPeticion">
+      <soap12:operation soapAction="http://tempuri.org/AgregarPeticion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSCosecol">
+    <wsdl:port name="WSCosecolSoap" binding="tns:WSCosecolSoap">
+      <soap:address location="http://localhost:1809/WSCosecol.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WSCosecolSoap12" binding="tns:WSCosecolSoap12">
+      <soap12:address location="http://localhost:1809/WSCosecol.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

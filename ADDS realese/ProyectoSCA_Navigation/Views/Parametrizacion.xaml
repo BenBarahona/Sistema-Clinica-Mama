@@ -1,0 +1,237 @@
+﻿<navigation:Page x:Class="ProyectoSCA_Navigation.Views.Parametrizacion" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           Title="Parametrizacion"
+    d:DesignWidth="800" d:DesignHeight="488"
+    Style="{StaticResource PageStyle}" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+
+    <Grid x:Name="LayoutRoot">
+        <ScrollViewer x:Name="PageScrollViewer" Style="{StaticResource PageScrollViewerStyle}">
+            <Grid Name="grid2" Width="800">
+                <Grid.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#FFA9FF89" Offset="1" />
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <sdk:Label Content="Campos Parametrizables" FontFamily="Arial" FontSize="22" FontWeight="Bold" Height="39" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="10,24,4,0" Name="label3" VerticalAlignment="Top" Width="749" />
+                <sdk:TabControl Height="418" HorizontalAlignment="Left" Margin="32,71,0,0" Name="tabsParametrizable" VerticalAlignment="Top" Width="708" FontWeight="Normal" SelectionChanged="tabControl1_SelectionChanged">
+                    <sdk:TabItem Header="Profesión" Name="profesion_tab" FontWeight="Bold" FontSize="11" Padding="12,4">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="46*" />
+                                <RowDefinition Height="331*" />
+                            </Grid.RowDefinitions>
+                            <sdk:DataGrid AutoGenerateColumns="True" Height="281" HorizontalAlignment="Left" Margin="80,0,0,0" Name="profesion_grid" VerticalAlignment="Top" Width="215" Grid.Row="1" IsReadOnly="True" SelectionChanged="profesion_grid_SelectionChanged">
+                            </sdk:DataGrid>
+                            <sdk:Label Height="28" HorizontalAlignment="Left" Margin="122,25,0,0" Name="label4" VerticalAlignment="Top" Width="120" Content="Campos en Existencia" Grid.RowSpan="2" />
+                            <sdk:TabControl Height="193" HorizontalAlignment="Left" Margin="343,35,0,0" Name="tabProfesion" VerticalAlignment="Top" Width="300" Grid.Row="1">
+                                <sdk:TabItem Header="Agregar/Deshabilitar" Name="tabItem1">
+                                    <Grid>
+                                        <Button Content="Agregar/Habilitar" Height="23" HorizontalAlignment="Left" Margin="30,96,0,0" Name="profesionAgregar_btn" TabIndex="2" VerticalAlignment="Top" Width="118" Click="button1_Click" />
+                                        <Button Content="Deshabilitar" Height="23" HorizontalAlignment="Left" Margin="168,96,0,0" Name="profesionEliminar_btn" TabIndex="3" VerticalAlignment="Top" Width="92" Click="profesionEliminar_btn_Click" />
+                                        <TextBox Height="23" HorizontalAlignment="Left" Margin="75,52,0,0" Name="profesion_txt" TabIndex="1" VerticalAlignment="Top" Width="120" />
+                                        <Image Height="19" HorizontalAlignment="Left" Margin="200,54,0,0" Name="profesion_valid" Source="/" Stretch="Fill" VerticalAlignment="Top" Width="19" />
+                                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="54,23,0,0" Name="textBlock8" Text="Ingrese el nombre de la Profesion" VerticalAlignment="Top" />
+                                    </Grid>
+                                </sdk:TabItem>
+                                <sdk:TabItem Header="Modificar" Name="tabItem2">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="84*" />
+                                            <ColumnDefinition Width="204*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Button Content="Modificar" Height="23" HorizontalAlignment="Left" Margin="32,125,0,0" Name="profesionModificar_btn" TabIndex="2" VerticalAlignment="Top" Width="75" Click="profesionModificar_btn_Click" Grid.Column="1" />
+                                        <TextBox Height="23" HorizontalAlignment="Left" Margin="20,82,0,0" Name="profesionNuevo_txt" TabIndex="1" VerticalAlignment="Top" Width="145" TextChanged="profesionNuevo_txt_TextChanged" Grid.Column="1" />
+                                        <Image Height="19" HorizontalAlignment="Left" Margin="173,82,0,0" Name="profesionNuevo_valid" Source="/" Stretch="Fill" VerticalAlignment="Top" Width="19" Grid.Column="1" />
+                                        <TextBox Height="23" HorizontalAlignment="Left" Margin="20,45,0,0" Name="profesionModificar_txt" TabIndex="1" VerticalAlignment="Top" Width="145" IsReadOnly="True" FontWeight="Bold" Grid.Column="1" />
+                                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="25,49,0,0" Name="textBlock5" Text="Valor Viejo:" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+                                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="25,86,0,0" Name="textBlock6" Text="Valor Nuevo:" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+                                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="34,12,0,0" Name="textBlock7" Text="Seleccione un valor de la lista a modificar" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+                                    </Grid>
+                                </sdk:TabItem>
+                            </sdk:TabControl>
+                        </Grid>
+                    </sdk:TabItem>
+                    <sdk:TabItem Header="Aportaciónes" Name="aportacion_tab" FontWeight="Bold" FontSize="11" Padding="12,4">
+                        <Grid>
+                            <sdk:TabControl Height="360" HorizontalAlignment="Left" Margin="28,11,0,0" Name="tabAportacion" VerticalAlignment="Top" Width="637" SelectionChanged="tabAportacion_SelectionChanged">
+                                <sdk:TabItem Header="Aportacion Obligatoria Especial" Name="aportacionObligatoria_tab" FontWeight="Normal">
+                                    <Grid>
+                                        <sdk:DataGrid AutoGenerateColumns="True" Height="281" HorizontalAlignment="Left" Margin="10,22,0,0" Name="aportacionObligatoria_grid" VerticalAlignment="Top" Width="215" IsReadOnly="True" IsEnabled="True" />
+                                        <sdk:Label Content="Campos en Existencia" Height="28" HorizontalAlignment="Left" Margin="52,7,0,0" Name="label9" VerticalAlignment="Top" Width="127" />
+                                        <Border BorderBrush="Silver" BorderThickness="1" Height="281" HorizontalAlignment="Left" Margin="242,28,0,0" Name="border3" VerticalAlignment="Top" Width="369">
+                                            <Grid Height="264" Name="grid5" Width="347">
+                                                <Button Content="Agregar" Height="23" HorizontalAlignment="Left" Margin="140,224,0,0" Name="aportacionAgregar_btn" VerticalAlignment="Top" Width="75" TabIndex="6" Click="aportacionAgregar_btn_Click" />
+                                                <ComboBox Height="23" HorizontalAlignment="Left" Margin="52,48,0,0" Name="aportacionAno_txt" VerticalAlignment="Top" Width="95" TabIndex="1" />
+                                                <sdk:Label Content="Año:" FontSize="13" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="52,28,0,0" Name="label6" VerticalAlignment="Top" Width="120" />
+                                                <ComboBox FontWeight="Normal" Height="23" HorizontalAlignment="Left" Margin="190,48,0,0" Name="aportacionMes_txt" VerticalAlignment="Top" Width="120" TabIndex="2"></ComboBox>
+                                                <sdk:Label Content="Mes:" FontSize="13" FontWeight="Bold" Height="28" HorizontalAlignment="Left" Margin="190,28,0,0" Name="label7" VerticalAlignment="Top" Width="120" />
+                                                <ComboBox Height="23" HorizontalAlignment="Left" Margin="112,120,0,0" Name="aportacionMotivo_txt" VerticalAlignment="Top" Width="120" TabIndex="4" />
+                                                <sdk:Label Content="Agregar o Eliminar Campo" Height="28" HorizontalAlignment="Left" Margin="107,6,0,0" Name="label12" VerticalAlignment="Top" Width="156" />
+                                                <TextBox Height="50" HorizontalAlignment="Left" Margin="112,155,0,0" Name="aportacionDescripcion_txt" VerticalAlignment="Top" Width="222" TabIndex="5" />
+                                                <sdk:Label Content="Descripción:" Height="28" HorizontalAlignment="Left" Margin="30,155,0,0" Name="label13" VerticalAlignment="Top" Width="78" />
+                                                <sdk:Label Content="Motivo:" Height="28" HorizontalAlignment="Left" Margin="30,124,0,0" Name="label8" VerticalAlignment="Top" Width="78" />
+                                                <sdk:Label Content="Monto:" Height="28" HorizontalAlignment="Left" Margin="30,90,0,0" Name="label25" VerticalAlignment="Top" Width="78" />
+                                                <TextBox Height="23" HorizontalAlignment="Left" Margin="112,86,0,0" Name="aportacionMonto_txt" VerticalAlignment="Top" Width="120" TabIndex="3" TextChanged="aportacionMonto_txt_TextChanged" />
+                                                <Image Height="19" HorizontalAlignment="Left" Margin="238,86,0,0" Name="aportacionMonto_valid" Source="/" Stretch="Fill" VerticalAlignment="Top" Width="19" />
+                                            </Grid>
+                                        </Border>
+                                    </Grid>
+                                </sdk:TabItem>
+                                <sdk:TabItem Header="Monto de Aportación Obligatoria" Name="monto_tab">
+                                    <Grid>
+                                        <Border BorderBrush="Silver" BorderThickness="1" Height="227" HorizontalAlignment="Left" Margin="114,0,0,54" Name="border6" VerticalAlignment="Bottom" Width="403">
+                                            <Grid Height="202" Name="grid8" Width="382" DataContext="">
+                                                <Button Content="Ajustar" Height="23" HorizontalAlignment="Left" Margin="151,153,0,0" Name="ajustarMonto_btn" VerticalAlignment="Top" Width="75" Click="ajustarMonto_btn_Click" TabIndex="2" />
+                                                <TextBox Height="23" HorizontalAlignment="Left" Margin="130,115,0,0" Name="nuevoMonto_txt" VerticalAlignment="Top" Width="120" Text="{Binding Mode=TwoWay, ValidatesOnExceptions=True, Path=numero, StringFormat=\{0:F0\}}" TabIndex="1" TextChanged="nuevoMonto_txt_TextChanged" />
+                                                <TextBox Height="23" HorizontalAlignment="Left" Margin="130,26,0,0" Name="montoActual_txt" VerticalAlignment="Top" Width="120" IsEnabled="True" IsReadOnly="True" FontWeight="Bold" DataContext="{Binding}" TextAlignment="Center" />
+                                                <TextBlock Height="23" HorizontalAlignment="Left" Margin="153,6,0,0" Name="textBlock1" Text="Monto Actual:" VerticalAlignment="Top" Width="82" />
+                                                <TextBlock HorizontalAlignment="Left" Margin="153,94,0,85" Name="textBlock2" Text="Nuevo Monto" Width="82" />
+                                                <Image Height="19" HorizontalAlignment="Left" Margin="256,115,0,0" Name="monto_valid" Source="/" Stretch="Fill" VerticalAlignment="Top" Width="19" />
+                                            </Grid>
+                                        </Border>
+                                    </Grid>
+                                </sdk:TabItem>
+                                <sdk:TabItem Header="Limite de Aportación Voluntaria" Name="limite_tab">
+                                    <Grid>
+                                        <Border BorderBrush="Silver" BorderThickness="1" Height="227" HorizontalAlignment="Left" Margin="114,0,0,54" Name="border7" VerticalAlignment="Bottom" Width="403">
+                                            <Grid Height="202" Name="grid9" Width="382">
+                                                <Button Content="Ajustar" Height="23" HorizontalAlignment="Left" Margin="151,153,0,0" Name="ajustarLimite_btn" VerticalAlignment="Top" Width="75" Click="ajustarLimite_btn_Click" TabIndex="2" />
+                                                <TextBox Height="23" HorizontalAlignment="Left" Margin="130,115,0,0" Name="nuevoLimite_txt" VerticalAlignment="Top" Width="120" TabIndex="1" TextChanged="nuevoLimite_txt_TextChanged" />
+                                                <TextBox Height="23" HorizontalAlignment="Left" IsEnabled="True" Margin="130,26,0,0" Name="limiteActual_txt" VerticalAlignment="Top" Width="120" FontWeight="Bold" IsReadOnly="True" TextAlignment="Center" />
+                                                <TextBlock Height="23" HorizontalAlignment="Left" Margin="153,6,0,0" Name="textBlock3" Text="Limite Actual:" VerticalAlignment="Top" Width="82" />
+                                                <TextBlock Height="23" HorizontalAlignment="Left" Margin="153,94,0,0" Name="textBlock4" Text="Nuevo Limite:" VerticalAlignment="Top" Width="82" />
+                                                <Image Height="19" HorizontalAlignment="Left" Margin="256,115,0,0" Name="limite_valid" Source="/" Stretch="Fill" VerticalAlignment="Top" Width="19" />
+                                            </Grid>
+                                        </Border>
+                                    </Grid>
+                                </sdk:TabItem>
+                            </sdk:TabControl>
+                        </Grid>
+                    </sdk:TabItem>
+                    <sdk:TabItem Header="Motivos de Aportacion" Name="motivo_tab" FontWeight="Bold" FontSize="11" Padding="12,4">
+                        <Grid>
+
+                            <sdk:DataGrid AutoGenerateColumns="True" Height="281" HorizontalAlignment="Left" Margin="80,0,0,50" Name="motivo_grid" VerticalAlignment="Bottom" Width="215" IsReadOnly="True" SelectionChanged="motivo_grid_SelectionChanged" />
+                            <sdk:Label Content="Campos en Existencia" Height="28" HorizontalAlignment="Left" Margin="122,25,0,0" Name="label10" VerticalAlignment="Top" Width="120" />
+                            <sdk:TabControl Height="193" HorizontalAlignment="Left" Margin="343,82,0,0" Name="tabMotivo" VerticalAlignment="Top" Width="300">
+                                <sdk:TabItem Header="Agregar/Deshabilitar" Name="tabItem3">
+                                    <Grid>
+                                        <Button Content="Agregar/Habilitar" Height="23" HorizontalAlignment="Left" Margin="30,96,0,0" Name="motivoAgregar_btn" TabIndex="2" VerticalAlignment="Top" Width="118" Click="motivoAgregar_btn_Click" />
+                                        <Button Content="Deshabilitar" Height="23" HorizontalAlignment="Left" Margin="168,96,0,0" Name="motivoEliminar_btn" TabIndex="3" VerticalAlignment="Top" Width="92" Click="motivoEliminar_btn_Click" />
+                                        <TextBox Height="23" HorizontalAlignment="Left" Margin="75,52,0,0" Name="motivo_txt" TabIndex="1" VerticalAlignment="Top" Width="120" TextChanged="motivo_txt_TextChanged" />
+                                        <Image Height="19" HorizontalAlignment="Left" Margin="200,54,0,0" Name="motivo_valid" Source="/" Stretch="Fill" VerticalAlignment="Top" Width="19" />
+                                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="66,23,0,0" Name="textBlock9" Text="Ingrese el nombre del Motivo" VerticalAlignment="Top" />
+                                    </Grid>
+                                </sdk:TabItem>
+                                <sdk:TabItem Header="Modificar" Name="tabItem4">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="84*" />
+                                            <ColumnDefinition Width="204*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Button Content="Modificar" Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="32,125,0,0" Name="modificarMotivo_btn" TabIndex="2" VerticalAlignment="Top" Width="75" Click="modificarMotivo_btn_Click" />
+                                        <TextBox Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="20,82,0,0" Name="motivoNuevo_txt" TabIndex="1" VerticalAlignment="Top" Width="145" TextChanged="motivoNuevo_txt_TextChanged" />
+                                        <Image Grid.Column="1" Height="19" HorizontalAlignment="Left" Margin="173,82,0,0" Name="motivoNuevo_valid" Source="/" Stretch="Fill" VerticalAlignment="Top" Width="19" />
+                                        <TextBox FontWeight="Bold" Grid.Column="1" Height="23" HorizontalAlignment="Left" IsReadOnly="True" Margin="20,45,0,0" Name="motivoViejo_txt" TabIndex="1" VerticalAlignment="Top" Width="145" />
+                                        <TextBlock Grid.ColumnSpan="2" Height="23" HorizontalAlignment="Left" Margin="25,49,0,0" Name="textBlock10" Text="Valor Viejo:" VerticalAlignment="Top" />
+                                        <TextBlock Grid.ColumnSpan="2" Height="23" HorizontalAlignment="Left" Margin="25,86,0,0" Name="textBlock11" Text="Valor Nuevo:" VerticalAlignment="Top" />
+                                        <TextBlock Grid.ColumnSpan="2" Height="23" HorizontalAlignment="Left" Margin="34,12,0,0" Name="textBlock12" Text="Seleccione un valor de la lista a modificar" VerticalAlignment="Top" />
+                                    </Grid>
+                                </sdk:TabItem>
+                            </sdk:TabControl>
+                        </Grid>
+                    </sdk:TabItem>
+                    <sdk:TabItem Header="Parentesco" Name="parentesco_tab" FontWeight="Bold" Padding="12,4">
+                        <Grid>
+                            <sdk:DataGrid AutoGenerateColumns="True" Height="281" HorizontalAlignment="Left" Margin="80,46,0,0" Name="parentesco_grid" VerticalAlignment="Top" Width="215" IsReadOnly="True" SelectionChanged="parentesco_grid_SelectionChanged" />
+                            <sdk:Label Content="Campos en Existencia" Height="28" HorizontalAlignment="Left" Margin="122,25,0,0" Name="label14" VerticalAlignment="Top" Width="120" />
+                            <sdk:TabControl Height="193" HorizontalAlignment="Left" Margin="343,82,0,0" Name="tabParentesco" VerticalAlignment="Top" Width="300">
+                                <sdk:TabItem Header="Agregar/Deshabilitar" Name="tabItem5">
+                                    <Grid>
+                                        <Button Content="Agregar/Habilitar" Height="23" HorizontalAlignment="Left" Margin="30,96,0,0" Name="parentescoAgregar_btn" TabIndex="2" VerticalAlignment="Top" Width="118" Click="parentescoAgregar_btn_Click" />
+                                        <Button Content="Deshabilitar" Height="23" HorizontalAlignment="Left" Margin="168,96,0,0" Name="parentescoEliminar_btn" TabIndex="3" VerticalAlignment="Top" Width="92" Click="parentescoEliminar_btn_Click" />
+                                        <TextBox Height="23" HorizontalAlignment="Left" Margin="75,52,0,0" Name="parentesco_txt" TabIndex="1" VerticalAlignment="Top" Width="120" TextChanged="parentesco_txt_TextChanged" />
+                                        <Image Height="19" HorizontalAlignment="Left" Margin="200,54,0,0" Name="parentesco_valid" Source="/" Stretch="Fill" VerticalAlignment="Top" Width="19" />
+                                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="54,23,0,0" Name="textBlock13" Text="Ingrese el nombre del Parentesco" VerticalAlignment="Top" />
+                                    </Grid>
+                                </sdk:TabItem>
+                                <sdk:TabItem Header="Modificar" Name="tabItem6">
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="84*" />
+                                            <ColumnDefinition Width="204*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Button Content="Modificar" Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="32,125,0,0" Name="parentescoModificar_btn" TabIndex="2" VerticalAlignment="Top" Width="75" Click="parentescoModificar_btn_Click" />
+                                        <TextBox Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="20,82,0,0" Name="parentescoNuevo_txt" TabIndex="1" VerticalAlignment="Top" Width="145" TextChanged="parentescoNuevo_txt_TextChanged" />
+                                        <Image Grid.Column="1" Height="19" HorizontalAlignment="Left" Margin="173,82,0,0" Name="parentescoNuevo_valid" Source="/" Stretch="Fill" VerticalAlignment="Top" Width="19" />
+                                        <TextBox FontWeight="Bold" Grid.Column="1" Height="23" HorizontalAlignment="Left" IsReadOnly="True" Margin="20,45,0,0" Name="parentescoViejo_txt" TabIndex="1" VerticalAlignment="Top" Width="145" />
+                                        <TextBlock Grid.ColumnSpan="2" Height="23" HorizontalAlignment="Left" Margin="25,49,0,0" Name="textBlock14" Text="Valor Viejo:" VerticalAlignment="Top" />
+                                        <TextBlock Grid.ColumnSpan="2" Height="23" HorizontalAlignment="Left" Margin="25,86,0,0" Name="textBlock15" Text="Valor Nuevo:" VerticalAlignment="Top" />
+                                        <TextBlock Grid.ColumnSpan="2" Height="23" HorizontalAlignment="Left" Margin="34,12,0,0" Name="textBlock16" Text="Seleccione un valor de la lista a modificar" VerticalAlignment="Top" />
+                                    </Grid>
+                                </sdk:TabItem>
+                            </sdk:TabControl>
+                        </Grid>
+                    </sdk:TabItem>
+                    <sdk:TabItem Header="Interés" Name="interes_tab" FontWeight="Bold" Padding="12,4">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="369*" />
+                                <RowDefinition Height="8*" />
+                            </Grid.RowDefinitions>
+                            <sdk:DataGrid AutoGenerateColumns="True" Height="162" HorizontalAlignment="Left" Margin="7,210,0,0" Name="interes_grid" VerticalAlignment="Top" Width="683" Grid.RowSpan="2" IsReadOnly="True" SelectionChanged="interes_grid_SelectionChanged" />
+                            <sdk:Label Content="Campos en Existencia" Height="28" HorizontalAlignment="Left" Margin="273,188,0,0" Name="label16" VerticalAlignment="Top" Width="149" FontWeight="SemiBold" />
+                            <sdk:TabControl Height="198" HorizontalAlignment="Left" Margin="5,6,0,0" Name="tabInteres" VerticalAlignment="Top" Width="686">
+                                <sdk:TabItem Header="Agregar/Habilitar" Name="tabItem7">
+                                    <Grid>
+                                        <Button Content="Agregar/Habilitar" Height="23" HorizontalAlignment="Left" Margin="199,115,0,0" Name="interesAgregar_btn" TabIndex="8" VerticalAlignment="Top" Width="118" Click="interesAgregar_btn_Click" />
+                                        <Button Content="Deshabilitar" Height="23" HorizontalAlignment="Right" Margin="0,115,198,0" Name="interesEliminar_btn" TabIndex="9" VerticalAlignment="Top" Width="118" Click="interesEliminar_btn_Click" />
+                                        <TextBox Height="23" HorizontalAlignment="Left" Margin="505,16,0,0" Name="interesPorcentaje_txt" TabIndex="2" VerticalAlignment="Top" Width="120" TextChanged="interesPorcentaje_txt_TextChanged" />
+                                        <sdk:Label Content="Porcentaje de Interés:" Height="28" HorizontalAlignment="Left" Margin="356,20,0,0" Name="label22" VerticalAlignment="Top" Width="120" />
+                                        <TextBox Height="23" HorizontalAlignment="Left" Margin="144,16,0,0" Name="interesNombre_txt" TabIndex="1" VerticalAlignment="Top" Width="120" TextChanged="interesNombre_txt_TextChanged" />
+                                        <sdk:Label Content="Nombre de Interés" Height="28" HorizontalAlignment="Left" Margin="21,20,0,0" Name="label23" VerticalAlignment="Top" Width="120" />
+                                        <sdk:Label Content="Aplica Para:" Height="28" HorizontalAlignment="Left" Margin="21,57,0,0" Name="label24" VerticalAlignment="Top" Width="72" />
+                                        <CheckBox Content="Aportación Voluntaria" Height="16" HorizontalAlignment="Left" Margin="120,56,0,0" Name="interesAplica1_chk" TabIndex="3" VerticalAlignment="Top" />
+                                        <CheckBox Content="Aportación Obligatoria" Height="16" HorizontalAlignment="Left" Margin="120,79,0,0" Name="interesAplica2_chk" TabIndex="4" VerticalAlignment="Top" />
+                                        <CheckBox Content="Aportación Obligatoria Especial" Height="16" HorizontalAlignment="Left" Margin="296,57,0,0" Name="interesAplica3_chk" TabIndex="5" VerticalAlignment="Top" />
+                                        <CheckBox Content="Aportación Voluntaria Arriba de" Height="16" HorizontalAlignment="Left" Margin="296,79,0,0" Name="interesAplica4_chk" TabIndex="6" VerticalAlignment="Top" Unchecked="checkBox4_Unchecked" Checked="checkBox4_Checked" />
+                                        <TextBox Height="23" HorizontalAlignment="Left" IsEnabled="False" Margin="496,76,0,0" Name="interesAportacionAplica_txt" TabIndex="7" VerticalAlignment="Top" Width="48" TextChanged="interesAportacionAplica_txt_TextChanged" />
+                                        <Image Height="19" HorizontalAlignment="Left" Margin="270,16,0,0" Name="interesNombre_valid" Source="/" Stretch="Fill" VerticalAlignment="Top" Width="19" />
+                                        <Image Height="19" HorizontalAlignment="Left" Margin="631,16,0,0" Name="interesPorcentaje_valid" Source="/" Stretch="Fill" VerticalAlignment="Top" Width="19" />
+                                        <Image Height="19" HorizontalAlignment="Left" Margin="547,76,0,0" Name="aportacionVoluntaria_valid" Source="/" Stretch="Fill" VerticalAlignment="Top" Width="19" />
+                                    </Grid>
+                                </sdk:TabItem>
+                                <sdk:TabItem Header="Modificar" Name="tabItem8">
+                                    <Grid>
+                                        <Button Content="Modificar" Height="23" HorizontalAlignment="Left" Margin="282,132,0,0" Name="interesModificar_btn" TabIndex="8" VerticalAlignment="Top" Width="118" Click="interesModificar_btn_Click" />
+                                        <TextBox Height="23" HorizontalAlignment="Left" Margin="505,35,0,0" Name="interesModificarPorc_txt" TabIndex="2" VerticalAlignment="Top" Width="120" TextChanged="interesModificarPorc_txt_TextChanged" />
+                                        <sdk:Label Content="Porcentaje de Interés:" Height="28" HorizontalAlignment="Left" Margin="356,39,0,0" Name="label1" VerticalAlignment="Top" Width="120" />
+                                        <TextBox Height="23" HorizontalAlignment="Left" Margin="144,35,0,0" Name="interesModificarNombre_txt" TabIndex="1" VerticalAlignment="Top" Width="120" TextChanged="interesModificarNombre_txt_TextChanged" />
+                                        <sdk:Label Content="Nombre Nuevo" Height="28" HorizontalAlignment="Left" Margin="21,39,0,0" Name="label2" VerticalAlignment="Top" Width="120" />
+                                        <sdk:Label Content="Aplica Para:" Height="28" HorizontalAlignment="Left" Margin="21,76,0,0" Name="label5" VerticalAlignment="Top" Width="72" />
+                                        <CheckBox Content="Aportación Voluntaria" Height="16" HorizontalAlignment="Left" Margin="120,75,0,0" Name="modificarInteresAplica1_chk" TabIndex="3" VerticalAlignment="Top" />
+                                        <CheckBox Content="Aportación Obligatoria" Height="16" HorizontalAlignment="Left" Margin="120,98,0,0" Name="modificarInteresAplica2_chk" TabIndex="4" VerticalAlignment="Top" />
+                                        <CheckBox Content="Aportación Obligatoria Especial" Height="16" HorizontalAlignment="Left" Margin="296,76,0,0" Name="modificarInteresAplica3_chk" TabIndex="5" VerticalAlignment="Top" />
+                                        <CheckBox Content="Aportación Voluntaria Arriba de" Height="16" HorizontalAlignment="Left" Margin="296,98,0,0" Name="modificarInteresAplica4_chk" TabIndex="6" VerticalAlignment="Top" Checked="modificarInteresAplica4_chk_Checked" Unchecked="modificarInteresAplica4_chk_Unchecked" />
+                                        <TextBox Height="23" HorizontalAlignment="Left" IsEnabled="False" Margin="496,95,0,0" Name="modificarAplicaAV_txt" TabIndex="7" VerticalAlignment="Top" Width="48" TextChanged="modificarAplicaAV_txt_TextChanged" />
+                                        <Image Height="19" HorizontalAlignment="Left" Margin="270,35,0,0" Name="interesModificarNombre_valid" Source="/" Stretch="Fill" VerticalAlignment="Top" Width="19" />
+                                        <Image Height="19" HorizontalAlignment="Left" Margin="631,35,0,0" Name="interesModificarPorcentaje_valid" Source="/" Stretch="Fill" VerticalAlignment="Top" Width="19" />
+                                        <Image Height="19" HorizontalAlignment="Left" Margin="547,95,0,0" Name="interesModificarAplicaAV_valid" Source="/" Stretch="Fill" VerticalAlignment="Top" Width="19" />
+                                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="224,5,0,0" Name="textBlock17" Text="Modificando Interes:" VerticalAlignment="Top" />
+                                        <TextBlock Height="23" HorizontalAlignment="Left" Margin="344,5,0,0" Name="interesViejo_txt" Text="" VerticalAlignment="Top" FontWeight="Bold" Width="157" />
+                                    </Grid>
+                                </sdk:TabItem>
+                            </sdk:TabControl>
+                        </Grid>
+                    </sdk:TabItem>
+                </sdk:TabControl>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</navigation:Page>

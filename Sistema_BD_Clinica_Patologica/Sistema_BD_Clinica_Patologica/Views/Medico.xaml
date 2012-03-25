@@ -1,0 +1,76 @@
+﻿<navigation:Page x:Class="Sistema_BD_Clinica_Patologica.Views.Medico" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="800"
+           Title="Medicos" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+    <Grid x:Name="LayoutRoot">
+        <ScrollViewer x:Name="PageScrollViewer" Style="{StaticResource PageScrollViewerStyle}" >
+            <StackPanel x:Name="ContentStackPanel" >
+                <StackPanel.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="White" Offset="0" />
+                        <GradientStop Color="#FFF6FF69" Offset="1" />
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+
+                <Grid Height="694" Margin="0,22,0,-55" Width="758">
+                    <TextBlock Text="*Nombre del Médico:" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="116,358,0,0" Name="label36" VerticalAlignment="Top" Width="138" />
+                    <TextBlock Text="Teléfono:" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="120,460,0,0" Name="label37" VerticalAlignment="Top" Width="87" />
+                    <TextBlock Text="Celular:" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="120,428,0,0" Name="label41" VerticalAlignment="Top" Width="87" />
+                    <TextBox Height="23" HorizontalAlignment="Right" Margin="0,424,304,0" MaxLength="9" Name="celularMedico_txt" TabIndex="6" VerticalAlignment="Top" Width="199" />
+                    <TextBox Height="23" HorizontalAlignment="Right" Margin="0,458,304,0" MaxLength="9" Name="telefonoMedico_txt" TabIndex="7" VerticalAlignment="Top" Width="199" />
+                    <TextBox Height="23" HorizontalAlignment="Right" Margin="0,358,304,0" Name="nombreMedicoMain_txt" TabIndex="4" VerticalAlignment="Top" Width="199" TextChanged="nombreMedicoMain_txt_TextChanged" />
+                    <Button Content="Guardar " FontSize="12" FontWeight="Bold" Height="38" HorizontalAlignment="Left" Margin="555,405,0,0" Name="guardar_btn5" Padding="5" VerticalAlignment="Top" Width="110" Click="guardar_btn5_Click" TabIndex="10" BorderThickness="3" HorizontalContentAlignment="Right" />
+                    <Button Content="Borrar   " FontSize="12" FontWeight="Bold" Height="38" HorizontalAlignment="Right" Margin="0,516,93,0" Name="borrar_btn5" Padding="5" VerticalAlignment="Top" Width="110" Click="borrar_btn5_Click" TabIndex="12" BorderThickness="3" HorizontalContentAlignment="Right" />
+                    <TextBlock Text="Listado de Médicos" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="274,6,0,0" Name="label58" VerticalAlignment="Top" Width="204" FontSize="18" />
+
+                    <TextBlock Text="Nuevo Medico" FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="285,323,0,0" Name="label59" VerticalAlignment="Top" Width="193" FontSize="15" FontStyle="Italic" TextAlignment="Center" />
+                    <Button Content="Buscar  " FontSize="12" FontWeight="Bold" Height="38" HorizontalAlignment="Left" Margin="571,35,0,0" Name="detalle" Padding="5" VerticalAlignment="Top" Width="110" Click="detalle_Click" TabIndex="2" BorderThickness="3" HorizontalContentAlignment="Right" />
+                    <TextBlock Text="Cargando Información de los Médicos..." Height="50" HorizontalAlignment="Left" Margin="141,92,0,0" Name="estado_medico" VerticalAlignment="Top" Width="466" TextWrapping="Wrap" TextAlignment="Center" FontWeight="Bold" FontSize="12" />
+                    <Button Content="Actualizar" FontSize="12" FontWeight="Bold" Height="38" HorizontalAlignment="Left" Margin="555,462,0,0" Name="button4" Padding="5" TabIndex="11" VerticalAlignment="Top" Width="110" Click="button4_Click" BorderThickness="3" HorizontalContentAlignment="Right" />
+                    <sdk:Label Content=" " Height="24" Margin="558,411,0,0" Name="guardar_icon" VerticalAlignment="Top" HorizontalAlignment="Left" Width="32" IsEnabled="False">
+                        <sdk:Label.Background>
+                            <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/Button-Add-icon.png" Stretch="Uniform" />
+                        </sdk:Label.Background>
+                    </sdk:Label>
+                    <sdk:Label Content=" " Height="24" HorizontalAlignment="Left" Margin="577,42,0,0" Name="buscar_icon" VerticalAlignment="Top" Width="32" IsEnabled="False">
+                        <sdk:Label.Background>
+                            <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/Lens-icon.png" Stretch="Uniform" />
+                        </sdk:Label.Background>
+                    </sdk:Label>
+                    <sdk:Label Content=" " Height="24" HorizontalAlignment="Left" Margin="558,468,0,0" Name="actualizar_icon" VerticalAlignment="Top" Width="32" IsEnabled="False">
+                        <sdk:Label.Background>
+                            <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/Button-Refresh-icon.png" Stretch="Uniform" />
+                        </sdk:Label.Background>
+                    </sdk:Label>
+                    <sdk:Label Content=" " Height="24" HorizontalAlignment="Left" Margin="558,522,0,0" Name="borrar_icon" VerticalAlignment="Top" Width="32" IsEnabled="False">
+                        <sdk:Label.Background>
+                            <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/Button-Close-icon.png" Stretch="Uniform" />
+                        </sdk:Label.Background>
+                    </sdk:Label>
+                    <TextBlock FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="120,493,0,0" Name="textBlock1" Text="Dirección:" VerticalAlignment="Top" Width="87" />
+                    <TextBox Height="23" HorizontalAlignment="Right" Margin="0,491,263,0" MaxLength="255" Name="direccion_txt" TabIndex="8" VerticalAlignment="Top" Width="240" />
+                    <TextBlock FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="120,523,0,0" Name="textBlock2" Text="Compañía:" VerticalAlignment="Top" Width="87" />
+                    <TextBox Height="23" HorizontalAlignment="Right" Margin="0,523,304,0" MaxLength="255" Name="compania_txt" TabIndex="9" VerticalAlignment="Top" Width="199" />
+                    <TextBlock FontWeight="Bold" Height="23" HorizontalAlignment="Left" Margin="120,393,0,0" Name="textBlock3" Text="Numero Colegiación:" VerticalAlignment="Top" Width="128" />
+                    <TextBox Height="23" HorizontalAlignment="Right" Margin="0,391,304,0" MaxLength="20" Name="numeroColegiatura_txt" TabIndex="5" VerticalAlignment="Top" Width="199" />
+                    <TextBlock Height="23" HorizontalAlignment="Left" Margin="116,560,0,0" Name="textBlock4" Text="* No se puede modificar el nombre de un medico una vez guardado" VerticalAlignment="Top" />
+                    <Image Height="19" HorizontalAlignment="Left" Margin="460,358,0,0" Name="id_error" Stretch="Fill" VerticalAlignment="Top" Width="19" />
+                    <Image Height="19" HorizontalAlignment="Left" Margin="514,47,0,0" Name="medico_combo_error" Stretch="Fill" VerticalAlignment="Top" Width="19" />
+                    <sdk:DataGrid AutoGenerateColumns="True" Height="166" HorizontalAlignment="Left" Margin="77,128,0,0" Name="datosMedicos_grid" VerticalAlignment="Top" Width="596" IsReadOnly="False" SelectionChanged="datosMedicos_grid_SelectionChanged" TabIndex="3" />
+                    <sdk:AutoCompleteBox Height="28" HorizontalAlignment="Left" Margin="242,42,0,0" Name="medicoNombre_auto" VerticalAlignment="Top" Width="266" FilterMode="Contains" TabIndex="1" />
+                    <Button BorderThickness="3" Content="Reiniciar Campos " FontSize="11" FontWeight="Normal" Height="29" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="555,352,0,0" Name="resetFields_btn" Padding="5" TabIndex="10" VerticalAlignment="Top" Width="147" Click="resetFields_Click" />
+                    <sdk:Label Content=" " Height="20" IsEnabled="False" Margin="559,356,0,0" Name="label1" VerticalAlignment="Top" HorizontalAlignment="Left" Width="28">
+                        <sdk:Label.Background>
+                            <ImageBrush ImageSource="/Sistema_BD_Clinica_Patologica;component/Images/World-icon.png" Stretch="Uniform" />
+                        </sdk:Label.Background>
+                    </sdk:Label>
+                </Grid>
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</navigation:Page>

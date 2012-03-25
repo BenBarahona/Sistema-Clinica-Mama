@@ -1,0 +1,50 @@
+c:\users\kotaro\documents\visual studio 2010\Projects\DT\DT\bin\Debug\DT.dll
+c:\users\kotaro\documents\visual studio 2010\Projects\DT\DT\bin\Debug\DT.pdb
+c:\users\kotaro\documents\visual studio 2010\Projects\DT\DT\obj\Debug\ResolveAssemblyReference.cache
+c:\users\kotaro\documents\visual studio 2010\Projects\DT\DT\obj\Debug\DT.dll
+c:\users\kotaro\documents\visual studio 2010\Projects\DT\DT\obj\Debug\DT.pdb
+C:\Users\Ben\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\DT\bin\Debug\DT.dll
+C:\Users\Ben\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\DT\bin\Debug\DT.pdb
+C:\Users\Ben\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\DT\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\DT\obj\Debug\DT.dll
+C:\Users\Ben\Dropbox\Proyecto ADDS\DOCUMENTOS\Presentacion III\Pantallas (GUI)\La Mas Actualizada\ProyectoSCA_Navigation\DT\obj\Debug\DT.pdb
+C:\Users\KOTARO\Desktop\DT\DT\bin\Debug\DT.dll
+C:\Users\KOTARO\Desktop\DT\DT\bin\Debug\DT.pdb
+C:\Users\KOTARO\Desktop\DT\DT\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\KOTARO\Desktop\DT\DT\obj\Debug\DT.dll
+C:\Users\KOTARO\Desktop\DT\DT\obj\Debug\DT.pdb
+C:\Users\KOTARO\Desktop\ADDS realese\DT\bin\Debug\DT.dll
+C:\Users\KOTARO\Desktop\ADDS realese\DT\bin\Debug\DT.pdb
+C:\Users\KOTARO\Desktop\ADDS realese\DT\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\KOTARO\Desktop\ADDS realese\DT\obj\Debug\DT.dll
+C:\Users\KOTARO\Desktop\ADDS realese\DT\obj\Debug\DT.pdb
+C:\Users\Ben\Dropbox\ADDS realese\DT\bin\Debug\DT.dll
+C:\Users\Ben\Dropbox\ADDS realese\DT\bin\Debug\DT.pdb
+C:\Users\Ben\Dropbox\ADDS realese\DT\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Dropbox\ADDS realese\DT\obj\Debug\DT.dll
+C:\Users\Ben\Dropbox\ADDS realese\DT\obj\Debug\DT.pdb
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\DT\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\DT\obj\Debug\DT.dll
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\DT\obj\Debug\DT.pdb
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\DT\bin\Debug\DT.dll
+C:\Users\bbarahona\Documents\My Dropbox\ADDS realese\DT\bin\Debug\DT.pdb
+C:\Users\KOTARO\Desktop\Release 1.2\ADDS realese\DT\bin\Debug\DT.dll
+C:\Users\KOTARO\Desktop\Release 1.2\ADDS realese\DT\bin\Debug\DT.pdb
+C:\Users\KOTARO\Desktop\Release 1.2\ADDS realese\DT\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\KOTARO\Desktop\Release 1.2\ADDS realese\DT\obj\Debug\DT.dll
+C:\Users\KOTARO\Desktop\Release 1.2\ADDS realese\DT\obj\Debug\DT.pdb
+C:\Users\KOTARO\Desktop\Release 1.4\ADDS realese\DT\bin\Debug\DT.dll
+C:\Users\KOTARO\Desktop\Release 1.4\ADDS realese\DT\bin\Debug\DT.pdb
+C:\Users\KOTARO\Desktop\Release 1.4\ADDS realese\DT\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\KOTARO\Desktop\Release 1.4\ADDS realese\DT\obj\Debug\DT.dll
+C:\Users\KOTARO\Desktop\Release 1.4\ADDS realese\DT\obj\Debug\DT.pdb
+C:\Users\dAnY\Desktop\ADDS realese\DT\bin\Debug\DT.dll
+C:\Users\dAnY\Desktop\ADDS realese\DT\bin\Debug\DT.pdb
+C:\Users\dAnY\Desktop\ADDS realese\DT\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\dAnY\Desktop\ADDS realese\DT\obj\Debug\DT.dll
+C:\Users\dAnY\Desktop\ADDS realese\DT\obj\Debug\DT.pdb
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\DT\bin\Debug\DT.dll
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\DT\bin\Debug\DT.pdb
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\DT\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\DT\obj\Debug\DT.dll
+C:\Users\Ben\Dropbox\Sistema Clinica Mama\ADDS realese\DT\obj\Debug\DT.pdb
