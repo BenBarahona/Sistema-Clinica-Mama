@@ -32,7 +32,7 @@
                                 </Grid.ColumnDefinitions>
                                 <sdk:DataGrid AutoGenerateColumns="True" Height="367" HorizontalAlignment="Left" Margin="4,112,0,0" Name="dataGrid1" VerticalAlignment="Top" Width="726" Grid.ColumnSpan="2" />
                                 <TextBlock Height="23" HorizontalAlignment="Left" Margin="6,79,0,0" Name="textBlock2" Text="Buscar por Nombre:" VerticalAlignment="Top" FontWeight="Bold" />
-                                <sdk:AutoCompleteBox Height="28" HorizontalAlignment="Left" Margin="136,74,0,0" Name="nombreAuto_txt" VerticalAlignment="Top" Width="350" FilterMode="Contains" Grid.ColumnSpan="2" />
+                                <sdk:AutoCompleteBox Height="28" HorizontalAlignment="Left" Margin="136,74,0,0" Name="nombreAuto_txt" VerticalAlignment="Top" Width="350" FilterMode="StartsWith" Grid.ColumnSpan="2" />
                                 <Button BorderThickness="3" Content="Buscar   " FontSize="12" FontWeight="Bold" Height="38" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="281,68,0,0" Name="buscarNombre_btn" Padding="5" TabIndex="120" VerticalAlignment="Top" Width="108" Click="buscarNombre_btn_Click" Grid.Column="1" />
                                 <sdk:Label Content=" " Height="24" HorizontalAlignment="Left" IsEnabled="False" Margin="286,75,0,0" Name="buscarNombre_icon" VerticalAlignment="Top" Width="32" Grid.Column="1">
                                     <sdk:Label.Background>

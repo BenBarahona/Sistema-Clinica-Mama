@@ -31,6 +31,16 @@
           </s:sequence>
         </s:complexType>
       </s:element>
+      <s:element name="getPacientesCount">
+        <s:complexType />
+      </s:element>
+      <s:element name="getPacientesCountResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getPacientesCountResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
       <s:element name="getIDdePaciente">
         <s:complexType>
           <s:sequence>
@@ -818,6 +828,12 @@
   <wsdl:message name="getIDdeMedicoSoapOut">
     <wsdl:part name="parameters" element="tns:getIDdeMedicoResponse" />
   </wsdl:message>
+  <wsdl:message name="getPacientesCountSoapIn">
+    <wsdl:part name="parameters" element="tns:getPacientesCount" />
+  </wsdl:message>
+  <wsdl:message name="getPacientesCountSoapOut">
+    <wsdl:part name="parameters" element="tns:getPacientesCountResponse" />
+  </wsdl:message>
   <wsdl:message name="getIDdePacienteSoapIn">
     <wsdl:part name="parameters" element="tns:getIDdePaciente" />
   </wsdl:message>
@@ -1067,6 +1083,10 @@
       <wsdl:input message="tns:getIDdeMedicoSoapIn" />
       <wsdl:output message="tns:getIDdeMedicoSoapOut" />
     </wsdl:operation>
+    <wsdl:operation name="getPacientesCount">
+      <wsdl:input message="tns:getPacientesCountSoapIn" />
+      <wsdl:output message="tns:getPacientesCountSoapOut" />
+    </wsdl:operation>
     <wsdl:operation name="getIDdePaciente">
       <wsdl:input message="tns:getIDdePacienteSoapIn" />
       <wsdl:output message="tns:getIDdePacienteSoapOut" />
@@ -1241,6 +1261,15 @@
     </wsdl:operation>
     <wsdl:operation name="getIDdeMedico">
       <soap:operation soapAction="http://tempuri.org/getIDdeMedico" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPacientesCount">
+      <soap:operation soapAction="http://tempuri.org/getPacientesCount" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -1622,6 +1651,15 @@
     </wsdl:operation>
     <wsdl:operation name="getIDdeMedico">
       <soap12:operation soapAction="http://tempuri.org/getIDdeMedico" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getPacientesCount">
+      <soap12:operation soapAction="http://tempuri.org/getPacientesCount" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>

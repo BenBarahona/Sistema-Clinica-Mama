@@ -104,6 +104,11 @@ namespace Sistema_BD_Clinica_Patologica.ServiceReferenceClinica {
         
         Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.getIDdeMedicoResponse EndgetIDdeMedico(System.IAsyncResult result);
         
+        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/getPacientesCount", ReplyAction="*")]
+        System.IAsyncResult BegingetPacientesCount(System.AsyncCallback callback, object asyncState);
+        
+        int EndgetPacientesCount(System.IAsyncResult result);
+        
         [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/getIDdePaciente", ReplyAction="*")]
         System.IAsyncResult BegingetIDdePaciente(Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.getIDdePacienteRequest request, System.AsyncCallback callback, object asyncState);
         
@@ -4225,6 +4230,25 @@ namespace Sistema_BD_Clinica_Patologica.ServiceReferenceClinica {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class getPacientesCountCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        public getPacientesCountCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        public int Result {
+            get {
+                base.RaiseExceptionIfNecessary();
+                return ((int)(this.results[0]));
+            }
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public partial class getIDdePacienteCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
         
         private object[] results;
@@ -4999,6 +5023,12 @@ namespace Sistema_BD_Clinica_Patologica.ServiceReferenceClinica {
         
         private System.Threading.SendOrPostCallback ongetIDdeMedicoCompletedDelegate;
         
+        private BeginOperationDelegate onBegingetPacientesCountDelegate;
+        
+        private EndOperationDelegate onEndgetPacientesCountDelegate;
+        
+        private System.Threading.SendOrPostCallback ongetPacientesCountCompletedDelegate;
+        
         private BeginOperationDelegate onBegingetIDdePacienteDelegate;
         
         private EndOperationDelegate onEndgetIDdePacienteDelegate;
@@ -5296,6 +5326,8 @@ namespace Sistema_BD_Clinica_Patologica.ServiceReferenceClinica {
         
         public event System.EventHandler<getIDdeMedicoCompletedEventArgs> getIDdeMedicoCompleted;
         
+        public event System.EventHandler<getPacientesCountCompletedEventArgs> getPacientesCountCompleted;
+        
         public event System.EventHandler<getIDdePacienteCompletedEventArgs> getIDdePacienteCompleted;
         
         public event System.EventHandler<getMedicos_NombresCompletedEventArgs> getMedicos_NombresCompleted;
@@ -5501,6 +5533,50 @@ namespace Sistema_BD_Clinica_Patologica.ServiceReferenceClinica {
             }
             base.InvokeAsync(this.onBegingetIDdeMedicoDelegate, new object[] {
                         nombre_Medico}, this.onEndgetIDdeMedicoDelegate, this.ongetIDdeMedicoCompletedDelegate, userState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.IAsyncResult Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.WSClinicaSoap.BegingetPacientesCount(System.AsyncCallback callback, object asyncState) {
+            return base.Channel.BegingetPacientesCount(callback, asyncState);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        int Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.WSClinicaSoap.EndgetPacientesCount(System.IAsyncResult result) {
+            return base.Channel.EndgetPacientesCount(result);
+        }
+        
+        private System.IAsyncResult OnBegingetPacientesCount(object[] inValues, System.AsyncCallback callback, object asyncState) {
+            return ((Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.WSClinicaSoap)(this)).BegingetPacientesCount(callback, asyncState);
+        }
+        
+        private object[] OnEndgetPacientesCount(System.IAsyncResult result) {
+            int retVal = ((Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.WSClinicaSoap)(this)).EndgetPacientesCount(result);
+            return new object[] {
+                    retVal};
+        }
+        
+        private void OngetPacientesCountCompleted(object state) {
+            if ((this.getPacientesCountCompleted != null)) {
+                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
+                this.getPacientesCountCompleted(this, new getPacientesCountCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
+            }
+        }
+        
+        public void getPacientesCountAsync() {
+            this.getPacientesCountAsync(null);
+        }
+        
+        public void getPacientesCountAsync(object userState) {
+            if ((this.onBegingetPacientesCountDelegate == null)) {
+                this.onBegingetPacientesCountDelegate = new BeginOperationDelegate(this.OnBegingetPacientesCount);
+            }
+            if ((this.onEndgetPacientesCountDelegate == null)) {
+                this.onEndgetPacientesCountDelegate = new EndOperationDelegate(this.OnEndgetPacientesCount);
+            }
+            if ((this.ongetPacientesCountCompletedDelegate == null)) {
+                this.ongetPacientesCountCompletedDelegate = new System.Threading.SendOrPostCallback(this.OngetPacientesCountCompleted);
+            }
+            base.InvokeAsync(this.onBegingetPacientesCountDelegate, null, this.onEndgetPacientesCountDelegate, this.ongetPacientesCountCompletedDelegate, userState);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -9160,6 +9236,18 @@ namespace Sistema_BD_Clinica_Patologica.ServiceReferenceClinica {
             public Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.getIDdeMedicoResponse EndgetIDdeMedico(System.IAsyncResult result) {
                 object[] _args = new object[0];
                 Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.getIDdeMedicoResponse _result = ((Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.getIDdeMedicoResponse)(base.EndInvoke("getIDdeMedico", _args, result)));
+                return _result;
+            }
+            
+            public System.IAsyncResult BegingetPacientesCount(System.AsyncCallback callback, object asyncState) {
+                object[] _args = new object[0];
+                System.IAsyncResult _result = base.BeginInvoke("getPacientesCount", _args, callback, asyncState);
+                return _result;
+            }
+            
+            public int EndgetPacientesCount(System.IAsyncResult result) {
+                object[] _args = new object[0];
+                int _result = ((int)(base.EndInvoke("getPacientesCount", _args, result)));
                 return _result;
             }
             

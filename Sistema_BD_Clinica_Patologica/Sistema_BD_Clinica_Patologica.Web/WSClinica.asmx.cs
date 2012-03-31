@@ -37,7 +37,12 @@ namespace Sistema_BD_Clinica_Patologica.Web
         {
             return DataTransaction.getIDdeMedico(nombre_Medico);
         }
-        
+
+        [WebMethod]
+        public int getPacientesCount()
+        {
+            return DataTransaction.getPacientesCount();
+        }
 
         [WebMethod]
         public int getIDdePaciente(String nombre_Paciente, String s_nombre_Paciente, String apellido_paciente, String s_apellido_paciente)

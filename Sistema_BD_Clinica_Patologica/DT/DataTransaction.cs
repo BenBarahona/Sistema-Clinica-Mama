@@ -563,9 +563,23 @@ namespace DT
             return datos;
         }
         */
+        public static int getPacientesCount()
+        {
+            QueryString = "SELECT COUNT(*) FROM Paciente";
+            int data = 0;
+            if(EjecutarComando())
+            {
+                while (DataReader.Read())
+                {
+                    data = DataReader.GetInt32(0);
+                }
+            }
+            return data;
+        }
+
         public static ArrayList getNombresPacientes()
         {
-            QueryString = "SELECT P_Nombre, S_Nombre, P_Apellido, S_Apellido FROM Paciente";
+            QueryString = "SELECT TOP 350 P_Nombre, S_Nombre, P_Apellido, S_Apellido FROM Paciente ORDER BY P_Nombre";
 
             ArrayList datos = new ArrayList();
 
@@ -678,7 +692,7 @@ namespace DT
             QueryString = "";
             for (int i = 0; i <= 3000; i++)
             {
-                QueryString += " INSERT INTO Paciente VALUES('', '', '', 'Lourdes', 'Isabel', 'Bermudez', 'Flores', 20, '', ''); ";
+                QueryString += " INSERT INTO Paciente VALUES('', '', '', 'Giselle', 'Eugenia', 'Del Carmen', '', 20, '', ''); ";
             }
             if (EjecutarComando())
             {

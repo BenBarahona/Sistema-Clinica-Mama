@@ -36,8 +36,13 @@ namespace Sistema_BD_Clinica_Patologica.Views
 
         //DATA VARIABLES    
         nombreCompletoPacientes[] lista;
-        //String[] nameList;
         List<string> nameList;
+
+        //MALDITO BUG VARIABLES
+        int pacientesCount = 0;
+        int startIndex = 0;
+        int endIndex = 300;
+        bool pacienteFlag = true;
 
         /********************************************************************************************************************************
         **************************************************    Inicializadores   *********************************************************
@@ -74,10 +79,11 @@ namespace Sistema_BD_Clinica_Patologica.Views
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             mainFlag = true;
+            pacienteFlag = true;
             flag2 = true;
 
-            Wrapper.getNombresPacientesCompleted += new EventHandler<ServiceReferenceClinica.getNombresPacientesCompletedEventArgs>(getNombresPacientes);
-            Wrapper.getNombresPacientesAsync();
+            Wrapper.getPacientesCountCompleted += new EventHandler<ServiceReferenceClinica.getPacientesCountCompletedEventArgs>(getPacientesCount);
+            Wrapper.getPacientesCountAsync();
         }
 
 
@@ -231,11 +237,26 @@ namespace Sistema_BD_Clinica_Patologica.Views
             }
         }
 
-        void getNombresPacientes(object sender, ServiceReferenceClinica.getNombresPacientesCompletedEventArgs e)
+        void getPacientesCount(object sender, ServiceReferenceClinica.getPacientesCountCompletedEventArgs e)
         {
             if (mainFlag)
             {
                 mainFlag = false;
+                pacientesCount = e.Result;
+
+                double repeatTimes = Math.Ceiling(pacientesCount / 300);
+                for (int i = 1; i <= repeatTimes; i++)
+                {
+                    Wrapper.getNombresPacientesCompleted += new EventHandler<ServiceReferenceClinica.getNombresPacientesCompletedEventArgs>(getNombresPacientes);
+                    Wrapper.getNombresPacientesAsync();
+                }
+            }
+        }
+
+        void getNombresPacientes(object sender, ServiceReferenceClinica.getNombresPacientesCompletedEventArgs e)
+        {
+            if (pacienteFlag)
+            {
                 System.Collections.ObjectModel.ObservableCollection<Sistema_BD_Clinica_Patologica.ServiceReferenceClinica.NombreCompleto> result = e.Result;
 
                 lista = new nombreCompletoPacientes[e.Result.Count];
